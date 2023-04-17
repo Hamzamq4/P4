@@ -1990,3 +1990,107 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 1731.199070 seconds.
+  path: Assets/SpatialiserFix
+  artifactKey: Guid(62b5cbf60e0c12747b6aee31d719aeb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpatialiserFix using Guid(62b5cbf60e0c12747b6aee31d719aeb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c49b7b935d525cbdea396688f98e3496') in 0.007420 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.978674 seconds.
+  path: Assets/Plugins
+  artifactKey: Guid(57d14e70932f4764da0878774a04ff05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins using Guid(57d14e70932f4764da0878774a04ff05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2796fb9830de8e89973de7476f24c497') in 0.002666 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.821391 seconds.
+  path: Packages/com.unity.ugui/package.json
+  artifactKey: Guid(319b8889f363f5947acf209c17a94149) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.ugui/package.json using Guid(319b8889f363f5947acf209c17a94149) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1002360e272cf591a214daa5cb5c75f8') in 1.610934 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000084 seconds.
+  path: Packages/com.unity.collab-proxy/package.json
+  artifactKey: Guid(743fda8c4b219c8429fb5a77ede1c879) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.collab-proxy/package.json using Guid(743fda8c4b219c8429fb5a77ede1c879) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '441cb28566fa7359f42033fb1640df9c') in 0.002695 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.116712 seconds.
+  path: Packages/com.unity.test-framework/package.json
+  artifactKey: Guid(d6a2e6e4803de7b43baacdc355fc144d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.test-framework/package.json using Guid(d6a2e6e4803de7b43baacdc355fc144d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e18898ccc8b096ee8f2e6704cc6568de') in 0.002779 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.529110 seconds.
+  path: Packages/com.unity.ext.nunit/package.json
+  artifactKey: Guid(8143d3a8390f2c64685e3bc272bd9e90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.ext.nunit/package.json using Guid(8143d3a8390f2c64685e3bc272bd9e90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b40fc5629c4141466786b845dfe4fc31') in 0.003075 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001099 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for Android target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.37 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.517 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1518ms)
+		BeginReloadAssembly (161ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (61ms)
+		EndReloadAssembly (1256ms)
+			LoadAssemblies (79ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (224ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (46ms)
+			SetupLoadedEditorAssemblies (803ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (25ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (44ms)
+				ProcessInitializeOnLoadAttributes (680ms)
+				ProcessInitializeOnLoadMethodAttributes (51ms)
+				AfterProcessingInitializeOnLoad (3ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (12ms)
+Platform modules already initialized, skipping
+Failed to load shader (instanceID 4222, GUID dd89cf5b9246416f84610a006f916af7)
+Failed to load shader (instanceID 4224, GUID 14eb328de4b8eb245bb7cea29e4ac00b)
+Failed to load shader (instanceID 4226, GUID 68e6db2ebdc24f95958faec2be5558d6)
+Failed to load shader (instanceID 4228, GUID bc1ede39bf3643ee8e493720e4259791)
+Failed to load shader (instanceID 4218, GUID fe393ace9b354375a9cb14cdbbc28be4)
+Failed to load shader (instanceID 4220, GUID cf81c85f95fe47e1a27f6ae460cf182c)
+Failed to load shader (instanceID 4230, GUID 48bb5f55d8670e349b6e614913f9d910)
+Failed to load shader (instanceID 4232, GUID 85187c2149c549c5b33f0cdb02836b17)
+Failed to load shader (instanceID 4234, GUID 128e987d567d4e2c824d754223b3f3b0)
+Failed to load shader (instanceID 4242, GUID f7ada0af4f174f0694ca6a487b8f543d)
+Failed to load shader (instanceID 4238, GUID a02a7d8c237544f1962732b55a9aebf1)
+Failed to load shader (instanceID 4240, GUID c8d12adcee749c344b8117cf7c7eb912)
+Failed to load shader (instanceID 4236, GUID 1e3b057af24249748ff873be7fafee47)
+Refreshing native plugins compatible for Editor in 0.75 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 0 unused Assets / (2.2 KB). Loaded Objects now: 631.
+Memory consumption went from 44.7 MB to 44.7 MB.
+Total: 5.239812 ms (FindLiveObjects: 0.078798 ms CreateObjectMapping: 0.006531 ms MarkObjects: 5.144067 ms  DeleteObjects: 0.009024 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
