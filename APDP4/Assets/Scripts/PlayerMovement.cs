@@ -117,4 +117,12 @@ public class PlayerMovement : MonoBehaviour
             cc.center = new Vector3(0, 0, 0);  // move character's center back to default position
         }
     }
+
+    private void OnControllerColliderHit(ControllerColliderHit hit)
+    {
+        if(hit.transform.tag=="Obstacle")
+        {
+            PlayerManager.gameOver = true;
+        }
+    }
 }
