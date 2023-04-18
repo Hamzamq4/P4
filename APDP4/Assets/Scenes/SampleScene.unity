@@ -691,11 +691,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   terrainPrefabs:
   - {fileID: 7028618665781999005, guid: 4d1f2c2052eec4689b1aae856db1ec2b, type: 3}
-  - {fileID: 7028618665781999005, guid: 6e4bd7673e8f54838a51b55d94acacec, type: 3}
   player: {fileID: 6450177392892860472}
-  terrainLength: 51.8
+  terrainLength: 50
   initialTerrain: {fileID: 7028618665781999005, guid: 4d1f2c2052eec4689b1aae856db1ec2b, type: 3}
-  distanceThreshold: 20
+  distanceThreshold: 35
   obstacleProbability: 0.7
   obstaclePlacementDistance: 3
   laneWidth: 5

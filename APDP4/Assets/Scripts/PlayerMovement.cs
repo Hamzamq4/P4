@@ -23,7 +23,7 @@ public class PlayerMovement : MonoBehaviour
         Vector3 pos = gameObject.transform.position;
         if (!line.Equals(targetLine))
         {
-            if (targetLine == 0 && pos.x < -2.8)
+            if (targetLine == 0 && pos.x < -4.1)
             {
                 gameObject.transform.position = new Vector3(-2, pos.y, pos.z);
                 line = targetLine;
@@ -47,7 +47,7 @@ public class PlayerMovement : MonoBehaviour
                     canmove = true;
                 }
             }
-            else if (targetLine == 2 && pos.x > 2.8)
+            else if (targetLine == 2 && pos.x > 4.1)
             {
                 gameObject.transform.position = new Vector3(2, pos.y, pos.z);
                 line = targetLine;
@@ -90,13 +90,13 @@ public class PlayerMovement : MonoBehaviour
         {
             targetLine--;
             canmove = false;
-            movec.x = -4f;
+            movec.x = -8f;
         }
         if (Input.GetKeyDown(KeyCode.RightArrow) && canmove && line < 2)
         {
             targetLine++;
             canmove = false;
-            movec.x = 4f;
+            movec.x = 8f;
         }
 
         if (Input.GetKeyDown(KeyCode.UpArrow) && cc.isGrounded)

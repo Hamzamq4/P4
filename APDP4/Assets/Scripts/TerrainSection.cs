@@ -37,6 +37,7 @@ public class TerrainSection : MonoBehaviour
             }
             lastLane = laneIndex;
 
+            // instantiate obstacle at the selected lane
             if (laneIndex == 0)
             {
                 lanePos = lane1.position;
@@ -50,11 +51,37 @@ public class TerrainSection : MonoBehaviour
                 lanePos = lane3.position;
             }
 
-            float zPos = i * (40f / (numObstacles - 1)) - 20f;
+            float zPos = i * (50f / (numObstacles - 1)) - 25f;
             obstacle.transform.position = new Vector3(lanePos.x, lanePos.y + obstacleHeight, lanePos.z + zPos * laneWidth);
             obstacle.transform.rotation = Quaternion.identity;
             obstacle.transform.localScale = Vector3.one;
             obstacle.transform.parent = transform;
+
+            // check if to instantiate the obstacle on one of the other lanes as well
+            if (Random.value < 0.3f)
+            {
+                int otherLaneIndex = (laneIndex + Random.Range(1, 3)) % 3; // choose one of the other two lanes
+                Vector3 otherLanePos = Vector3.zero;
+
+                if (otherLaneIndex == 0)
+                {
+                    otherLanePos = lane1.position;
+                }
+                else if (otherLaneIndex == 1)
+                {
+                    otherLanePos = lane2.position;
+                }
+                else
+                {
+                    otherLanePos = lane3.position;
+                }
+
+                GameObject otherObstacle = Instantiate(obstaclePrefab);
+                otherObstacle.transform.position = new Vector3(otherLanePos.x, otherLanePos.y + obstacleHeight, lanePos.z + zPos * laneWidth);
+                otherObstacle.transform.rotation = Quaternion.identity;
+                otherObstacle.transform.localScale = Vector3.one;
+                otherObstacle.transform.parent = transform;
+            }
         }
     }
 }
