@@ -17,6 +17,9 @@
 #Libary Ignore
 /APDP4/Library/
 
+#User Settings
+/APDP4/UserSettings/
+
 # Recordings can get excessive in size
 /[Rr]ecordings/
 
