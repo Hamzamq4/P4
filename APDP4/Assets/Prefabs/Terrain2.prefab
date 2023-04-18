@@ -48,7 +48,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   obstacles:
-  - {fileID: 5928858169845282320, guid: 13cd423ba8fb94441b8579a1506524b6, type: 3}
+  - {fileID: 117208, guid: c149960d9485b394e8d52ae30578e3f3, type: 3}
   lane1: {fileID: 8439202911255806465}
   lane2: {fileID: 8439202911608260089}
   lane3: {fileID: 8439202911024132891}

@@ -1,0 +1,322 @@
+Using pre-set license
+Built from '2021.3/staging' branch; Version is '2021.3.22f1 (b6c551784ba3) revision 11978065'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 11  (10.0.22621) 64bit Professional' Language: 'en' Physical Memory: 14188 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2021.3.22f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker1
+-projectPath
+C:/Users/gabri/soundmanagerassingleton/P4/APDP4
+-logFile
+Logs/AssetImportWorker1.log
+-srvPort
+50035
+Successfully changed project path to: C:/Users/gabri/soundmanagerassingleton/P4/APDP4
+C:/Users/gabri/soundmanagerassingleton/P4/APDP4
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [29104] Host "[IP] 172.30.242.79 [Port] 0 [Flags] 2 [Guid] 2712188178 [EditorId] 2712188178 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-HMK759AA) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [29104] Host "[IP] 172.30.242.79 [Port] 0 [Flags] 2 [Guid] 2712188178 [EditorId] 2712188178 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-HMK759AA) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+Refreshing native plugins compatible for Editor in 19.82 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.3.22f1 (b6c551784ba3)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.22f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/gabri/soundmanagerassingleton/P4/APDP4/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 3050 Laptop GPU (ID=0x25a2)
+    Vendor:   NVIDIA
+    VRAM:     3993 MB
+    Driver:   31.0.15.1654
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.22f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.22f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.22f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56140
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.22f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.003744 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 17.66 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.468 seconds
+Domain Reload Profiling:
+	ReloadAssembly (468ms)
+		BeginReloadAssembly (72ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (320ms)
+			LoadAssemblies (71ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (80ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (20ms)
+			SetupLoadedEditorAssemblies (179ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (18ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (115ms)
+				ProcessInitializeOnLoadMethodAttributes (39ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.001878 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.32 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.656 seconds
+Domain Reload Profiling:
+	ReloadAssembly (656ms)
+		BeginReloadAssembly (101ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (17ms)
+		EndReloadAssembly (471ms)
+			LoadAssemblies (65ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (131ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (30ms)
+			SetupLoadedEditorAssemblies (226ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (35ms)
+				ProcessInitializeOnLoadAttributes (165ms)
+				ProcessInitializeOnLoadMethodAttributes (16ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 0.55 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1358 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 18 unused Assets / (56.1 KB). Loaded Objects now: 1825.
+Memory consumption went from 64.7 MB to 64.6 MB.
+Total: 3.520700 ms (FindLiveObjects: 0.130600 ms CreateObjectMapping: 0.040900 ms MarkObjects: 3.268600 ms  DeleteObjects: 0.079500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 9890.678606 seconds.
+  path: Assets/SimplePeople
+  artifactKey: Guid(3e063de8330da1143b0a89971b50ba51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimplePeople using Guid(3e063de8330da1143b0a89971b50ba51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '582a7243195efa38a3d73c7c55e95177') in 0.008580 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.663503 seconds.
+  path: Assets/SimplePeople/Prefabs/SimplePeople_BeachBabe_Brown.prefab
+  artifactKey: Guid(40ed268e2df0a394ca090fe991bf3af6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimplePeople/Prefabs/SimplePeople_BeachBabe_Brown.prefab using Guid(40ed268e2df0a394ca090fe991bf3af6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5502f5fe81e7808521bc5d191a4c912') in 0.304449 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/SimplePeople/Prefabs/SimplePeople_Pimp_White.prefab
+  artifactKey: Guid(214bcce7f27c132428a1a8aba0ea371a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimplePeople/Prefabs/SimplePeople_Pimp_White.prefab using Guid(214bcce7f27c132428a1a8aba0ea371a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9bf27a790c0d1f957c6d1555e92e2717') in 0.048572 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/SimplePeople/Prefabs/SimplePeople_Police_White.prefab
+  artifactKey: Guid(49e9a2b80e32aad49b1ea67be50a44ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimplePeople/Prefabs/SimplePeople_Police_White.prefab using Guid(49e9a2b80e32aad49b1ea67be50a44ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10eedab873387af9d1dc63f59d862d42') in 0.047829 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/SimplePeople/Prefabs/SimplePeople_RiotCop_Brown.prefab
+  artifactKey: Guid(a47f4fac3113f0d4bb65ea27d0dad0c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimplePeople/Prefabs/SimplePeople_RiotCop_Brown.prefab using Guid(a47f4fac3113f0d4bb65ea27d0dad0c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a6f9e756cb7dfb6f378144f094c198d2') in 0.046319 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/SimplePeople/Prefabs/SimplePeople_FireFighter_Black.prefab
+  artifactKey: Guid(888c7e05ee7700c46a52b3daf2eacbf5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimplePeople/Prefabs/SimplePeople_FireFighter_Black.prefab using Guid(888c7e05ee7700c46a52b3daf2eacbf5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2228ac11d2333405fb47ac840e144aa3') in 0.044958 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/SimplePeople/Prefabs/SimplePeople_Prostitute_White.prefab
+  artifactKey: Guid(0d98918798ca2404b9b060a460199585) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimplePeople/Prefabs/SimplePeople_Prostitute_White.prefab using Guid(0d98918798ca2404b9b060a460199585) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9cb7653a4defe3280e3ab1e2d453a582') in 0.047509 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/SimplePeople/Prefabs/SimplePeople_StreetMan_Brown.prefab
+  artifactKey: Guid(973da52f37faff44fbaa2270c9c5ea90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimplePeople/Prefabs/SimplePeople_StreetMan_Brown.prefab using Guid(973da52f37faff44fbaa2270c9c5ea90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'acdd1bc8c713980e37c9870ade25c2b2') in 0.048014 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/SimplePeople/Prefabs/SimplePeople_BusinessMan_White.prefab
+  artifactKey: Guid(b186f9485a0828b468f98fe846ae1a68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimplePeople/Prefabs/SimplePeople_BusinessMan_White.prefab using Guid(b186f9485a0828b468f98fe846ae1a68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a2369c6bc81c79dd317125594cedfe70') in 0.044082 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/SimplePeople/Prefabs/SimplePeople_Trucker_White.prefab
+  artifactKey: Guid(c2a7d1e33078b94448f5c853a1b8da65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimplePeople/Prefabs/SimplePeople_Trucker_White.prefab using Guid(c2a7d1e33078b94448f5c853a1b8da65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a422a66cce496a5ac6546fda7752fb4') in 0.045306 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/SimplePeople/Prefabs/SimplePeople_HouseWife_Brown.prefab
+  artifactKey: Guid(ea966a6c6626547479c4d8c7b7a4ab8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimplePeople/Prefabs/SimplePeople_HouseWife_Brown.prefab using Guid(ea966a6c6626547479c4d8c7b7a4ab8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b14cdb6669fb5616d30b90fcc31370b3') in 0.044516 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/SimplePeople/Prefabs/SimplePeople_Robber_Brown.prefab
+  artifactKey: Guid(76141ce09f31e0f43acb603244bea2dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimplePeople/Prefabs/SimplePeople_Robber_Brown.prefab using Guid(76141ce09f31e0f43acb603244bea2dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18c353e78b106e1adab9e4a2b75d05a6') in 0.047852 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/SimplePeople/Prefabs/SimplePeople_Sheriff_White.prefab
+  artifactKey: Guid(56eecb6027ff58d46b9b8045ce2f5b66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimplePeople/Prefabs/SimplePeople_Sheriff_White.prefab using Guid(56eecb6027ff58d46b9b8045ce2f5b66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00c4421d9064b3cdc1344862e8fc926f') in 0.048358 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/SimplePeople/Prefabs/SimplePeople_Hobo_Black.prefab
+  artifactKey: Guid(595794b9a4c7b884a93afc538ea183fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimplePeople/Prefabs/SimplePeople_Hobo_Black.prefab using Guid(595794b9a4c7b884a93afc538ea183fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb524d6c5f5f0a18a7ec4c5672b55944') in 0.056560 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/SimplePeople/Prefabs/SimplePeople_Hobo_White.prefab
+  artifactKey: Guid(3386efbe8e8a9664bbf5138fd2748628) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimplePeople/Prefabs/SimplePeople_Hobo_White.prefab using Guid(3386efbe8e8a9664bbf5138fd2748628) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2752bc98d25b5d17aaa971f7c7c67f53') in 0.049554 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/SimplePeople/Prefabs/SimplePeople_Punk_Brown.prefab
+  artifactKey: Guid(4a7c3ad7168bb834b87a91e3f94ad3d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimplePeople/Prefabs/SimplePeople_Punk_Brown.prefab using Guid(4a7c3ad7168bb834b87a91e3f94ad3d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dcdeafb254f2bf24fffbc1291bbcd7f2') in 0.045802 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/SimplePeople/Prefabs/SimplePeople_Hobo_Brown.prefab
+  artifactKey: Guid(acc9d8a2d2f9d574885908fdfe7fde10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimplePeople/Prefabs/SimplePeople_Hobo_Brown.prefab using Guid(acc9d8a2d2f9d574885908fdfe7fde10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1a6d55c90ff3f99fe2a7c698de164c3') in 0.044970 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/SimplePeople/Prefabs/SimplePeople_HouseWife_Black.prefab
+  artifactKey: Guid(da2c75d1eb537d343a12a9d832f28807) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimplePeople/Prefabs/SimplePeople_HouseWife_Black.prefab using Guid(da2c75d1eb537d343a12a9d832f28807) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '03b2f659a3dd75f06754dddada384c39') in 0.044014 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/SimplePeople/Prefabs/SimplePeople_FireFighter_Brown.prefab
+  artifactKey: Guid(48d0e91c5bec22942b8ccea02fa05f21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimplePeople/Prefabs/SimplePeople_FireFighter_Brown.prefab using Guid(48d0e91c5bec22942b8ccea02fa05f21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a03ceb291b0e807f297b94ce4757288b') in 0.050595 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/SimplePeople/Prefabs/SimplePeople_Trucker_Black.prefab
+  artifactKey: Guid(83fbe18e5570dd643bd5ec438484c2a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimplePeople/Prefabs/SimplePeople_Trucker_Black.prefab using Guid(83fbe18e5570dd643bd5ec438484c2a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e86d9b8ca16cd263d7ccaffe5639086') in 0.045442 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/SimplePeople/Prefabs/SimplePeople_BeachBabe_White.prefab
+  artifactKey: Guid(ab962cacf7f4cc64fa9cf9cd8f75c972) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimplePeople/Prefabs/SimplePeople_BeachBabe_White.prefab using Guid(ab962cacf7f4cc64fa9cf9cd8f75c972) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32a50dd0e22314ea459b87d5387d5dd6') in 0.046180 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/SimplePeople/Prefabs/SimplePeople_Waitress_White.prefab
+  artifactKey: Guid(fe520ce6663e67348a964bf7b4318e26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimplePeople/Prefabs/SimplePeople_Waitress_White.prefab using Guid(fe520ce6663e67348a964bf7b4318e26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab5d797116eaa192be59750e68b08fef') in 0.047377 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/SimplePeople/Prefabs/SimplePeople_Sheriff_Black.prefab
+  artifactKey: Guid(04bbc969ba1271d4295504ca3f510d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimplePeople/Prefabs/SimplePeople_Sheriff_Black.prefab using Guid(04bbc969ba1271d4295504ca3f510d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb9c16d45acb5d2fc5f3e9ca6c711ed6') in 0.048429 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/SimplePeople/Prefabs/SimplePeople_Pimp_Black.prefab
+  artifactKey: Guid(eaa87c0130c9b1f4ba9e270558d2e0a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimplePeople/Prefabs/SimplePeople_Pimp_Black.prefab using Guid(eaa87c0130c9b1f4ba9e270558d2e0a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ea2e3bd723281bfc6075dd166ec394f') in 0.048678 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/SimplePeople/Prefabs/SimplePeople_Sheriff_Brown.prefab
+  artifactKey: Guid(5d39e79d23613634bb7d4085aba7f31f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimplePeople/Prefabs/SimplePeople_Sheriff_Brown.prefab using Guid(5d39e79d23613634bb7d4085aba7f31f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ecd52549f15e97d79d5cea99609580d') in 0.048007 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/SimplePeople/Prefabs/SimplePeople_StreetMan_Black.prefab
+  artifactKey: Guid(9caa079f9beda554ca9e22d2337f14e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimplePeople/Prefabs/SimplePeople_StreetMan_Black.prefab using Guid(9caa079f9beda554ca9e22d2337f14e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a3d73a6d8def3390f4001824c9da563') in 0.047845 seconds 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

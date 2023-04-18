@@ -9,8 +9,8 @@ public class PlayerMovement : MonoBehaviour
     bool canmove = true;
     int line = 1;
     int targetLine = 1;
-    float speed = 5f; // added variable for speed
-    float jumpHeight = 10f; // added variable for jump height
+    float speed = 10f; // added variable for speed
+    float jumpHeight = 20f; // added variable for jump height
     float jumpDuration = 0.5f; // added variable for jump duration
 
     void Start()
@@ -23,7 +23,7 @@ public class PlayerMovement : MonoBehaviour
         Vector3 pos = gameObject.transform.position;
         if (!line.Equals(targetLine))
         {
-            if (targetLine == 0 && pos.x < -2)
+            if (targetLine == 0 && pos.x < -2.8)
             {
                 gameObject.transform.position = new Vector3(-2, pos.y, pos.z);
                 line = targetLine;
@@ -47,7 +47,7 @@ public class PlayerMovement : MonoBehaviour
                     canmove = true;
                 }
             }
-            else if (targetLine == 2 && pos.x > 2)
+            else if (targetLine == 2 && pos.x > 2.8)
             {
                 gameObject.transform.position = new Vector3(2, pos.y, pos.z);
                 line = targetLine;

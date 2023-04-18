@@ -31,7 +31,7 @@ public class TerrainGenerator : MonoBehaviour
     public float obstaclePlacementDistance;
     public float laneWidth;
     
-    private float[] lanePositions = new float[] { -1f, 0f, 1f };
+    private float[] lanePositions = new float[] { -2.8f, 0f, 2.8f };
 
     void Start()
     {
