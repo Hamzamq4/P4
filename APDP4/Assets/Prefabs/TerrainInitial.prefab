@@ -9418,7 +9418,7 @@ GameObject:
   - component: {fileID: 2510143451815902456}
   - component: {fileID: 1210062652270754106}
   m_Layer: 0
-  m_Name: Terrain1
+  m_Name: TerrainInitial
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9454,9 +9454,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca36d7f9fed7f489ca5385ee50ffe7b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  obstacles:
-  - {fileID: 122224, guid: 008c6febfb8d88a4496fe51f2a2d409a, type: 3}
-  - {fileID: 117208, guid: c149960d9485b394e8d52ae30578e3f3, type: 3}
+  obstacles: []
   lane1: {fileID: 4146732861027600959}
   lane2: {fileID: 2304240344769639143}
   lane3: {fileID: 1802541556248393170}

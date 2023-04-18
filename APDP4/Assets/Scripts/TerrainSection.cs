@@ -26,7 +26,7 @@ public class TerrainSection : MonoBehaviour
             GameObject obstaclePrefab = obstacles[Random.Range(0, obstacles.Length)];
             GameObject obstacle = Instantiate(obstaclePrefab);
 
-            float obstacleHeight = obstacle.GetComponent<Renderer>().bounds.size.y / 2f;
+            float obstacleHeight = obstacle.GetComponent<Renderer>().bounds.size.y - 1.20f;
             Vector3 lanePos = Vector3.zero;
 
             // select a lane that is different from the last lane used
@@ -54,7 +54,7 @@ public class TerrainSection : MonoBehaviour
             float zPos = i * (50f / (numObstacles - 1)) - 25f;
             obstacle.transform.position = new Vector3(lanePos.x, lanePos.y + obstacleHeight, lanePos.z + zPos * laneWidth);
             obstacle.transform.rotation = Quaternion.identity;
-            obstacle.transform.localScale = Vector3.one;
+            obstacle.transform.localScale = new Vector3(2,2,2);
             obstacle.transform.parent = transform;
 
             // check if to instantiate the obstacle on one of the other lanes as well
@@ -79,7 +79,7 @@ public class TerrainSection : MonoBehaviour
                 GameObject otherObstacle = Instantiate(obstaclePrefab);
                 otherObstacle.transform.position = new Vector3(otherLanePos.x, otherLanePos.y + obstacleHeight, lanePos.z + zPos * laneWidth);
                 otherObstacle.transform.rotation = Quaternion.identity;
-                otherObstacle.transform.localScale = Vector3.one;
+                otherObstacle.transform.localScale = new Vector3(2, 2, 2);
                 otherObstacle.transform.parent = transform;
             }
         }
