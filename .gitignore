@@ -14,11 +14,11 @@
 # They also could contain extremely sensitive data
 /[Mm]emoryCaptures/
 
+#Libary Ignore
+/APDP4/Library/
+
 # Recordings can get excessive in size
 /[Rr]ecordings/
-
-# Library
-Library/
 
 # Uncomment this line if you wish to ignore the asset store tools plugin
 # /[Aa]ssets/AssetStoreTools*
