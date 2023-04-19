@@ -10,8 +10,9 @@ public class PlayerMovement : MonoBehaviour
     int line = 1;
     int targetLine = 1;
     float speed = 15f; // added variable for speed
-    float jumpHeight = 20f; // added variable for jump height
-    float jumpDuration = 0.5f; // added variable for jump duration
+    float jumpHeight = 50f; // added variable for jump height
+    float jumpDuration = 0.2f; // added variable for jump duration
+    float gravity = -50f; // added variable for gravity
 
     void Start()
     {
@@ -58,14 +59,15 @@ public class PlayerMovement : MonoBehaviour
 
         // added code for continuous movement along the Z axis
         movec.z = speed;
+
+        // added code for gravity
+        if (!cc.isGrounded)
+        {
+            movec.y += gravity * Time.deltaTime;
+        }
         cc.Move(movec * Time.deltaTime);
 
         checkInputs();
-
-        if (!cc.isGrounded)
-        {
-            movec.y = -4;
-        }
     }
 
     IEnumerator Jump()
