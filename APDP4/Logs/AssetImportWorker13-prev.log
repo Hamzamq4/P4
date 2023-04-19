@@ -1,0 +1,604 @@
+Using pre-set license
+Built from '2021.3/staging' branch; Version is '2021.3.22f1 (b6c551784ba3) revision 11978065'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 11  (10.0.22621) 64bit Professional' Language: 'en' Physical Memory: 14188 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2021.3.22f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker13
+-projectPath
+C:/Users/gabri/soundmanagerassingleton/P4/APDP4
+-logFile
+Logs/AssetImportWorker13.log
+-srvPort
+53295
+Successfully changed project path to: C:/Users/gabri/soundmanagerassingleton/P4/APDP4
+C:/Users/gabri/soundmanagerassingleton/P4/APDP4
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [32152] Host "[IP] 172.20.10.2 [Port] 0 [Flags] 2 [Guid] 4171296597 [EditorId] 4171296597 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-HMK759AA) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [32152] Host "[IP] 172.20.10.2 [Port] 0 [Flags] 2 [Guid] 4171296597 [EditorId] 4171296597 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-HMK759AA) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+Refreshing native plugins compatible for Editor in 41.52 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.3.22f1 (b6c551784ba3)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.22f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/gabri/soundmanagerassingleton/P4/APDP4/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 3050 Laptop GPU (ID=0x25a2)
+    Vendor:   NVIDIA
+    VRAM:     3993 MB
+    Driver:   31.0.15.1654
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.22f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.22f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.22f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56664
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.22f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.003656 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 35.02 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.508 seconds
+Domain Reload Profiling:
+	ReloadAssembly (509ms)
+		BeginReloadAssembly (71ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (361ms)
+			LoadAssemblies (69ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (78ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (25ms)
+			SetupLoadedEditorAssemblies (213ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (35ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (122ms)
+				ProcessInitializeOnLoadMethodAttributes (47ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.001950 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.54 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.720 seconds
+Domain Reload Profiling:
+	ReloadAssembly (720ms)
+		BeginReloadAssembly (103ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (18ms)
+		EndReloadAssembly (532ms)
+			LoadAssemblies (64ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (139ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (30ms)
+			SetupLoadedEditorAssemblies (270ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (36ms)
+				ProcessInitializeOnLoadAttributes (204ms)
+				ProcessInitializeOnLoadMethodAttributes (18ms)
+				AfterProcessingInitializeOnLoad (6ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 1.19 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1360 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 18 unused Assets / (56.7 KB). Loaded Objects now: 1828.
+Memory consumption went from 66.4 MB to 66.3 MB.
+Total: 2.956400 ms (FindLiveObjects: 0.133600 ms CreateObjectMapping: 0.044900 ms MarkObjects: 2.688800 ms  DeleteObjects: 0.088000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002130 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.47 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.695 seconds
+Domain Reload Profiling:
+	ReloadAssembly (695ms)
+		BeginReloadAssembly (120ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (29ms)
+		EndReloadAssembly (496ms)
+			LoadAssemblies (70ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (137ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (28ms)
+			SetupLoadedEditorAssemblies (237ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (34ms)
+				ProcessInitializeOnLoadAttributes (175ms)
+				ProcessInitializeOnLoadMethodAttributes (17ms)
+				AfterProcessingInitializeOnLoad (6ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.42 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1341 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 11 unused Assets / (24.6 KB). Loaded Objects now: 1831.
+Memory consumption went from 64.5 MB to 64.4 MB.
+Total: 3.076200 ms (FindLiveObjects: 0.110200 ms CreateObjectMapping: 0.035100 ms MarkObjects: 2.869600 ms  DeleteObjects: 0.059600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 102900.736930 seconds.
+  path: Assets/PolygonHeist/Prefab/Props/SM_Prop_Desk_01.prefab
+  artifactKey: Guid(7d9ea7b9cf5e55949a4348596234d408) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonHeist/Prefab/Props/SM_Prop_Desk_01.prefab using Guid(7d9ea7b9cf5e55949a4348596234d408) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2893cd06d089e3cfc315d00e781b780b') in 0.129487 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.691634 seconds.
+  path: Assets/PolygonHeist/Prefab/Props/SM_Prop_Jewellery_Necklace_04.prefab
+  artifactKey: Guid(fc9414b905e546c4ea8fea9a343a2cde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonHeist/Prefab/Props/SM_Prop_Jewellery_Necklace_04.prefab using Guid(fc9414b905e546c4ea8fea9a343a2cde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9064f68ba78a4814aeb6ced130715b33') in 0.018895 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/PolygonHeist/Prefab/Props/SM_Prop_MetalDetector_01.prefab
+  artifactKey: Guid(a434d6d7e1d7e2140ace7ece3e80c0a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonHeist/Prefab/Props/SM_Prop_MetalDetector_01.prefab using Guid(a434d6d7e1d7e2140ace7ece3e80c0a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dce54823da1edda9f3e06d7a86bab564') in 0.024561 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/PolygonHeist/Prefab/Props/SM_Prop_Money_Note_04.prefab
+  artifactKey: Guid(06f4d0c1058c516439f4717e83536bb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonHeist/Prefab/Props/SM_Prop_Money_Note_04.prefab using Guid(06f4d0c1058c516439f4717e83536bb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3fb9cd065da12e582cda2cb4cab3d859') in 0.027443 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/PolygonHeist/Prefab/Props/SM_Prop_Money_Note_02.prefab
+  artifactKey: Guid(a94f119e8c61dae4f8c39c94b2b56199) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonHeist/Prefab/Props/SM_Prop_Money_Note_02.prefab using Guid(a94f119e8c61dae4f8c39c94b2b56199) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f8ca3f084cea88564152ea8b70b1b5d') in 0.022809 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/PolygonHeist/Prefab/Props/SM_Prop_MetalDetector_Baggage_01.prefab
+  artifactKey: Guid(b80a3d9abeeb3b44f9229725f2f5a63b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonHeist/Prefab/Props/SM_Prop_MetalDetector_Baggage_01.prefab using Guid(b80a3d9abeeb3b44f9229725f2f5a63b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a371990e0e49616ae1840ccc125c892a') in 0.026446 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.191879 seconds.
+  path: Assets/PolygonHeist/Prefab/Props/SM_Prop_Money_Note_06.prefab
+  artifactKey: Guid(130b7421c2e08474e89a6357a69bbcb8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonHeist/Prefab/Props/SM_Prop_Money_Note_06.prefab using Guid(130b7421c2e08474e89a6357a69bbcb8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9155ca4297f232d36f59f5296d27b34a') in 0.015053 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000081 seconds.
+  path: Assets/PolygonHeist/Prefab/Props/SM_Prop_Money_Stack_02.prefab
+  artifactKey: Guid(1524a2bacc5b19d40a7ea897564db824) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonHeist/Prefab/Props/SM_Prop_Money_Stack_02.prefab using Guid(1524a2bacc5b19d40a7ea897564db824) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e1c4eb72607d07d9ea37084f86c661a') in 0.017317 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/PolygonHeist/Prefab/Props/SM_Prop_Pillar_02.prefab
+  artifactKey: Guid(c0b65cd1348aa19459f671bc2f63f16a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonHeist/Prefab/Props/SM_Prop_Pillar_02.prefab using Guid(c0b65cd1348aa19459f671bc2f63f16a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '51ab1c812987c63695616e523f71d8c1') in 0.017194 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/PolygonHeist/Prefab/Props/SM_Prop_Money_Note_07.prefab
+  artifactKey: Guid(83eb6da912953354fb9d71e922ca8db8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonHeist/Prefab/Props/SM_Prop_Money_Note_07.prefab using Guid(83eb6da912953354fb9d71e922ca8db8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '60b2e5be2bc40560d7682a79dcf7fb16') in 0.018083 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/PolygonHeist/Prefab/Props/SM_Prop_Money_Roll_01.prefab
+  artifactKey: Guid(e9396206a9de2e248854a26c1bc1c2e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonHeist/Prefab/Props/SM_Prop_Money_Roll_01.prefab using Guid(e9396206a9de2e248854a26c1bc1c2e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3f74e6f9f4db5d08fa42dc549e66004') in 0.018726 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/PolygonHeist/Prefab/Props/SM_Prop_RopeBarrier_Pole_01.prefab
+  artifactKey: Guid(4fda005215cb0714b95002638112c818) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonHeist/Prefab/Props/SM_Prop_RopeBarrier_Pole_01.prefab using Guid(4fda005215cb0714b95002638112c818) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '426c8da57188130f6e9de6909ae7e7bc') in 0.018949 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/PolygonHeist/Prefab/Props/SM_Prop_RopeBarrier_03.prefab
+  artifactKey: Guid(fe98137e8f4613c4aa47bddd275ca529) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonHeist/Prefab/Props/SM_Prop_RopeBarrier_03.prefab using Guid(fe98137e8f4613c4aa47bddd275ca529) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c2ea90dc8900a1c93c2a2e98a0b7cac') in 0.019493 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/PolygonHeist/Prefab/Props/SM_Prop_Plant_02.prefab
+  artifactKey: Guid(85cbc8147508f2544aefffff252e6d9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonHeist/Prefab/Props/SM_Prop_Plant_02.prefab using Guid(85cbc8147508f2544aefffff252e6d9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50cb9de9bfa9e69b37f630d8fe40c4d8') in 0.018948 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000058 seconds.
+  path: Assets/PolygonHeist/Prefab/Props/SM_Prop_Plant_01.prefab
+  artifactKey: Guid(9d84a7d988251ec4fa19223b92083a24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonHeist/Prefab/Props/SM_Prop_Plant_01.prefab using Guid(9d84a7d988251ec4fa19223b92083a24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '95e3ef0b7774f4f86a961a01f7d0ca08') in 0.018186 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/PolygonHeist/Prefab/Props/SM_Prop_Plant_03.prefab
+  artifactKey: Guid(a3516e53983593c4cb4a50626dac4968) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonHeist/Prefab/Props/SM_Prop_Plant_03.prefab using Guid(a3516e53983593c4cb4a50626dac4968) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16039e106d20143c558812a2e8f60e77') in 0.020092 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.230265 seconds.
+  path: Assets/PolygonHeist/Prefab/Props/SM_Prop_SafeDepositBox_Container_02.prefab
+  artifactKey: Guid(5f3dcd2666b4ce845909fd01d7b93b75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonHeist/Prefab/Props/SM_Prop_SafeDepositBox_Container_02.prefab using Guid(5f3dcd2666b4ce845909fd01d7b93b75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a33522611b0f4c3df2b373bd0736d066') in 0.014277 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/PolygonHeist/Prefab/Props/SM_Prop_SafeDepositBox_Cover_03.prefab
+  artifactKey: Guid(8ad664689865b684ca9b0efbad18ec7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonHeist/Prefab/Props/SM_Prop_SafeDepositBox_Cover_03.prefab using Guid(8ad664689865b684ca9b0efbad18ec7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '28b9c77e15c0768644125ddfd441e7ad') in 0.018435 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/PolygonHeist/Prefab/Props/SM_Prop_SafeDepositBoxes_Looted_01.prefab
+  artifactKey: Guid(484afefe62652474a807d0515debf7b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonHeist/Prefab/Props/SM_Prop_SafeDepositBoxes_Looted_01.prefab using Guid(484afefe62652474a807d0515debf7b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '37d15934b1b0677915e77783eda91b1b') in 0.019716 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/PolygonHeist/Prefab/Props/SM_Prop_SafeDepositBox_Cover_01.prefab
+  artifactKey: Guid(c8ed81a5cf0b1934a9ad90762f074825) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonHeist/Prefab/Props/SM_Prop_SafeDepositBox_Cover_01.prefab using Guid(c8ed81a5cf0b1934a9ad90762f074825) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02b5c8513f3f64f066a49a13410a878e') in 0.019785 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/PolygonHeist/Prefab/Props/SM_Prop_Statue_01.prefab
+  artifactKey: Guid(e979c8f656be0fd4d844f3467a72c3ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonHeist/Prefab/Props/SM_Prop_Statue_01.prefab using Guid(e979c8f656be0fd4d844f3467a72c3ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9bba3ada7eb02f324ee2b01e9215abda') in 0.017170 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/PolygonHeist/Prefab/Props/SM_Prop_Table_01.prefab
+  artifactKey: Guid(1fd60c8cdf7022642a8e56d7c7ebbab3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonHeist/Prefab/Props/SM_Prop_Table_01.prefab using Guid(1fd60c8cdf7022642a8e56d7c7ebbab3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d8d455551ca7640f36f2e12aa83eb34') in 0.017650 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/PolygonHeist/Prefab/Props/SM_Prop_Sign_Base_01.prefab
+  artifactKey: Guid(996ce8037127f114fb150d0f2a8c0d92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonHeist/Prefab/Props/SM_Prop_Sign_Base_01.prefab using Guid(996ce8037127f114fb150d0f2a8c0d92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad3df970c52aefd5464e67a6cb14484b') in 0.017788 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/PolygonHeist/Prefab/Props/SM_Prop_Seat_01.prefab
+  artifactKey: Guid(ed14c94b476509240be0121f8ea91a76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonHeist/Prefab/Props/SM_Prop_Seat_01.prefab using Guid(ed14c94b476509240be0121f8ea91a76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1209e2ec2e276aa1a5423c097b935942') in 0.017783 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/PolygonHeist/Prefab/Props/SM_Prop_Table_02.prefab
+  artifactKey: Guid(efecd26f64950f24b9eb82f27ffe1a7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonHeist/Prefab/Props/SM_Prop_Table_02.prefab using Guid(efecd26f64950f24b9eb82f27ffe1a7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '34fe0bb9b9768017dbbfc0af939a4632') in 0.017662 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/PolygonHeist/Prefab/Props/SM_Prop_Sign_Bank_01.prefab
+  artifactKey: Guid(ba4bfa53a39eb7c40bf5c0b3650a1f1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonHeist/Prefab/Props/SM_Prop_Sign_Bank_01.prefab using Guid(ba4bfa53a39eb7c40bf5c0b3650a1f1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cfc303038451d838d77ff4d1268ab9c1') in 0.018656 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.311845 seconds.
+  path: Assets/PolygonHeist/Prefab/Props/SM_Prop_TellerDesk_02.prefab
+  artifactKey: Guid(a413ee79147d0164b8761c7549bdfca2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonHeist/Prefab/Props/SM_Prop_TellerDesk_02.prefab using Guid(a413ee79147d0164b8761c7549bdfca2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '754a9c87cc1616ccdb8928e701ea4d33') in 0.015428 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/PolygonHeist/Prefab/Props/SM_Prop_TellerDesk_Barrier_02.prefab
+  artifactKey: Guid(a429d96bb59195a4f81dd5de01b45013) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonHeist/Prefab/Props/SM_Prop_TellerDesk_Barrier_02.prefab using Guid(a429d96bb59195a4f81dd5de01b45013) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '854e68968ca7613bae930fbf0bb58e4a') in 0.017462 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/PolygonHeist/Prefab/Props/SM_Prop_WaterCooler_01.prefab
+  artifactKey: Guid(8d01dbffe8d6980419ce4af98b9d452b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonHeist/Prefab/Props/SM_Prop_WaterCooler_01.prefab using Guid(8d01dbffe8d6980419ce4af98b9d452b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '821112487c568871090404621553e437') in 0.019231 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/PolygonHeist/Prefab/Props/SM_Prop_TellerDesk_03.prefab
+  artifactKey: Guid(5b4f078c06f376341bb6804d3c282051) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonHeist/Prefab/Props/SM_Prop_TellerDesk_03.prefab using Guid(5b4f078c06f376341bb6804d3c282051) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '73cab3b37197f524b31991ca0e244aa9') in 0.017563 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 11.458875 seconds.
+  path: Assets/PolygonHeist/Prefab/Masks/SM_Item_Mask_Glasses_01.prefab
+  artifactKey: Guid(8654b15919165984eb25a3047d77464f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonHeist/Prefab/Masks/SM_Item_Mask_Glasses_01.prefab using Guid(8654b15919165984eb25a3047d77464f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb6049d391f8ad0322939275397f1110') in 0.018917 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/PolygonHeist/Prefab/Masks/SM_Item_Mask_Horse_01.prefab
+  artifactKey: Guid(f92ac15293fece44fa2234b61aaeca70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonHeist/Prefab/Masks/SM_Item_Mask_Horse_01.prefab using Guid(f92ac15293fece44fa2234b61aaeca70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd6c1869a0b8b76745030f3e33c454520') in 0.022517 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/PolygonHeist/Prefab/Masks/SM_Item_Mask_Simple_Woman_01.prefab
+  artifactKey: Guid(05bb5227e8bf9f145920345bbd687941) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonHeist/Prefab/Masks/SM_Item_Mask_Simple_Woman_01.prefab using Guid(05bb5227e8bf9f145920345bbd687941) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f2bff88a0bdf4d5f1395c520745e278') in 0.025606 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/PolygonHeist/Prefab/Masks/SM_Item_Mask_Panda_01.prefab
+  artifactKey: Guid(71ce5de9ed9408949807b42beb7c70a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonHeist/Prefab/Masks/SM_Item_Mask_Panda_01.prefab using Guid(71ce5de9ed9408949807b42beb7c70a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd12e83ce2fc6316487fb4ca22e730b1d') in 0.019142 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/PolygonHeist/Prefab/Masks/SM_Item_Mask_Simple_Man_01.prefab
+  artifactKey: Guid(593f0cf20ebe5ec4db08b51779053d3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonHeist/Prefab/Masks/SM_Item_Mask_Simple_Man_01.prefab using Guid(593f0cf20ebe5ec4db08b51779053d3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b2a63b0ca3026cad9bf7481b0f507e92') in 0.029644 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/PolygonHeist/Prefab/Masks/SM_Item_Mask_Tiger_01.prefab
+  artifactKey: Guid(8cf39fddff0960249834e0ab7cf892aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonHeist/Prefab/Masks/SM_Item_Mask_Tiger_01.prefab using Guid(8cf39fddff0960249834e0ab7cf892aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9149b801e36a97473b20b2c04dbbce48') in 0.025869 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/PolygonHeist/Prefab/Masks/SM_Item_Mask_Trump_01.prefab
+  artifactKey: Guid(7d151f6504734624fb6746746ff6e9f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonHeist/Prefab/Masks/SM_Item_Mask_Trump_01.prefab using Guid(7d151f6504734624fb6746746ff6e9f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6007dfe6986d3ae758195a475a327c86') in 0.023052 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002348 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.52 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.669 seconds
+Domain Reload Profiling:
+	ReloadAssembly (670ms)
+		BeginReloadAssembly (115ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (28ms)
+		EndReloadAssembly (479ms)
+			LoadAssemblies (68ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (125ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (27ms)
+			SetupLoadedEditorAssemblies (237ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (34ms)
+				ProcessInitializeOnLoadAttributes (175ms)
+				ProcessInitializeOnLoadMethodAttributes (17ms)
+				AfterProcessingInitializeOnLoad (6ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.43 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1341 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 11 unused Assets / (24.7 KB). Loaded Objects now: 1842.
+Memory consumption went from 68.7 MB to 68.6 MB.
+Total: 2.987400 ms (FindLiveObjects: 0.111800 ms CreateObjectMapping: 0.036800 ms MarkObjects: 2.816200 ms  DeleteObjects: 0.021600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001710 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.56 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.690 seconds
+Domain Reload Profiling:
+	ReloadAssembly (691ms)
+		BeginReloadAssembly (125ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (29ms)
+		EndReloadAssembly (485ms)
+			LoadAssemblies (76ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (128ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (27ms)
+			SetupLoadedEditorAssemblies (238ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (35ms)
+				ProcessInitializeOnLoadAttributes (174ms)
+				ProcessInitializeOnLoadMethodAttributes (17ms)
+				AfterProcessingInitializeOnLoad (6ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.66 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1341 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 11 unused Assets / (24.6 KB). Loaded Objects now: 1845.
+Memory consumption went from 68.7 MB to 68.7 MB.
+Total: 3.155000 ms (FindLiveObjects: 0.152300 ms CreateObjectMapping: 0.070300 ms MarkObjects: 2.898400 ms  DeleteObjects: 0.033000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002342 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.55 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.664 seconds
+Domain Reload Profiling:
+	ReloadAssembly (665ms)
+		BeginReloadAssembly (114ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (30ms)
+		EndReloadAssembly (476ms)
+			LoadAssemblies (65ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (125ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (27ms)
+			SetupLoadedEditorAssemblies (235ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (36ms)
+				ProcessInitializeOnLoadAttributes (170ms)
+				ProcessInitializeOnLoadMethodAttributes (16ms)
+				AfterProcessingInitializeOnLoad (6ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.75 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1341 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 11 unused Assets / (24.6 KB). Loaded Objects now: 1848.
+Memory consumption went from 68.7 MB to 68.7 MB.
+Total: 2.598600 ms (FindLiveObjects: 0.121400 ms CreateObjectMapping: 0.042400 ms MarkObjects: 2.416400 ms  DeleteObjects: 0.017700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
