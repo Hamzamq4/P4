@@ -9,9 +9,9 @@ public class PlayerMovement : MonoBehaviour
     bool canmove = true;
     int line = 1;
     int targetLine = 1;
-    float speed = 15f; // added variable for speed
-    float jumpHeight = 50f; // added variable for jump height
-    float jumpDuration = 0.2f; // added variable for jump duration
+    float speed = 25f; // added variable for speed
+    float jumpHeight = 35f; // added variable for jump height
+    float jumpDuration = 0.5f; // added variable for jump duration
     float gravity = -50f; // added variable for gravity
 
     void Start()

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657838, g: 0.49641228, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -982,7 +982,6 @@ MonoBehaviour:
   trafficObstacles:
   - {fileID: 122224, guid: 008c6febfb8d88a4496fe51f2a2d409a, type: 3}
   - {fileID: 117208, guid: c149960d9485b394e8d52ae30578e3f3, type: 3}
-  soundObstacles: []
   soundObstacleSpacing: 5
 --- !u!1 &585496546
 GameObject:
@@ -2594,7 +2593,7 @@ Animator:
   m_Controller: {fileID: 9100000, guid: 1de385df2ff713a41adfcbbb63b8af91, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
-  m_ApplyRootMotion: 1
+  m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
   m_WarningMessage: 
