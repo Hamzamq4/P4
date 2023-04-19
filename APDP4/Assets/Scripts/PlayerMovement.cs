@@ -13,15 +13,23 @@ public class PlayerMovement : MonoBehaviour
     float jumpHeight = 50f; // added variable for jump height
     float jumpDuration = 0.2f; // added variable for jump duration
     float gravity = -50f; // added variable for gravity
+    private Animator pAnimator;
 
     void Start()
     {
         cc = gameObject.GetComponent<CharacterController>();
+        pAnimator = GetComponent<Animator>();
     }
 
     void Update()
     {
-        Vector3 pos = gameObject.transform.position;
+        bool isJumping = (Input.GetKeyDown(KeyCode.UpArrow));
+            if (isJumping)
+        {
+            pAnimator.SetTrigger("Jump_b");
+        }
+
+    Vector3 pos = gameObject.transform.position;
         if (!line.Equals(targetLine))
         {
             if (targetLine == 0 && pos.x < -4.1)
@@ -104,6 +112,7 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.UpArrow) && cc.isGrounded)
         {
             StartCoroutine(Jump());
+
         }
 
         // added code for ducking on down arrow
