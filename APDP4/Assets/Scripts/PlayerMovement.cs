@@ -10,7 +10,7 @@ public class PlayerMovement : MonoBehaviour
     int line = 1;
     int targetLine = 1;
     float speed = 25f; // added variable for speed
-    float jumpHeight = 35f; // added variable for jump height
+    float jumpHeight = 20f; // added variable for jump height
     float jumpDuration = 0.5f; // added variable for jump duration
     float gravity = -50f; // added variable for gravity
     private Animator pAnimator;
@@ -23,13 +23,27 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
+        if (!ScoreManager.isPlayerAlive)
+        {
+            // Stop the movement
+            movec = Vector3.zero;
+            speed = 0f; // Stop the player from moving along the z-axis
+            return;
+        }
+
         bool isJumping = (Input.GetKeyDown(KeyCode.UpArrow));
             if (isJumping)
         {
             pAnimator.SetTrigger("Jump_b");
         }
 
-    Vector3 pos = gameObject.transform.position;
+        bool isDucking = (Input.GetKeyDown(KeyCode.DownArrow));
+        if (isDucking)
+        {
+            pAnimator.SetTrigger("Crouch_b");
+        }
+
+        Vector3 pos = gameObject.transform.position;
         if (!line.Equals(targetLine))
         {
             if (targetLine == 0 && pos.x < -4.1)
@@ -91,6 +105,7 @@ public class PlayerMovement : MonoBehaviour
             yield return null;
         }
 
+        pAnimator.ResetTrigger("Jump_b"); // Reset the Jump_b animation trigger
         movec.y = 0.0f;
     }
 
@@ -100,13 +115,13 @@ public class PlayerMovement : MonoBehaviour
         {
             targetLine--;
             canmove = false;
-            movec.x = -8f;
+            movec.x = -15f;
         }
         if (Input.GetKeyDown(KeyCode.RightArrow) && canmove && line < 2)
         {
             targetLine++;
             canmove = false;
-            movec.x = 8f;
+            movec.x = 15f;
         }
 
         if (Input.GetKeyDown(KeyCode.UpArrow) && cc.isGrounded)
@@ -114,18 +129,20 @@ public class PlayerMovement : MonoBehaviour
             StartCoroutine(Jump());
 
         }
-
+        
         // added code for ducking on down arrow
         if (Input.GetKeyDown(KeyCode.DownArrow) && cc.isGrounded)
         {
-            cc.height = 1.0f;  // set character height to lower value
-            cc.center = new Vector3(0, -0.5f, 0);  // move character's center down to maintain balance
+            //cc.height = 1.0f;  // set character height to lower value
+            //cc.center = new Vector3(0, -0.5f, 0);  // move character's center down to maintain balance
+            
         }
         // added code to reset character height when the down arrow is released
         if (Input.GetKeyUp(KeyCode.DownArrow))
         {
-            cc.height = 2.0f;  // set character height back to default value
+            //cc.height = 2.0f;  // set character height back to default value
             cc.center = new Vector3(0, 0, 0);  // move character's center back to default position
+            pAnimator.ResetTrigger("Crouch_b"); // Reset the Jump_b animation trigger
         }
     }
 
@@ -135,5 +152,15 @@ public class PlayerMovement : MonoBehaviour
         {
             PlayerManager.gameOver = true;
         }
+    }
+    void PlayerDeath()
+    {
+        // Play death animation
+
+        // Set flag to false
+        ScoreManager.isPlayerAlive = false;
+
+        // Stop the movement
+        movec = Vector3.zero;
     }
 }

@@ -24,7 +24,13 @@ public class ScoreManager : MonoBehaviour
     public GameObject gameOverPanel;
     public int refillLifeTime;
 
+<<<<<<< Updated upstream
     private Coroutine lifeRefillCoroutine;
+=======
+    private Animator pAnimator;
+
+    public static bool isPlayerAlive = true;
+>>>>>>> Stashed changes
 
 
     // Start is called before the first frame update
@@ -36,39 +42,50 @@ public class ScoreManager : MonoBehaviour
         oneLife.gameObject.SetActive(true);
         twoLives.gameObject.SetActive(true);
 
-        if (PlayerPrefs.HasKey ("HighScore"))
+        if (PlayerPrefs.HasKey("HighScore"))
         {
             highScoreCount = PlayerPrefs.GetFloat("HighScore");
         }
-        
+
+        pAnimator = GameObject.FindGameObjectWithTag("Player").GetComponent<Animator>();
     }
 
     // Update is called once per frame
     void Update()
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
     {
         switch (health)
         {
             case 2:
                 oneLife.gameObject.SetActive(true);
                 twoLives.gameObject.SetActive(true);
-                Debug.Log("2 lives");
                 break;
             case 1:
                 oneLife.gameObject.SetActive(true);
                 twoLives.gameObject.SetActive(false);
+<<<<<<< Updated upstream
                 if (lifeRefillCoroutine == null)
                 {
                     // Start a new coroutine to refill the life
                     lifeRefillCoroutine = StartCoroutine(RefillLives());
                 }
                 Debug.Log("1 life");
+=======
+                StartCoroutine(RefillLives());
+>>>>>>> Stashed changes
                 break;
             case 0:
                 oneLife.gameObject.SetActive(false);
                 twoLives.gameObject.SetActive(false);
-                Debug.Log("0 lives");
-                Time.timeScale = 0;
-                gameOverPanel.SetActive(true);
+                if (!gameOverPanel.activeSelf)
+                {
+                    pAnimator.SetTrigger("Death_b");
+                    isPlayerAlive = false;
+                    StartCoroutine(ShowGameOverPanel());
+                }
                 break;
         }
 
@@ -87,6 +104,7 @@ public class ScoreManager : MonoBehaviour
         highScore.text = "High Score: " + Mathf.Round(highScoreCount).ToString();
     }
 
+<<<<<<< Updated upstream
     IEnumerator RefillLives()
     {
 
@@ -97,6 +115,26 @@ public class ScoreManager : MonoBehaviour
             health += 1;
             lifeRefillCoroutine = null;
         }
+=======
+
+    IEnumerator ShowGameOverPanel()
+    {
+        yield return new WaitForSeconds(2f); // Wait for 2 seconds
+        gameOverPanel.SetActive(true);
+        Time.timeScale = 0;
+    }
+
+    IEnumerator RefillLives()
+    {
+        yield return new WaitForSeconds(refillLifeTime);
+        health = 2;
+        Health();
+>>>>>>> Stashed changes
+    }
+
+    void Health()
+    {
+
     }
 
     public void ReloadGame()
