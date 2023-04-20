@@ -913,7 +913,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 528139306}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -1005,7 +1005,6 @@ MonoBehaviour:
   terrainPrefabs:
   - {fileID: 7028618665781999005, guid: 4d1f2c2052eec4689b1aae856db1ec2b, type: 3}
   - {fileID: 7028618665781999005, guid: b42994c1754c92d4886d88f26355b649, type: 3}
-  - {fileID: 7028618665781999005, guid: c078badde01872c4b933a17e876ea9ab, type: 3}
   player: {fileID: 6450177392892860472}
   terrainLength: 50
   initialTerrain: {fileID: 7028618665781999005, guid: 0584d015196b99a41b2b499ee38acdcc, type: 3}
@@ -1049,6 +1048,8 @@ MonoBehaviour:
   trafficObstacles:
   - {fileID: 122224, guid: 008c6febfb8d88a4496fe51f2a2d409a, type: 3}
   - {fileID: 117208, guid: c149960d9485b394e8d52ae30578e3f3, type: 3}
+  soundObstacles:
+  - {fileID: 7175974340718362378, guid: 282cafd08a02842e5896c169d37917f5, type: 3}
   soundObstacleSpacing: 5
 --- !u!114 &558159029
 MonoBehaviour:
@@ -2063,7 +2064,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1529008781}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -2580,7 +2581,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1938645793}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
