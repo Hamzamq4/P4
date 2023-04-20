@@ -62,7 +62,7 @@ public class ObstacleGenerator : MonoBehaviour
                 else if (obstacleType == 1) 
                 { // Traffic terrain
                     obstacleToSpawn = trafficObstacles[Random.Range(0, trafficObstacles.Length)];
-                    spawnOtherLanes = Random.value < 0.6f;
+                    spawnOtherLanes = Random.value < 0.1f;
                 } 
                 else 
                 { // Sound obstacle
@@ -78,6 +78,7 @@ public class ObstacleGenerator : MonoBehaviour
 
             if (spawnOtherLanes) 
             {
+                Debug.Log("Double forhindring!");
                 List<Transform> availableLanes = new List<Transform>(lanes);
                 availableLanes.RemoveAt(laneIndex);
                 int otherLaneIndex = Random.Range(0, availableLanes.Count);
@@ -95,17 +96,15 @@ public class ObstacleGenerator : MonoBehaviour
                     otherObstacleToSpawn = trafficObstacles[Random.Range(0, trafficObstacles.Length)];
                 }
 
-                Instantiate(obstacleToSpawn, lanes[laneIndex].position + new Vector3(-1.6f, 4.181f, player.position.z + 50f), Quaternion.identity);
+                //Instantiate(obstacleToSpawn, lanes[laneIndex].position + new Vector3(-1.6f, 4.181f, player.position.z + 50f), Quaternion.identity);
                 Instantiate(thirdObstacleToSpawn, availableLanes[0].position + new Vector3(-1.6f, 4.181f, player.position.z + 50f), Quaternion.identity);
-
-                Debug.Log("Double forhindring!");
-
+                Instantiate(otherObstacleToSpawn, otherLane.position + new Vector3(-1.6f, 4.181f, player.position.z + 50f), Quaternion.identity);
                 spawnOtherLanes = false;
             } 
 
 
 
-            else 
+            /*else 
             {
                 List<Transform> availableLanes = new List<Transform>(lanes);
                 availableLanes.RemoveAt(laneIndex);
@@ -126,7 +125,7 @@ public class ObstacleGenerator : MonoBehaviour
                 Instantiate(obstacleToSpawn, lanes[laneIndex].position + new Vector3(-1.6f, 4.181f, player.position.z + 50f), Quaternion.identity);
                 Instantiate(otherObstacleToSpawn, otherLane.position + new Vector3(-1.6f, 4.181f, player.position.z + 50f), Quaternion.identity);
             
-            }
+            }*/
 
 
         }

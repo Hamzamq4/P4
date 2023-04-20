@@ -42,6 +42,7 @@ public class MinimalPairs : MonoBehaviour
             Vector3 positionOffset = new Vector3(0f, randomObjectIndex * 1.5f, 0f);
             Vector3 objectPosition = laneTransforms[i].position + positionOffset;
             Instantiate(chosenArray[randomObjectIndex], objectPosition, Quaternion.identity);
+            Debug.Log("Instantiated object!");
         }
     }
 }
