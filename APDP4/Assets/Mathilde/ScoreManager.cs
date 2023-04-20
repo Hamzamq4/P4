@@ -24,6 +24,8 @@ public class ScoreManager : MonoBehaviour
     public GameObject gameOverPanel;
     public int refillLifeTime;
 
+    private Coroutine lifeRefillCoroutine;
+
 
     // Start is called before the first frame update
     void Start()
@@ -44,11 +46,6 @@ public class ScoreManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //if (health > 2)
-        //{
-        //    health = 2;
-        //}
-
         switch (health)
         {
             case 2:
@@ -59,7 +56,11 @@ public class ScoreManager : MonoBehaviour
             case 1:
                 oneLife.gameObject.SetActive(true);
                 twoLives.gameObject.SetActive(false);
-                StartCoroutine(RefillLives());
+                if (lifeRefillCoroutine == null)
+                {
+                    // Start a new coroutine to refill the life
+                    lifeRefillCoroutine = StartCoroutine(RefillLives());
+                }
                 Debug.Log("1 life");
                 break;
             case 0:
@@ -86,18 +87,16 @@ public class ScoreManager : MonoBehaviour
         highScore.text = "High Score: " + Mathf.Round(highScoreCount).ToString();
     }
 
-    void Health()
-    {
-        
-    }
-
     IEnumerator RefillLives()
     {
-        Debug.Log("IEnumerator");
+
         yield return new WaitForSeconds(refillLifeTime);
-        Debug.Log("2 lives now");
-        health = 2;
-        Health();
+        if(health == 1)
+        {
+            Debug.Log("2 lives now");
+            health += 1;
+            lifeRefillCoroutine = null;
+        }
     }
 
     public void ReloadGame()
