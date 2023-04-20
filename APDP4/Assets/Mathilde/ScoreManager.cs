@@ -24,13 +24,11 @@ public class ScoreManager : MonoBehaviour
     public GameObject gameOverPanel;
     public int refillLifeTime;
 
-<<<<<<< Updated upstream
     private Coroutine lifeRefillCoroutine;
-=======
+
     private Animator pAnimator;
 
     public static bool isPlayerAlive = true;
->>>>>>> Stashed changes
 
 
     // Start is called before the first frame update
@@ -52,10 +50,7 @@ public class ScoreManager : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-<<<<<<< Updated upstream
-=======
 
->>>>>>> Stashed changes
     {
         switch (health)
         {
@@ -66,16 +61,13 @@ public class ScoreManager : MonoBehaviour
             case 1:
                 oneLife.gameObject.SetActive(true);
                 twoLives.gameObject.SetActive(false);
-<<<<<<< Updated upstream
                 if (lifeRefillCoroutine == null)
                 {
                     // Start a new coroutine to refill the life
                     lifeRefillCoroutine = StartCoroutine(RefillLives());
                 }
                 Debug.Log("1 life");
-=======
                 StartCoroutine(RefillLives());
->>>>>>> Stashed changes
                 break;
             case 0:
                 oneLife.gameObject.SetActive(false);
@@ -104,7 +96,6 @@ public class ScoreManager : MonoBehaviour
         highScore.text = "High Score: " + Mathf.Round(highScoreCount).ToString();
     }
 
-<<<<<<< Updated upstream
     IEnumerator RefillLives()
     {
 
@@ -115,7 +106,6 @@ public class ScoreManager : MonoBehaviour
             health += 1;
             lifeRefillCoroutine = null;
         }
-=======
 
     IEnumerator ShowGameOverPanel()
     {
@@ -129,7 +119,6 @@ public class ScoreManager : MonoBehaviour
         yield return new WaitForSeconds(refillLifeTime);
         health = 2;
         Health();
->>>>>>> Stashed changes
     }
 
     void Health()
