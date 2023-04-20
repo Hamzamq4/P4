@@ -1065,7 +1065,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreText: {fileID: 210775096}
-  highScore: {fileID: 283942086}
+  highScoreText: {fileID: 283942086}
   scoreCount: 0
   highScoreCount: 0
   pointsPerSecond: 0

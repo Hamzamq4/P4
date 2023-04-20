@@ -9,7 +9,7 @@ using TMPro;
 public class ScoreManager : MonoBehaviour
 {
     public TMP_Text scoreText;
-    public TMP_Text highScore;
+    public TMP_Text highScoreText;
 
     public float scoreCount;
     public float highScoreCount;
@@ -30,15 +30,14 @@ public class ScoreManager : MonoBehaviour
 
     public static bool isPlayerAlive = true;
 
-
     // Start is called before the first frame update
     void Start()
     {
         Time.timeScale = 1;
 
         health = 2;
-        oneLife.gameObject.SetActive(true);
-        twoLives.gameObject.SetActive(true);
+        oneLife.SetActive(true);
+        twoLives.SetActive(true);
 
         if (PlayerPrefs.HasKey("HighScore"))
         {
@@ -50,28 +49,26 @@ public class ScoreManager : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-
     {
         switch (health)
         {
             case 2:
-                oneLife.gameObject.SetActive(true);
-                twoLives.gameObject.SetActive(true);
+                oneLife.SetActive(true);
+                twoLives.SetActive(true);
                 break;
             case 1:
-                oneLife.gameObject.SetActive(true);
-                twoLives.gameObject.SetActive(false);
+                oneLife.SetActive(true);
+                twoLives.SetActive(false);
                 if (lifeRefillCoroutine == null)
                 {
                     // Start a new coroutine to refill the life
                     lifeRefillCoroutine = StartCoroutine(RefillLives());
                 }
                 Debug.Log("1 life");
-                StartCoroutine(RefillLives());
                 break;
             case 0:
-                oneLife.gameObject.SetActive(false);
-                twoLives.gameObject.SetActive(false);
+                oneLife.SetActive(false);
+                twoLives.SetActive(false);
                 if (!gameOverPanel.activeSelf)
                 {
                     pAnimator.SetTrigger("Death_b");
@@ -93,37 +90,25 @@ public class ScoreManager : MonoBehaviour
         }
 
         scoreText.text = "Score: " + Mathf.Round(scoreCount);
-        highScore.text = "High Score: " + Mathf.Round(highScoreCount).ToString();
+        highScoreText.text = "High Score: " + Mathf.Round(highScoreCount).ToString();
     }
 
     IEnumerator RefillLives()
     {
-
         yield return new WaitForSeconds(refillLifeTime);
-        if(health == 1)
+        if (health == 1)
         {
             Debug.Log("2 lives now");
             health += 1;
             lifeRefillCoroutine = null;
         }
+    }
 
     IEnumerator ShowGameOverPanel()
     {
         yield return new WaitForSeconds(2f); // Wait for 2 seconds
         gameOverPanel.SetActive(true);
         Time.timeScale = 0;
-    }
-
-    IEnumerator RefillLives()
-    {
-        yield return new WaitForSeconds(refillLifeTime);
-        health = 2;
-        Health();
-    }
-
-    void Health()
-    {
-
     }
 
     public void ReloadGame()
