@@ -19,17 +19,20 @@ public class ScoreManager : MonoBehaviour
     public bool scoreIncreasing;
 
     public GameObject oneLife, twoLives;
-    public static int health;
+    public static int health = 2;
 
     public GameObject gameOverPanel;
     public int refillLifeTime;
 
     private Coroutine lifeRefillCoroutine;
 
+<<<<<<< Updated upstream
     private Animator pAnimator;
 
     public static bool isPlayerAlive = true;
 
+=======
+>>>>>>> Stashed changes
     // Start is called before the first frame update
     void Start()
     {
@@ -53,8 +56,13 @@ public class ScoreManager : MonoBehaviour
         switch (health)
         {
             case 2:
+<<<<<<< Updated upstream
                 oneLife.SetActive(true);
                 twoLives.SetActive(true);
+=======
+                oneLife.gameObject.SetActive(true);
+                twoLives.gameObject.SetActive(true);
+>>>>>>> Stashed changes
                 break;
             case 1:
                 oneLife.SetActive(true);
@@ -64,9 +72,9 @@ public class ScoreManager : MonoBehaviour
                     // Start a new coroutine to refill the life
                     lifeRefillCoroutine = StartCoroutine(RefillLives());
                 }
-                Debug.Log("1 life");
                 break;
             case 0:
+<<<<<<< Updated upstream
                 oneLife.SetActive(false);
                 twoLives.SetActive(false);
                 if (!gameOverPanel.activeSelf)
@@ -75,6 +83,12 @@ public class ScoreManager : MonoBehaviour
                     isPlayerAlive = false;
                     StartCoroutine(ShowGameOverPanel());
                 }
+=======
+                oneLife.gameObject.SetActive(false);
+                twoLives.gameObject.SetActive(false);
+                Time.timeScale = 0;
+                gameOverPanel.SetActive(true);
+>>>>>>> Stashed changes
                 break;
         }
 
@@ -96,6 +110,11 @@ public class ScoreManager : MonoBehaviour
     IEnumerator RefillLives()
     {
         yield return new WaitForSeconds(refillLifeTime);
+<<<<<<< Updated upstream
+=======
+
+        // Refill the life only if the player has not lost another life in the meantime
+>>>>>>> Stashed changes
         if (health == 1)
         {
             Debug.Log("2 lives now");
@@ -114,5 +133,6 @@ public class ScoreManager : MonoBehaviour
     public void ReloadGame()
     {
         SceneManager.LoadScene("SampleScene");
+        health = 2;
     }
 }
