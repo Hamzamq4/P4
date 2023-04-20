@@ -823,8 +823,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: PlayerManager, Assembly-CSharp
+      - m_Target: {fileID: 558159029}
+        m_TargetAssemblyTypeName: ScoreManager, Assembly-CSharp
         m_MethodName: ReloadGame
         m_Mode: 1
         m_Arguments:
@@ -964,7 +964,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 528139306}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.6, y: 0, z: 65.2}
+  m_LocalPosition: {x: 1.5999999, y: 0, z: 65.2}
   m_LocalScale: {x: 0.38086998, y: 1, z: 300}
   m_ConstrainProportionsScale: 0
   m_Children: []

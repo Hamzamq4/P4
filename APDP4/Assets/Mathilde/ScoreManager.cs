@@ -59,7 +59,7 @@ public class ScoreManager : MonoBehaviour
             case 1:
                 oneLife.gameObject.SetActive(true);
                 twoLives.gameObject.SetActive(false);
-                // StartCoroutine(RefillLives());
+                StartCoroutine(RefillLives());
                 Debug.Log("1 life");
                 break;
             case 0:
