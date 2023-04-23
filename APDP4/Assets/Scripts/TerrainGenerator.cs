@@ -11,6 +11,11 @@ public class TerrainGenerator : MonoBehaviour
 
     public GameObject player;
 
+    public float deleteDistance = 10f; // Distance behind the player at which objects will be deleted
+
+    private List<GameObject> objectsToDestroy = new List<GameObject>(); // List of objects to destroy
+     public GameObject[] objectsToIgnore; // Array of objects to ignore during deletion
+
     // Length of each terrain section
     public float terrainLength = 50f;
 
@@ -45,14 +50,6 @@ public class TerrainGenerator : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        /*if (player.transform.position.z > currentTerrainLength)
-        {
-        Destroy(currentTerrain);
-        GenerateTerrain();
-        Debug.Log("Threshold Passed!");
-        }
-         */
-
         // Calculate the distance between the player and the end of the current terrain section
         float distanceToEdge = currentTerrainLength - player.transform.position.z;
 
@@ -62,7 +59,44 @@ public class TerrainGenerator : MonoBehaviour
             //Destroy(currentTerrain);
             GenerateTerrain();  
         }
+
+        // Next part for deletion of objects behind player
+        // Loop through all objects in the scene
+        foreach (GameObject obj in FindObjectsOfType<GameObject>())
+        {
+            // Check if the object is behind the player and not in the ignore list
+            if (obj.transform.position.z < player.transform.position.z - deleteDistance && !IsObjectIgnored(obj))
+            {
+                // Add the object to the list of objects to destroy
+                objectsToDestroy.Add(obj);
+            }
+        }
+
+        // Destroy all objects in the list
+        foreach (GameObject obj in objectsToDestroy)
+        {
+            Destroy(obj);
+        }
+
+        // Clear the list for the next frame
+        objectsToDestroy.Clear();
     }
+
+    // Check if an object is in the ignore list
+    bool IsObjectIgnored(GameObject obj)
+    {
+        foreach (GameObject ignoreObj in objectsToIgnore)
+        {
+            if (obj == ignoreObj)
+            {
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+    
     void GenerateTerrain()
     {
     // Choose a random terrain prefab from the array
@@ -87,28 +121,6 @@ public class TerrainGenerator : MonoBehaviour
 
     // Get the list of obstacle prefabs from the new terrain section
     GameObject[] obstaclePrefabs = newTerrain.GetComponent<TerrainSection>().obstacles;
-
-    // Iterate over the lanes in the new terrain section
-    /*for (int i = 0; i < 3; i++)
-    {
-        // Generate a random number between 0 and 1
-        float randomValue = Random.value;
-
-        // If the random number is less than the obstacle probability for this lane, place an obstacle in the lane
-        if (randomValue < obstacleProbability)
-        {
-            // Choose a random obstacle prefab from the list
-            int randomObstacleIndex = Random.Range(0, obstaclePrefabs.Length);
-            GameObject obstaclePrefab = obstaclePrefabs[randomObstacleIndex];
-
-            // Instantiate the obstacle at a random position in the lane
-            float lanePosition = lanePositions[i];
-            float obstacleX = lanePosition + Random.Range(-laneWidth / 2f, laneWidth / 2f);
-            float obstacleZ = currentTerrain.transform.position.z + obstaclePlacementDistance + Random.Range(-5f, 5f);
-            Vector3 obstaclePosition = new Vector3(obstacleX, obstaclePrefab.transform.position.y, obstacleZ);
-            Instantiate(obstaclePrefab, obstaclePosition, Quaternion.identity);
-        }
-    }*/
 }
 }
 

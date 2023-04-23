@@ -145,14 +145,7 @@ public class PlayerMovement : MonoBehaviour
             pAnimator.ResetTrigger("Crouch_b"); // Reset the Jump_b animation trigger
         }
     }
-
-    private void OnControllerColliderHit(ControllerColliderHit hit)
-    {
-        if(hit.transform.tag=="Obstacle")
-        {
-            PlayerManager.gameOver = true;
-        }
-    }
+    
     void PlayerDeath()
     {
         // Play death animation

@@ -45,9 +45,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objects1:
-  - {fileID: 5928858169845282320, guid: be7eb6cce797e304fbb41df6be288d46, type: 3}
-  - {fileID: 5928858169845282320, guid: 13cd423ba8fb94441b8579a1506524b6, type: 3}
-  - {fileID: 5928858169845282320, guid: 2d7e692e2ec844613ab4bf6d978582de, type: 3}
+  - {fileID: 1055064919166404, guid: de6abd774f85e18408346a3233418242, type: 3}
+  - {fileID: 1287295899898638, guid: 9ec060093457ad84ca2733cb15c2c41e, type: 3}
+  - {fileID: 5266117821352957060, guid: 28ab1d578905d5e438faff691d0ea172, type: 3}
   objects2:
   - {fileID: 5928858169845282320, guid: be7eb6cce797e304fbb41df6be288d46, type: 3}
   - {fileID: 5928858169845282320, guid: 2d7e692e2ec844613ab4bf6d978582de, type: 3}
@@ -56,6 +56,7 @@ MonoBehaviour:
   - {fileID: 5928858169845282320, guid: be7eb6cce797e304fbb41df6be288d46, type: 3}
   - {fileID: 5928858169845282320, guid: 2d7e692e2ec844613ab4bf6d978582de, type: 3}
   - {fileID: 5928858169845282320, guid: 13cd423ba8fb94441b8579a1506524b6, type: 3}
+  minimalPairsObject: {fileID: 7175974340718362380}
   laneTransforms:
   - {fileID: 0}
   - {fileID: 0}

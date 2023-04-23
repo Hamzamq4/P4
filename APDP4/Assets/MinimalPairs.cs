@@ -1,3 +1,5 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class MinimalPairs : MonoBehaviour
@@ -6,6 +8,8 @@ public class MinimalPairs : MonoBehaviour
     public GameObject[] objects1;
     public GameObject[] objects2;
     public GameObject[] objects3;
+    
+    public Transform minimalPairsObject;
 
     // Define the array of arrays
     public GameObject[][] objectCombinations;
@@ -13,6 +17,8 @@ public class MinimalPairs : MonoBehaviour
     // Define the array of transforms for the lanes
     public Transform[] laneTransforms;
     public string[] transformNames;
+
+    GameObject trueObject;
 
     // Start is called before the first frame update
     void Start()
@@ -31,18 +37,37 @@ public class MinimalPairs : MonoBehaviour
     }
         // Populate the array of arrays with the object arrays
         objectCombinations = new GameObject[][] { objects1, objects2, objects3 };
+        
+        // Choosing a random array
+        int randomIndex = Random.Range(0, 0);
+        GameObject[] chosenArray = objectCombinations[randomIndex];  
 
+        trueObject = chosenArray[Random.Range(0, chosenArray.Length)];
+        Debug.Log(trueObject);
+        trueObject.tag = "MinimalPairsTrue";
+
+        List<GameObject> availableObjects = new List<GameObject>(chosenArray);  
         // Randomly distribute the objects on all three lanes
         for (int i = 0; i < laneTransforms.Length; i++)
         {
-            int randomIndex = Random.Range(0, objectCombinations.Length);
-            GameObject[] chosenArray = objectCombinations[randomIndex];
-
-            int randomObjectIndex = Random.Range(0, chosenArray.Length);
-            Vector3 positionOffset = new Vector3(0f, randomObjectIndex * 1.5f, 0f);
-            Vector3 objectPosition = laneTransforms[i].position + positionOffset;
-            Instantiate(chosenArray[randomObjectIndex], objectPosition, Quaternion.identity);
+            int obstacleToSpawn = Random.Range(0, availableObjects.Count);
+            Vector3 objectPosition = new Vector3(laneTransforms[i].position.x - 1.8f, 4.5f, minimalPairsObject.position.z + 30f);
+            Instantiate(availableObjects[obstacleToSpawn], objectPosition, Quaternion.identity);
+            availableObjects.RemoveAt(obstacleToSpawn);
             Debug.Log("Instantiated object!");
         }
+        Invoke("OriginalTag", 8f);
+    }
+
+    void OriginalTag()
+    {
+    trueObject.tag = "Obstacle";
+    Debug.Log("Originalt tag nu");
+    }
+
+    private void OnDisable() 
+    {
+    trueObject.tag = "Obstacle";   
+    Debug.Log("Slut, Originalt tag nu");
     }
 }

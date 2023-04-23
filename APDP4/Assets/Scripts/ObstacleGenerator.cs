@@ -62,7 +62,7 @@ public class ObstacleGenerator : MonoBehaviour
                 else if (obstacleType == 1) 
                 { // Traffic terrain
                     obstacleToSpawn = trafficObstacles[Random.Range(0, trafficObstacles.Length)];
-                    spawnOtherLanes = Random.value < 0.1f;
+                    spawnOtherLanes = Random.value < 0.6f;
                 } 
                 else 
                 { // Sound obstacle
