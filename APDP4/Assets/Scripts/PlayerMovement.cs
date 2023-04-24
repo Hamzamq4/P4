@@ -145,15 +145,17 @@ public class PlayerMovement : MonoBehaviour
             pAnimator.ResetTrigger("Crouch_b"); // Reset the Jump_b animation trigger
         }
     }
-    
+
     void PlayerDeath()
     {
-        // Play death animation
-
         // Set flag to false
         ScoreManager.isPlayerAlive = false;
 
         // Stop the movement
         movec = Vector3.zero;
+
+        // Freeze the character's position
+        cc.enabled = false; // Disable the character controller component
+        gameObject.transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z); // Set the position to the current position
     }
 }

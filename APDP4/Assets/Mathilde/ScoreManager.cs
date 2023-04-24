@@ -78,8 +78,6 @@ public class ScoreManager : MonoBehaviour
                 }
                 oneLife.gameObject.SetActive(false);
                 twoLives.gameObject.SetActive(false);
-                Time.timeScale = 0;
-                gameOverPanel.SetActive(true);
                 break;
         }
 
@@ -114,7 +112,7 @@ public class ScoreManager : MonoBehaviour
     {
         yield return new WaitForSeconds(2f); // Wait for 2 seconds
         gameOverPanel.SetActive(true);
-        Time.timeScale = 0;
+        Time.timeScale = 0; // Set the time scale to zero after the delay
     }
 
     public void ReloadGame()
