@@ -17,7 +17,7 @@ public class PlayerMovement : MonoBehaviour
 
     // added variables for speed increase
     float maxSpeed = 40f;
-    float speedIncreasePerSecond = 0.1f;
+    float speedIncreasePerSecond = 0.05f;
 
     void Start()
     {

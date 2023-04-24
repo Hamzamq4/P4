@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -852,7 +852,7 @@ MonoBehaviour:
   - {fileID: 1529008781}
   terrainLength: 50
   initialTerrain: {fileID: 7028618665781999005, guid: 0584d015196b99a41b2b499ee38acdcc, type: 3}
-  distanceThreshold: 80
+  distanceThreshold: 120
   obstacleProbability: 0.7
   obstaclePlacementDistance: 3
   laneWidth: 5
@@ -894,6 +894,7 @@ MonoBehaviour:
   - {fileID: 122224, guid: 008c6febfb8d88a4496fe51f2a2d409a, type: 3}
   - {fileID: 117208, guid: c149960d9485b394e8d52ae30578e3f3, type: 3}
   - {fileID: 1550721664163431712, guid: 4acdfbaeea109464f821cfbde113894e, type: 3}
+  - {fileID: 241473963869164114, guid: ec9627adfc2b3874f819a89abc2468be, type: 3}
   soundObstacles:
   - {fileID: 7175974340718362378, guid: 282cafd08a02842e5896c169d37917f5, type: 3}
   soundObstacleSpacing: 5
