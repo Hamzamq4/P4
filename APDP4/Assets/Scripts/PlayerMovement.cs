@@ -9,11 +9,15 @@ public class PlayerMovement : MonoBehaviour
     bool canmove = true;
     int line = 1;
     int targetLine = 1;
-    float speed = 25f; // added variable for speed
+    float speed = 20f; // added variable for speed
     float jumpHeight = 20f; // added variable for jump height
     float jumpDuration = 0.5f; // added variable for jump duration
     float gravity = -50f; // added variable for gravity
     private Animator pAnimator;
+
+    // added variables for speed increase
+    float maxSpeed = 40f;
+    float speedIncreasePerSecond = 0.1f;
 
     void Start()
     {
@@ -32,7 +36,7 @@ public class PlayerMovement : MonoBehaviour
         }
 
         bool isJumping = (Input.GetKeyDown(KeyCode.UpArrow));
-            if (isJumping)
+        if (isJumping)
         {
             pAnimator.SetTrigger("Jump_b");
         }
@@ -90,6 +94,12 @@ public class PlayerMovement : MonoBehaviour
         cc.Move(movec * Time.deltaTime);
 
         checkInputs();
+
+        // added code for speed increase
+        if (speed < maxSpeed)
+        {
+            speed += speedIncreasePerSecond * Time.deltaTime;
+        }
     }
 
     IEnumerator Jump()
