@@ -51,7 +51,7 @@ MonoBehaviour:
   audioSource: {fileID: 5717508223820659030}
   obstacleSounds:
   - {fileID: 8300000, guid: 33903a1c0171b4ddf9dd836b2df21ec7, type: 3}
-  reactionTime: 10
+  reactionTime: 5
 --- !u!82 &5717508223820659030
 AudioSource:
   m_ObjectHideFlags: 0

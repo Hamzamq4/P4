@@ -33,7 +33,7 @@ public class SpatialAudioObstacle : MonoBehaviour
         audioSource.PlayOneShot(SpatialAudioSounds());
         StartCoroutine(ReactionTime());
         Debug.Log("reaction time done");
-        Obstacle();
+        
     }
 
     AudioClip SpatialAudioSounds()
@@ -41,17 +41,12 @@ public class SpatialAudioObstacle : MonoBehaviour
         return obstacleSounds[Random.Range(0, obstacleSounds.Length)];
     }
 
-    void Obstacle()
-    {
-        for (int i = 0; i < laneTransforms.Length; i++)
-        {
-            Vector3 objectPosition = new Vector3(laneTransforms[i].position.x - 1.8f, 4.5f, spatialAudio.position.z + 30f);
-            Instantiate(obstacles[Random.Range(0, obstacles.Length)], objectPosition, Quaternion.identity);
-        }
-    }
-
     IEnumerator ReactionTime()
     {
         yield return new WaitForSeconds(reactionTime);
+
+        int randomLaneIndex = Random.Range(0, laneTransforms.Length);
+        Vector3 objectPosition = new Vector3(laneTransforms[randomLaneIndex].position.x - 1.8f, 4.5f, spatialAudio.position.z - 30f);
+        Instantiate(obstacles[Random.Range(0, obstacles.Length)], objectPosition, Quaternion.identity);
     }
 }
