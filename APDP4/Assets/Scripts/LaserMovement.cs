@@ -17,6 +17,7 @@ public class LaserMovement : MonoBehaviour
         // Store the original position of the object holding this script
         originalPosition = transform.position;
         target = GameObject.Find("Player");
+        transform.Rotate(90, 0, 0, Space.Self);
     }
 
     // Update is called once per frame
