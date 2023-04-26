@@ -10,6 +10,7 @@ public class LaserMovement : MonoBehaviour
     private float elapsedSeconds; // The number of seconds that have elapsed since the game started
     private float currentTargetZ;
 
+
     // Start is called before the first frame update
     void Start()
     {
