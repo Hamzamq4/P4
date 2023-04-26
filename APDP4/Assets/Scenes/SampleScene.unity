@@ -938,11 +938,12 @@ MonoBehaviour:
   objectsToIgnore:
   - {fileID: 963194225}
   - {fileID: 705507993}
-  - {fileID: 0}
+  - {fileID: 1874629093}
   - {fileID: 558159024}
   - {fileID: 1938645793}
   - {fileID: 528139306}
   - {fileID: 1529008781}
+  - {fileID: 652592463}
   terrainLength: 50
   initialTerrain: {fileID: 7028618665781999005, guid: 0584d015196b99a41b2b499ee38acdcc, type: 3}
   distanceThreshold: 120
