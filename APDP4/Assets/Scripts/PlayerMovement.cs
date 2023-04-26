@@ -19,6 +19,28 @@ public class PlayerMovement : MonoBehaviour
     float maxSpeed = 40f;
     float speedIncreasePerSecond = 0.05f;
 
+    private inputManager inputManager;
+
+    private void Awake()
+    {
+        inputManager = GetComponent<inputManager>();
+    }
+
+    private void OnEnable()
+    {
+        inputManager.OnSwipeLeft += OnSwipeLeft;
+        inputManager.OnSwipeRight += OnSwipeRight;
+        inputManager.OnSwipeUp += OnSwipeUp;
+        inputManager.OnSwipeDown += OnSwipeDown;
+    }
+
+    private void OnDisable()
+    {
+        inputManager.OnSwipeLeft -= OnSwipeLeft;
+        inputManager.OnSwipeRight -= OnSwipeRight;
+        inputManager.OnSwipeUp -= OnSwipeUp;
+        inputManager.OnSwipeDown -= OnSwipeDown;
+    }
     void Start()
     {
         cc = gameObject.GetComponent<CharacterController>();
@@ -123,20 +145,16 @@ public class PlayerMovement : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.LeftArrow) && canmove && line > 0)
         {
-            targetLine--;
-            canmove = false;
-            movec.x = -15f;
+            OnSwipeLeft();
         }
         if (Input.GetKeyDown(KeyCode.RightArrow) && canmove && line < 2)
         {
-            targetLine++;
-            canmove = false;
-            movec.x = 15f;
+            OnSwipeRight();
         }
 
         if (Input.GetKeyDown(KeyCode.UpArrow) && cc.isGrounded)
         {
-            StartCoroutine(Jump());
+            OnSwipeUp();
 
         }
         
@@ -150,11 +168,49 @@ public class PlayerMovement : MonoBehaviour
         // added code to reset character height when the down arrow is released
         if (Input.GetKeyUp(KeyCode.DownArrow))
         {
-            //cc.height = 2.0f;  // set character height back to default value
-            cc.center = new Vector3(0, 0, 0);  // move character's center back to default position
-            pAnimator.ResetTrigger("Crouch_b"); // Reset the Jump_b animation trigger
+            OnSwipeDown();
         }
     }
+
+    private void OnSwipeLeft(){
+
+        if (canmove && line > 0)
+        {
+            Debug.Log("Left swipe detected"); 
+            targetLine--;
+            canmove = false;
+            movec.x = -15f;
+        }   
+    }
+
+    private void OnSwipeRight(){
+
+        if (canmove && line < 2)
+        {
+            Debug.Log("Right swipe detected");
+            targetLine++;
+            canmove = false;
+            movec.x = 15f;
+        }
+    }
+
+    private void OnSwipeUp(){
+
+        if (cc.isGrounded)
+        {
+            StartCoroutine(Jump());
+            Debug.Log("Up swipe detected");
+        }
+    }
+
+    private void OnSwipeDown(){
+
+        Debug.Log("Down swipe detected");
+        //cc.height = 2.0f;  // set character height back to default value
+        cc.center = new Vector3(0, 0, 0);  // move character's center back to default position
+        pAnimator.ResetTrigger("Crouch_b"); // Reset the Jump_b animation trigger
+
+    } 
 
     void PlayerDeath()
     {
