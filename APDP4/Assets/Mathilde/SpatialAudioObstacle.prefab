@@ -46,7 +46,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   obstacles:
-  - {fileID: 5928858169845282320, guid: 2d7e692e2ec844613ab4bf6d978582de, type: 3}
+  - {fileID: 7412207597216234611, guid: 42713c64a23d842549c2a65d5ef591de, type: 3}
   spatialAudio: {fileID: 5717508223820659032}
   audioSource: {fileID: 5717508223820659030}
   obstacleSounds:
