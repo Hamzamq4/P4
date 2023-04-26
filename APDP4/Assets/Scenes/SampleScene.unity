@@ -1450,7 +1450,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sun: {fileID: 705507994}
   secondsInFullDay: 120
-  currentTimeOfDay: 0
+  currentTimeOfDay: 0.257
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0

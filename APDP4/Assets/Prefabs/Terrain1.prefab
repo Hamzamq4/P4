@@ -22051,9 +22051,37 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1983541730430604817, guid: dd7552abdcfd3ab42b0fd3a955f0c961, type: 3}
+      propertyPath: m_TagString
+      value: streetlights
+      objectReference: {fileID: 0}
+    - target: {fileID: 2233108132434597489, guid: dd7552abdcfd3ab42b0fd3a955f0c961, type: 3}
+      propertyPath: m_TagString
+      value: streetlights
+      objectReference: {fileID: 0}
     - target: {fileID: 2763734173763659245, guid: dd7552abdcfd3ab42b0fd3a955f0c961, type: 3}
       propertyPath: m_Name
       value: lights
+      objectReference: {fileID: 0}
+    - target: {fileID: 4766212663444577180, guid: dd7552abdcfd3ab42b0fd3a955f0c961, type: 3}
+      propertyPath: m_TagString
+      value: streetlights
+      objectReference: {fileID: 0}
+    - target: {fileID: 5180185104122566058, guid: dd7552abdcfd3ab42b0fd3a955f0c961, type: 3}
+      propertyPath: m_TagString
+      value: streetlights
+      objectReference: {fileID: 0}
+    - target: {fileID: 6176349406963796504, guid: dd7552abdcfd3ab42b0fd3a955f0c961, type: 3}
+      propertyPath: m_TagString
+      value: streetlights
+      objectReference: {fileID: 0}
+    - target: {fileID: 6625319093164071308, guid: dd7552abdcfd3ab42b0fd3a955f0c961, type: 3}
+      propertyPath: m_TagString
+      value: streetlights
+      objectReference: {fileID: 0}
+    - target: {fileID: 6982088527856342295, guid: dd7552abdcfd3ab42b0fd3a955f0c961, type: 3}
+      propertyPath: m_TagString
+      value: streetlights
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dd7552abdcfd3ab42b0fd3a955f0c961, type: 3}
