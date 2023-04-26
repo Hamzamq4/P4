@@ -5,20 +5,29 @@ using UnityEngine;
 public class CameraAttach : MonoBehaviour
 {
 
-    [SerializeField] private Vector3 offset;
+    [SerializeField] private Vector3 offset = new Vector3(0, 20, -10);
     [SerializeField] private Transform target;
     [SerializeField] private float translateSpeed;
     [SerializeField] private float rotationSpeed;
 
     public Camera cam;
 
-    // public SpeedZoom _SZ;
+    private LayerMask schoolTerrainLayerMask;
+
+    private Vector3 originalOffset;
+    private Vector3 schoolTerrainOffset = new Vector3(0, 3, -3);
+
+    private void Start()
+    {
+        originalOffset = offset;
+        schoolTerrainLayerMask = LayerMask.GetMask("SchoolTerrain");
+    }
 
     private void FixedUpdate()
     {
         HandleTranslation();
         HandleRotation();
-
+        HandleTerrainOffset();
     }
 
 
@@ -33,7 +42,19 @@ public class CameraAttach : MonoBehaviour
         var direction = target.position - transform.position;
         var rotation = Quaternion.LookRotation(direction, (Vector3.up));
         transform.rotation = Quaternion.Lerp(transform.rotation, rotation, rotationSpeed * Time.deltaTime);
-        // noget med flip af kameraet hvis Z positionen er over
+    }
+
+    private void HandleTerrainOffset()
+    {
+        RaycastHit hit;
+        if (Physics.Raycast(transform.position, Vector3.down, out hit, Mathf.Infinity, schoolTerrainLayerMask))
+        {
+            offset = schoolTerrainOffset;
+        }
+        else
+        {
+            offset = originalOffset;
+        }
     }
 
     IEnumerator Waiter()
@@ -44,9 +65,7 @@ public class CameraAttach : MonoBehaviour
 
     public void SpeedBoostZoom()
     {
-        // if (_SZ.speedbool)
         cam.fieldOfView = Mathf.Lerp(cam.fieldOfView, 100f, 1f);
-        // StartCoroutine("Waiter"); 
     }
 
     void Countdown()
