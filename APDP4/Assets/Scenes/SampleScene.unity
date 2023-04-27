@@ -372,7 +372,7 @@ Canvas:
   serializedVersion: 3
   m_RenderMode: 1
   m_Camera: {fileID: 963194227}
-  m_PlaneDistance: 10
+  m_PlaneDistance: 1
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
@@ -985,6 +985,7 @@ MonoBehaviour:
   schoolObstacles:
   - {fileID: 2265006713436330256, guid: e50ffd91219bddb46bcef68326604128, type: 3}
   - {fileID: 5652261049229350223, guid: 00aff3286b93f8f4e88a132da96c47d9, type: 3}
+  - {fileID: 2260376842356947821, guid: 4ecd52e19bfc16d4da53c7233398c4ac, type: 3}
   trafficObstacles:
   - {fileID: 122224, guid: 008c6febfb8d88a4496fe51f2a2d409a, type: 3}
   - {fileID: 117208, guid: c149960d9485b394e8d52ae30578e3f3, type: 3}
@@ -3248,6 +3249,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d998d0e722ede4e3c998d6918aec301d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  particleSystemPrefab: {fileID: 163066, guid: 53777b8572d1e7242bc90044f62667ce, type: 3}
+  destroySound: {fileID: 8300000, guid: 7652dd8c4437d8a499c02b2b2f4f9fc2, type: 3}
 --- !u!4 &6450177392893084702
 Transform:
   m_ObjectHideFlags: 0
