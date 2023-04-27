@@ -31,7 +31,7 @@ public class PlayerMovement : MonoBehaviour
         inputManager.OnSwipeLeft += OnSwipeLeft;
         inputManager.OnSwipeRight += OnSwipeRight;
         inputManager.OnSwipeUp += OnSwipeUp;
-        inputManager.OnSwipeDown += OnSwipeDown;
+        //inputManager.OnSwipeDown += OnSwipeDown;
     }
 
     private void OnDisable()
@@ -39,7 +39,7 @@ public class PlayerMovement : MonoBehaviour
         inputManager.OnSwipeLeft -= OnSwipeLeft;
         inputManager.OnSwipeRight -= OnSwipeRight;
         inputManager.OnSwipeUp -= OnSwipeUp;
-        inputManager.OnSwipeDown -= OnSwipeDown;
+        //inputManager.OnSwipeDown -= OnSwipeDown;
     }
     void Start()
     {
@@ -62,13 +62,13 @@ public class PlayerMovement : MonoBehaviour
         {
             pAnimator.SetTrigger("Jump_b");
         }
-
+        /*
         bool isDucking = (Input.GetKeyDown(KeyCode.DownArrow));
         if (isDucking)
         {
             pAnimator.SetTrigger("Crouch_b");
         }
-
+        */
         Vector3 pos = gameObject.transform.position;
         if (!line.Equals(targetLine))
         {
@@ -157,7 +157,7 @@ public class PlayerMovement : MonoBehaviour
             OnSwipeUp();
 
         }
-        
+        /*
         // added code for ducking on down arrow
         if (Input.GetKeyDown(KeyCode.DownArrow) && cc.isGrounded)
         {
@@ -169,7 +169,7 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKeyUp(KeyCode.DownArrow))
         {
             OnSwipeDown();
-        }
+        }*/
     }
 
     private void OnSwipeLeft(){
@@ -202,7 +202,7 @@ public class PlayerMovement : MonoBehaviour
             Debug.Log("Up swipe detected");
         }
     }
-
+    /*
     private void OnSwipeDown(){
 
         Debug.Log("Down swipe detected");
@@ -211,7 +211,7 @@ public class PlayerMovement : MonoBehaviour
         pAnimator.ResetTrigger("Crouch_b"); // Reset the Jump_b animation trigger
 
     } 
-
+    */
     void PlayerDeath()
     {
         // Set flag to false
