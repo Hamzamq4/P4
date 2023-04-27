@@ -30,6 +30,11 @@ public class ScoreManager : MonoBehaviour
 
     public static bool isPlayerAlive = true;
 
+    public GameObject enemyDeathSpawnPrefab;
+    private bool hasSpawned = false;
+
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -110,10 +115,35 @@ public class ScoreManager : MonoBehaviour
 
     IEnumerator ShowGameOverPanel()
     {
-        yield return new WaitForSeconds(2f); // Wait for 2 seconds
+        if (!hasSpawned)
+        {
+            hasSpawned = true; // Set the hasSpawned variable to true to prevent spawning more than once
+
+            GameObject player = GameObject.FindGameObjectWithTag("Player");
+            Vector3 spawnPosition = player.transform.position - new Vector3(0f, 0f, 20f); // Spawn the prefab 20 units behind the player
+            GameObject spawnedObject = Instantiate(enemyDeathSpawnPrefab, spawnPosition, Quaternion.identity);
+            // Get the direction from the spawn position to the player's position
+            Vector3 direction = (player.transform.position - spawnPosition).normalized;
+
+            // Set the initial rotation of the spawned object to face the player
+            spawnedObject.transform.rotation = Quaternion.LookRotation(direction);
+
+            // Move the spawned object towards the player across 10 units
+            while (Vector3.Distance(spawnedObject.transform.position, player.transform.position) > 10f)
+            {
+                spawnedObject.transform.position += direction * Time.deltaTime * 5f; // Change the speed here as required
+                yield return null;
+            }
+        }
+
+        yield return new WaitForSeconds(3f); // wait for 3 seconds
+
         gameOverPanel.SetActive(true);
         Time.timeScale = 0; // Set the time scale to zero after the delay
     }
+
+
+
 
     public void ReloadGame()
     {
