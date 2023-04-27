@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7175974340718362378
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7175974340718362380}
+  - component: {fileID: 7175974340718362381}
+  m_Layer: 0
+  m_Name: SelectionOfWords
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7175974340718362380
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7175974340718362378}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.6, y: 2.58, z: 85.01}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7175974340718362381
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7175974340718362378}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 304699eae1f434b2ba4a28591c52bb09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objects1:
+  - {fileID: 1055064919166404, guid: de6abd774f85e18408346a3233418242, type: 3}
+  - {fileID: 1287295899898638, guid: 9ec060093457ad84ca2733cb15c2c41e, type: 3}
+  - {fileID: 5266117821352957060, guid: 28ab1d578905d5e438faff691d0ea172, type: 3}
+  objects2:
+  - {fileID: 5928858169845282320, guid: be7eb6cce797e304fbb41df6be288d46, type: 3}
+  - {fileID: 5928858169845282320, guid: 2d7e692e2ec844613ab4bf6d978582de, type: 3}
+  - {fileID: 5928858169845282320, guid: 13cd423ba8fb94441b8579a1506524b6, type: 3}
+  objects3:
+  - {fileID: 5928858169845282320, guid: be7eb6cce797e304fbb41df6be288d46, type: 3}
+  - {fileID: 5928858169845282320, guid: 2d7e692e2ec844613ab4bf6d978582de, type: 3}
+  - {fileID: 5928858169845282320, guid: 13cd423ba8fb94441b8579a1506524b6, type: 3}
+  minimalPairsObject: {fileID: 7175974340718362380}
+  laneTransforms:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  transformNames: []
