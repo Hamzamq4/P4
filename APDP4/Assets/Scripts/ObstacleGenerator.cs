@@ -31,14 +31,14 @@ public class ObstacleGenerator : MonoBehaviour
                 Vector2 randomCircle = Random.insideUnitCircle;
                 int laneIndex = Mathf.RoundToInt(Mathf.Clamp01(randomCircle.x + 0.5f) * (lanes.Length - 1));
 
-                // Check the layer of the terrain that the player is about to approach
+            // Check the layer of the terrain that the player is about to approach
                 RaycastHit hit;
-                if (Physics.Raycast(player.position + new Vector3(0, 0, 20f), Vector3.forward, out hit)) 
+                Vector3 raycastDirection = Quaternion.Euler(60, 0, 0) * Vector3.forward; // Rotate the forward vector by 45 degrees around the x-axis
+                if (Physics.Raycast(player.position + new Vector3(0, 0, 20f), raycastDirection, out hit))
                 {
                     currentTerrainLayer = hit.transform.gameObject.layer;
                 }
-
-                bool isSoundObstacle = Random.value < 0.1f;
+            bool isSoundObstacle = Random.value < 0.1f;
                 if (isSoundObstacle) 
                 {
                     obstacleType = 2;

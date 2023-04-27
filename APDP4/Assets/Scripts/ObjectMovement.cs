@@ -9,7 +9,7 @@ public class ObjectMovement : MonoBehaviour
     {
         transform.Translate(0, 0, distance); // Move the object on the z-axis
         transform.Rotate(Vector3.up, 180f); // Rotate the object 180 degrees around the y-axis
-        Destroy(gameObject, 20f); // Destroy the object after 1 second
+        Destroy(gameObject, 10f); // Destroy the object after 10 second
     }
 
     private void Update()
