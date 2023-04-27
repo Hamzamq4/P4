@@ -16,7 +16,7 @@ public class PlayerMovement : MonoBehaviour
     private Animator pAnimator;
 
     // added variables for speed increase
-    float maxSpeed = 40f;
+    float maxSpeed = 25f;
     float speedIncreasePerSecond = 0.05f;
 
     private inputManager inputManager;

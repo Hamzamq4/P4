@@ -932,6 +932,7 @@ MonoBehaviour:
   terrainPrefabs:
   - {fileID: 7028618665781999005, guid: 4d1f2c2052eec4689b1aae856db1ec2b, type: 3}
   - {fileID: 7028618665781999005, guid: b42994c1754c92d4886d88f26355b649, type: 3}
+  - {fileID: 7028618665781999005, guid: 3feed1b4611d339488e898baf0a6c98e, type: 3}
   player: {fileID: 6450177392892860472}
   deleteDistance: 200
   objectsToIgnore:
