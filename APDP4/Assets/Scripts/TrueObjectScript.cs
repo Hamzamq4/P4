@@ -7,19 +7,20 @@ public class TrueObjectScript : MonoBehaviour
     private AudioSource audioSource;
     public GameObject player;
     public AudioClip audioclip;
+    public AudioClip[] feedbackClip;
 
     void Start() 
     {
     GameObject player = GameObject.FindGameObjectWithTag("Player");
     audioSource = player.GetComponent<AudioSource>();
+
+    if(gameObject.tag == "MinimalPairsTrue")
+        {
+            audioSource.PlayOneShot(audioclip);
+        }
     }
     void Update()
     {
-        if(gameObject.tag == "MinimalPairsTrue")
-        {
-            audioSource.PlayOneShot(audioclip);
-            Destroy(this);
-        }
     }
 
     void OnTriggerEnter(Collider other)
@@ -29,7 +30,8 @@ public class TrueObjectScript : MonoBehaviour
         {
             if (other.gameObject.tag == "Player")
             {
-                // Let the player live
+                audioSource.PlayOneShot(feedbackClip[Random.Range(0, feedbackClip.Length)]);
+                Destroy(gameObject);
                 Debug.Log("Player survived");   
             }
             

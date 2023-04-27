@@ -54,14 +54,27 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   audioSource: {fileID: 3482742823152455133}
-  goodGuyAudio:
-  - {fileID: 8300000, guid: 33903a1c0171b4ddf9dd836b2df21ec7, type: 3}
-  - {fileID: 8300000, guid: 33903a1c0171b4ddf9dd836b2df21ec7, type: 3}
-  - {fileID: 8300000, guid: 33903a1c0171b4ddf9dd836b2df21ec7, type: 3}
-  badGuyAudio:
-  - {fileID: 8300000, guid: b18e647b7016e4c4ca8d53713a5aa127, type: 3}
-  - {fileID: 8300000, guid: 6789211ac27eee64484d36b04f1e9d0e, type: 3}
-  - {fileID: 8300000, guid: 2c1e15dfd400d6743bac6e1d2b9b851a, type: 3}
+  goodGuyLeft:
+  - {fileID: 8300000, guid: 02fe62d5e9e3f408186ee9fe560e0d74, type: 3}
+  - {fileID: 8300000, guid: 0e57b06bfaa6d4b508049a7996b2ba72, type: 3}
+  - {fileID: 8300000, guid: c57b835eb54ed420a9994337c2a0392a, type: 3}
+  goodGuyMiddle:
+  - {fileID: 8300000, guid: 092f924d3145840d4b73607ffee0512a, type: 3}
+  - {fileID: 8300000, guid: 8b20ba4c88f09423f97850fa1fbf3782, type: 3}
+  - {fileID: 8300000, guid: 0fbe7e0ac8d4e45d1bb7dc6006300a71, type: 3}
+  goodGuyRight:
+  - {fileID: 8300000, guid: 505a302fdac644d119a5d7cde116d7d2, type: 3}
+  - {fileID: 8300000, guid: c7985476b692c4453978dfe42e7641af, type: 3}
+  - {fileID: 8300000, guid: d3c8f215686024db1898a4fb052301f6, type: 3}
+  badGuyLeft:
+  - {fileID: 8300000, guid: b8e954b1c016b43d2ac324f5c92a9abf, type: 3}
+  - {fileID: 8300000, guid: 9fe071bbcbf514fa49ba9e0c2cc07f5a, type: 3}
+  badGuyMiddle:
+  - {fileID: 8300000, guid: db879be7a9dfb43cab5925c64b43b599, type: 3}
+  - {fileID: 8300000, guid: d973afd0251a743ab9f4222e096cfe9c, type: 3}
+  badGuyRight:
+  - {fileID: 8300000, guid: eebb540e2ebd74f24a496bc3b1d9c518, type: 3}
+  - {fileID: 8300000, guid: d570b6dc3d4b942db815097e62365449, type: 3}
   reactionTime: 5
 --- !u!82 &3482742823152455133
 AudioSource:

@@ -34,6 +34,10 @@ public class ScoreManager : MonoBehaviour
     public GameObject enemyDeathSpawnPrefab;
     private bool hasSpawned = false;
 
+    public AudioClip fangetClip;
+
+    private AudioSource playerAudioSource; 
+
 
 
     // Start is called before the first frame update
@@ -45,6 +49,8 @@ public class ScoreManager : MonoBehaviour
         zeroLives.SetActive(false);
         oneLife.SetActive(false);
         twoLives.SetActive(false);
+        GameObject player = GameObject.FindGameObjectWithTag("Player");
+        playerAudioSource = player.GetComponent<AudioSource>();
 
         if (PlayerPrefs.HasKey("HighScore"))
         {
@@ -142,6 +148,7 @@ public class ScoreManager : MonoBehaviour
                 spawnedObject.transform.position += direction * Time.deltaTime * 5f; // Change the speed here as required
                 yield return null;
             }
+            playerAudioSource.PlayOneShot(fangetClip);
         }
 
         yield return new WaitForSeconds(3f); // wait for 3 seconds
