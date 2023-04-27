@@ -28,7 +28,7 @@ public class TimeOfDay : MonoBehaviour
             {
                 streetlight.SetActive(true); // Enable the streetlights
             }
-            Debug.Log("Turn ON streetlights");
+            // Debug.Log("Turn ON streetlights");
         }
         else
         {
@@ -36,7 +36,7 @@ public class TimeOfDay : MonoBehaviour
             {
                 streetlight.SetActive(false); // Disable the streetlights
             }
-            Debug.Log("Turn OFF streetlights");
+            // Debug.Log("Turn OFF streetlights");
         }
     }
 
