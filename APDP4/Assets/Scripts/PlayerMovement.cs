@@ -57,11 +57,11 @@ public class PlayerMovement : MonoBehaviour
             return;
         }
 
-        bool isJumping = (Input.GetKeyDown(KeyCode.UpArrow));
+       /* bool isJumping = (Input.GetKeyDown(KeyCode.UpArrow));
         if (isJumping)
         {
             pAnimator.SetTrigger("Jump_b");
-        }
+        }*/
         /*
         bool isDucking = (Input.GetKeyDown(KeyCode.DownArrow));
         if (isDucking)
@@ -126,6 +126,7 @@ public class PlayerMovement : MonoBehaviour
 
     IEnumerator Jump()
     {
+        Debug.Log("Jump animation started");
         float timeInAir = 0.0f;
         movec.y = jumpHeight;
 
@@ -198,8 +199,16 @@ public class PlayerMovement : MonoBehaviour
 
         if (cc.isGrounded)
         {
+            bool isJumping = true;
+            if (isJumping)
+            {
+                pAnimator.SetTrigger("Jump_b");
+            }
+
             StartCoroutine(Jump());
+
             Debug.Log("Up swipe detected");
+            return;
         }
     }
     /*
