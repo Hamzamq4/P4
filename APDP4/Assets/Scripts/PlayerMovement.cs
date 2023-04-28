@@ -230,7 +230,7 @@ public class PlayerMovement : MonoBehaviour
         //movec = Vector3.zero;
 
         // Freeze the character's position
-        //cc.enabled = false; // Disable the character controller component
-        //gameObject.transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z); // Set the position to the current position
+        cc.enabled = false; // Disable the character controller component
+        gameObject.transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z); // Set the position to the current position
     }
 }

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657838, g: 0.49641228, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -610,6 +610,7 @@ GameObject:
   - component: {fileID: 478132811}
   - component: {fileID: 478132810}
   - component: {fileID: 478132809}
+  - component: {fileID: 478132813}
   m_Layer: 5
   m_Name: TilbageButton
   m_TagString: Untagged
@@ -745,6 +746,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 478132807}
   m_CullTransparentMesh: 1
+--- !u!114 &478132813
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 478132807}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86657cbeb00dd46a3858c78999491ca5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minimumDistance: 15
+  maximumTime: 1
+  directionThreshold: 0.9
 --- !u!1 &535266329
 GameObject:
   m_ObjectHideFlags: 0
@@ -758,6 +774,7 @@ GameObject:
   - component: {fileID: 535266332}
   - component: {fileID: 535266331}
   - component: {fileID: 535266334}
+  - component: {fileID: 535266335}
   m_Layer: 5
   m_Name: StartButton
   m_TagString: Untagged
@@ -893,6 +910,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_ControlPath: <Touchscreen>/primaryTouch/tap
+--- !u!114 &535266335
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 535266329}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86657cbeb00dd46a3858c78999491ca5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minimumDistance: 15
+  maximumTime: 1
+  directionThreshold: 0.9
 --- !u!1 &594327070
 GameObject:
   m_ObjectHideFlags: 0
@@ -1517,6 +1549,7 @@ GameObject:
   - component: {fileID: 873225573}
   - component: {fileID: 873225572}
   - component: {fileID: 873225571}
+  - component: {fileID: 873225575}
   m_Layer: 5
   m_Name: TilbageButton
   m_TagString: Untagged
@@ -1652,6 +1685,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 873225569}
   m_CullTransparentMesh: 1
+--- !u!114 &873225575
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 873225569}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86657cbeb00dd46a3858c78999491ca5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minimumDistance: 15
+  maximumTime: 1
+  directionThreshold: 0.9
 --- !u!1 &950414544
 GameObject:
   m_ObjectHideFlags: 0
@@ -1749,7 +1797,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1178033023
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2519,6 +2567,7 @@ GameObject:
   - component: {fileID: 1862171447}
   - component: {fileID: 1862171446}
   - component: {fileID: 1862171449}
+  - component: {fileID: 1862171450}
   m_Layer: 5
   m_Name: IndstillingerButton
   m_TagString: Untagged
@@ -2654,6 +2703,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_ControlPath: <Touchscreen>/primaryTouch/tap
+--- !u!114 &1862171450
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1862171444}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86657cbeb00dd46a3858c78999491ca5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minimumDistance: 15
+  maximumTime: 1
+  directionThreshold: 0.9
 --- !u!1 &1895594720
 GameObject:
   m_ObjectHideFlags: 0
@@ -2667,6 +2731,8 @@ GameObject:
   - component: {fileID: 1895594723}
   - component: {fileID: 1895594722}
   - component: {fileID: 1895594725}
+  - component: {fileID: 1895594727}
+  - component: {fileID: 1895594726}
   m_Layer: 5
   m_Name: FremskridtButton
   m_TagString: Untagged
@@ -2802,3 +2868,33 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_ControlPath: <Touchscreen>/primaryTouch/tap
+--- !u!114 &1895594726
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1895594720}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86657cbeb00dd46a3858c78999491ca5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minimumDistance: 15
+  maximumTime: 1
+  directionThreshold: 0.9
+--- !u!114 &1895594727
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1895594720}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86657cbeb00dd46a3858c78999491ca5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minimumDistance: 15
+  maximumTime: 1
+  directionThreshold: 0.9

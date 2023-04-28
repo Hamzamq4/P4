@@ -105,6 +105,7 @@ public class ScoreManager : MonoBehaviour
                 /* oneLife.gameObject.SetActive(true);
                 twoLives.gameObject.SetActive(true); */
                 break;
+                
             case 1:
                 zeroLives.SetActive(false);
                 oneLife.SetActive(true);
@@ -115,6 +116,7 @@ public class ScoreManager : MonoBehaviour
                     lifeRefillCoroutine = StartCoroutine(RefillLives());
                 }
                 break;
+
             case 0:
                 zeroLives.SetActive(true);
                 oneLife.SetActive(false);
@@ -124,7 +126,7 @@ public class ScoreManager : MonoBehaviour
                 {
                     scoreIncreasing = false;
                     pAnimator.SetTrigger("Death_b");
-                    isPlayerAlive = false;
+                    //isPlayerAlive = false;
                     StartCoroutine(ShowGameOverPanel());
                 }
                 /* zeroLives.gameObject.SetActive(false);
