@@ -8,6 +8,7 @@ public class MinimalPairs : MonoBehaviour
     public GameObject[] objects1;
     public GameObject[] objects2;
     public GameObject[] objects3;
+    public GameObject[] objects;
     
     public Transform minimalPairsObject;
 
@@ -42,11 +43,11 @@ public class MinimalPairs : MonoBehaviour
         int randomIndex = Random.Range(0, objectCombinations.Length);
         GameObject[] chosenArray = objectCombinations[randomIndex];  
 
-        trueObject = chosenArray[Random.Range(0, chosenArray.Length)];
+        trueObject = objects[Random.Range(0, objects.Length)];
         Debug.Log(trueObject);
         trueObject.tag = "MinimalPairsTrue";
 
-        List<GameObject> availableObjects = new List<GameObject>(chosenArray);  
+        List<GameObject> availableObjects = new List<GameObject>(objects);  
         // Randomly distribute the objects on all three lanes
         for (int i = 0; i < laneTransforms.Length; i++)
         {
