@@ -33,6 +33,7 @@ public class MainMenu : MonoBehaviour
         {
             case "start":
                 DisablePanels();
+                Time.timeScale = 1;
                 ChangeScene("SampleScene");
                 break;
             case "fremskridt":

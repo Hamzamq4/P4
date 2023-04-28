@@ -56,16 +56,16 @@ public class GameMenu : MonoBehaviour
             case "tryAgain":
                 Debug.Log("Prøv igen");
                 DisablePanels();
-                SceneManager.LoadScene("SampleScene");
                 Time.timeScale = 1;
+                SceneManager.LoadScene("SampleScene");
                 scoreUI.gameObject.SetActive(true);
                 ScoreManager.health = 2;
                 break;
             case "tryAgainAfslut":
                 Debug.Log("TryAgainAfslut");
                 DisablePanels();
-                SceneManager.LoadScene("MenuScene");
                 Time.timeScale = 1;
+                SceneManager.LoadScene("MenuScene");
                 scoreUI.gameObject.SetActive(true);
                 ScoreManager.health = 2;
                 break;
