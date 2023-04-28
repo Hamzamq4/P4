@@ -8,6 +8,7 @@ public class GameMenu : MonoBehaviour
 {
     public GameObject pausePanel;
     public GameObject gameOverPanel;
+    public GameObject scoreUI;
 
     public Button pause, genoptag, pauseAfslut, tryAgain, gameOverAfslut;
 
@@ -34,12 +35,14 @@ public class GameMenu : MonoBehaviour
             case "pause":
                 Debug.Log("Pause");
                 DisablePanels();
+                pause.gameObject.SetActive(false);
                 Time.timeScale = 0;
                 pausePanel.SetActive(true);
                 break;
             case "genoptag":
                 Debug.Log("Genoptag");
                 DisablePanels();
+                pause.gameObject.SetActive(true);
                 Time.timeScale = 1;
                 break;
             case "pauseAfslut":
@@ -47,6 +50,7 @@ public class GameMenu : MonoBehaviour
                 DisablePanels();
                 SceneManager.LoadScene("MenuScene");
                 Time.timeScale = 1;
+                scoreUI.gameObject.SetActive(true);
                 ScoreManager.health = 2;
                 break;
             case "tryAgain":
@@ -54,6 +58,7 @@ public class GameMenu : MonoBehaviour
                 DisablePanels();
                 SceneManager.LoadScene("SampleScene");
                 Time.timeScale = 1;
+                scoreUI.gameObject.SetActive(true);
                 ScoreManager.health = 2;
                 break;
             case "tryAgainAfslut":
@@ -61,6 +66,7 @@ public class GameMenu : MonoBehaviour
                 DisablePanels();
                 SceneManager.LoadScene("MenuScene");
                 Time.timeScale = 1;
+                scoreUI.gameObject.SetActive(true);
                 ScoreManager.health = 2;
                 break;
         }

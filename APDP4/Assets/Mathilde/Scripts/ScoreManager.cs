@@ -12,6 +12,8 @@ public class ScoreManager : MonoBehaviour
     public TMP_Text endScoreText;
     public TMP_Text highScoreText;
 
+    public Button scoreUI;
+
     public float scoreCount;
     public float highScoreCount;
 
@@ -154,6 +156,7 @@ public class ScoreManager : MonoBehaviour
         yield return new WaitForSeconds(3f); // wait for 3 seconds
 
         gameOverPanel.SetActive(true);
+        scoreUI.gameObject.SetActive(false);
         Time.timeScale = 0; // Set the time scale to zero after the delay
     }
 
@@ -163,6 +166,7 @@ public class ScoreManager : MonoBehaviour
     public void ReloadGame()
     {
         SceneManager.LoadScene("SampleScene");
+        scoreUI.gameObject.SetActive(true);
         health = 2;
     }
 }
