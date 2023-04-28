@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657838, g: 0.49641228, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1196,7 +1196,7 @@ MonoBehaviour:
   scoreText: {fileID: 210775096}
   endScoreText: {fileID: 624363407}
   highScoreText: {fileID: 283942086}
-  scoreUI: {fileID: 1539794799}
+  scoreUI: {fileID: 1539794795}
   scoreCount: 0
   highScoreCount: 0
   pointsPerSecond: 1
@@ -1208,6 +1208,7 @@ MonoBehaviour:
   refillLifeTime: 15
   enemyDeathSpawnPrefab: {fileID: 2260376842356947821, guid: d44815b6a70913d4b9797a8fb0cc8733, type: 3}
   fangetClip: {fileID: 8300000, guid: 534334654295f4bb5b680a2539695b39, type: 3}
+  saveScore: 0
 --- !u!1 &600213100
 GameObject:
   m_ObjectHideFlags: 0

@@ -4,6 +4,8 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using TMPro;
+using System.IO;
+using System.Linq;
 
 [System.Serializable]
 public class ScoreManager : MonoBehaviour
@@ -21,6 +23,8 @@ public class ScoreManager : MonoBehaviour
 
     public bool scoreIncreasing;
 
+    private string scoreFilePath;
+
     public GameObject zeroLives, oneLife, twoLives;
     public static int health = 2;
 
@@ -33,6 +37,7 @@ public class ScoreManager : MonoBehaviour
 
     public static bool isPlayerAlive = true;
 
+
     public GameObject enemyDeathSpawnPrefab;
     private bool hasSpawned = false;
 
@@ -40,11 +45,37 @@ public class ScoreManager : MonoBehaviour
 
     private AudioSource playerAudioSource; 
 
+    public bool saveScore = false;
 
+
+    void Awake()
+    {
+        scoreFilePath = Path.Combine(Application.dataPath, "Mathilde", "Scripts", "scores.csv");
+    }
 
     // Start is called before the first frame update
     void Start()
     {
+        List<float> scores = new List<float>();
+        // Read all lines from the file
+        string[] lines = File.ReadAllLines(scoreFilePath);
+
+        // Loop through all lines and try to parse them as floats
+        foreach (string line in lines)
+        {
+            if (float.TryParse(line, out float score))
+            {
+                scores.Add(score);
+            }
+            else
+            {
+                Debug.LogError("Failed to parse score: " + line);
+            }
+        }
+
+        highScoreCount = scores.Any() ? scores.Max() : 0;
+        highScoreText.text = "High Score: " + Mathf.Round(highScoreCount).ToString();
+
         Time.timeScale = 1;
 
         health = 2;
@@ -54,17 +85,17 @@ public class ScoreManager : MonoBehaviour
         GameObject player = GameObject.FindGameObjectWithTag("Player");
         playerAudioSource = player.GetComponent<AudioSource>();
 
-        if (PlayerPrefs.HasKey("HighScore"))
-        {
-            highScoreCount = PlayerPrefs.GetFloat("HighScore");
-        }
-
         pAnimator = GameObject.FindGameObjectWithTag("Player").GetComponent<Animator>();
+       
+
     }
 
     // Update is called once per frame
     void Update()
     {
+        Debug.Log(highScoreCount);
+        Debug.Log("File path: " + scoreFilePath);
+        Debug.Log("High score text: " + highScoreText.text);
         switch (health)
         {
             case 2:
@@ -91,6 +122,7 @@ public class ScoreManager : MonoBehaviour
 
                 if (!gameOverPanel.activeSelf)
                 {
+                    scoreIncreasing = false;
                     pAnimator.SetTrigger("Death_b");
                     isPlayerAlive = false;
                     StartCoroutine(ShowGameOverPanel());
@@ -99,7 +131,10 @@ public class ScoreManager : MonoBehaviour
                 oneLife.gameObject.SetActive(false);
                 twoLives.gameObject.SetActive(false); */
                 break;
+
+                // Check if the player is alive
         }
+
 
         if (scoreIncreasing)
         {
@@ -109,14 +144,31 @@ public class ScoreManager : MonoBehaviour
         if (scoreCount > highScoreCount)
         {
             highScoreCount = scoreCount;
-            PlayerPrefs.SetFloat("HighScore", highScoreCount);
         }
 
         scoreText.text = "Score: " + Mathf.Round(scoreCount);
         endScoreText.text = "Score: " + Mathf.Round(scoreCount);
         highScoreText.text = "High Score: " + Mathf.Round(highScoreCount).ToString();
+        scoreCount.ToString("0.#####");
+
+        if (!isPlayerAlive)
+        {
+            if (!saveScore)
+            {
+                // Write the score to the file
+                WriteScoreToFile(true);
+                saveScore = true;
+            }
+        }
+        else
+        {
+            // Don't write the score to the file
+            WriteScoreToFile(false);
+        }
     }
 
+
+    
     IEnumerator RefillLives()
     {
         yield return new WaitForSeconds(refillLifeTime);
@@ -154,14 +206,10 @@ public class ScoreManager : MonoBehaviour
         }
 
         yield return new WaitForSeconds(3f); // wait for 3 seconds
-
         gameOverPanel.SetActive(true);
         scoreUI.gameObject.SetActive(false);
         Time.timeScale = 0; // Set the time scale to zero after the delay
     }
-
-
-
 
     public void ReloadGame()
     {
@@ -169,4 +217,20 @@ public class ScoreManager : MonoBehaviour
         scoreUI.gameObject.SetActive(true);
         health = 2;
     }
+
+
+    private void WriteScoreToFile(bool shouldWrite)
+    {
+        if (shouldWrite)
+        {
+            using (StreamWriter sw = File.AppendText(scoreFilePath))
+            {
+                //sw.WriteLine("{0:F5}", scoreCount);
+                sw.WriteLine(scoreCount.ToString());
+                sw.Flush();
+            }
+        }
+    }
+
+
 }
