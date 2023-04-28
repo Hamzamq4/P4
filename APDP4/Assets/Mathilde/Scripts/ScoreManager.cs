@@ -12,7 +12,7 @@ public class ScoreManager : MonoBehaviour
     public TMP_Text endScoreText;
     public TMP_Text highScoreText;
 
-    public Button scoreUI;
+    public GameObject scoreUI;
 
     public float scoreCount;
     public float highScoreCount;
