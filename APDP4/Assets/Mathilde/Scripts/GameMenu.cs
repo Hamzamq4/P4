@@ -60,6 +60,7 @@ public class GameMenu : MonoBehaviour
                 SceneManager.LoadScene("SampleScene");
                 scoreUI.gameObject.SetActive(true);
                 ScoreManager.health = 2;
+                ScoreManager.isPlayerAlive = true;
                 break;
             case "tryAgainAfslut":
                 Debug.Log("TryAgainAfslut");

@@ -52,8 +52,8 @@ public class PlayerMovement : MonoBehaviour
         if (!ScoreManager.isPlayerAlive)
         {
             // Stop the movement
-            movec = Vector3.zero;
-            speed = 0f; // Stop the player from moving along the z-axis
+            //movec = Vector3.zero;
+            //speed = 0f; // Stop the player from moving along the z-axis
             return;
         }
 
@@ -218,10 +218,10 @@ public class PlayerMovement : MonoBehaviour
         ScoreManager.isPlayerAlive = false;
 
         // Stop the movement
-        movec = Vector3.zero;
+        //movec = Vector3.zero;
 
         // Freeze the character's position
-        cc.enabled = false; // Disable the character controller component
-        gameObject.transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z); // Set the position to the current position
+        //cc.enabled = false; // Disable the character controller component
+        //gameObject.transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z); // Set the position to the current position
     }
 }

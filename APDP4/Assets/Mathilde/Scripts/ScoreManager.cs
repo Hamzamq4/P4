@@ -168,5 +168,9 @@ public class ScoreManager : MonoBehaviour
         SceneManager.LoadScene("SampleScene");
         scoreUI.gameObject.SetActive(true);
         health = 2;
+        //pAnimator.SetTrigger("Static_b");
+        ScoreManager.isPlayerAlive = true;
+
+
     }
 }
