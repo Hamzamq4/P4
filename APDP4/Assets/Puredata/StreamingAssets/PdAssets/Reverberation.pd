@@ -6,11 +6,11 @@
 #X obj 297 351 dac~;
 #X obj 306 135 readsf~;
 #X obj 239 304 *~;
-#X floatatom 200 260 5 0 1 0 - - - 0.2;
+#X floatatom 200 260 5 0 1 0 - - - 0;
 #X obj 286 266 *~;
 #X obj 341 226 rev2~ 100 90 3000 20;
-#X floatatom 409 199 5 0 0 0 - - - 1.3;
-#X floatatom 481 197 5 0 0 0 - - - 0.5;
+#X floatatom 409 199 5 0 0 0 - - - 0;
+#X floatatom 481 197 5 0 0 0 - - - 0;
 #X obj 411 120 bng 19 250 50 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000;
 #X msg 204 113 0;
 #X msg 306 82 open Playground.wav \, 1;
