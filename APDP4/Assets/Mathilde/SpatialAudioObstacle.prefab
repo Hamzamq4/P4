@@ -48,9 +48,10 @@ MonoBehaviour:
   obstacles:
   - {fileID: 7412207597216234611, guid: 42713c64a23d842549c2a65d5ef591de, type: 3}
   spatialAudio: {fileID: 5717508223820659032}
-  audioSource: {fileID: 5717508223820659030}
+  audioSource: {fileID: 0}
   obstacleSounds:
   - {fileID: 8300000, guid: 6a7bf516f4d23456d91010aca4073dd5, type: 3}
+  player: {fileID: 0}
   reactionTime: 5
 --- !u!82 &5717508223820659030
 AudioSource:
