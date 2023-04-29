@@ -4,15 +4,15 @@ using UnityEngine;
 
 public class TrueObjectScript : MonoBehaviour
 {
-    private AudioSource audioSource;
-    public GameObject player;
+    public AudioSource audioSource;
+    public GameObject radio;
     public AudioClip audioclip;
     public AudioClip[] feedbackClip;
 
     void Start() 
     {
-    GameObject player = GameObject.FindGameObjectWithTag("Player");
-    audioSource = player.GetComponent<AudioSource>();
+    GameObject radio = GameObject.FindGameObjectWithTag("Radio");
+    audioSource = radio.GetComponent<AudioSource>();
 
     if(gameObject.tag == "MinimalPairsTrue")
         {
@@ -20,7 +20,7 @@ public class TrueObjectScript : MonoBehaviour
         }
     }
     void Update()
-    {
+    {   
     }
 
     void OnTriggerEnter(Collider other)

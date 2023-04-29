@@ -43,10 +43,9 @@ public class ScoreManager : MonoBehaviour
 
     public AudioClip fangetClip;
 
-    private AudioSource playerAudioSource; 
-
     public bool saveScore = false;
 
+    private AudioSource radio;
 
     void Awake()
     {
@@ -82,8 +81,8 @@ public class ScoreManager : MonoBehaviour
         zeroLives.SetActive(false);
         oneLife.SetActive(false);
         twoLives.SetActive(false);
-        GameObject player = GameObject.FindGameObjectWithTag("Player");
-        playerAudioSource = player.GetComponent<AudioSource>();
+        GameObject radioObject = GameObject.FindGameObjectWithTag("Radio");
+        radio = radioObject.GetComponent<AudioSource>();
 
         pAnimator = GameObject.FindGameObjectWithTag("Player").GetComponent<Animator>();
        
@@ -93,9 +92,10 @@ public class ScoreManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(highScoreCount);
+        /*Debug.Log(highScoreCount);
         Debug.Log("File path: " + scoreFilePath);
-        Debug.Log("High score text: " + highScoreText.text);
+        Debug.Log("High score text: " + highScoreText.text);*/
+        
         switch (health)
         {
             case 2:
@@ -204,7 +204,8 @@ public class ScoreManager : MonoBehaviour
                 spawnedObject.transform.position += direction * Time.deltaTime * 5f; // Change the speed here as required
                 yield return null;
             }
-            playerAudioSource.PlayOneShot(fangetClip);
+            radio.PlayOneShot(fangetClip);
+            Debug.Log("DeathAnimationTime");
         }
 
         yield return new WaitForSeconds(3f); // wait for 3 seconds

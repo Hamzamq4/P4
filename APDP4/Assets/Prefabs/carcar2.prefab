@@ -48,7 +48,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   distance: -150
-  speed: 80
+  speed: 50
 --- !u!82 &50666395941914443
 AudioSource:
   m_ObjectHideFlags: 0

@@ -10,7 +10,7 @@ public class GoodAgentBadAgentScript : MonoBehaviour
     public Transform[] laneTransforms;
     private string[] transformNames;
 
-    public AudioSource audioSource;
+    public AudioSource radio;
     public AudioClip[] goodGuyLeft;
     public AudioClip[] goodGuyMiddle;
     public AudioClip[] goodGuyRight;
@@ -22,7 +22,8 @@ public class GoodAgentBadAgentScript : MonoBehaviour
 
     void Start()
     {
-        audioSource = GetComponent<AudioSource>();
+        GameObject radioObject = GameObject.FindGameObjectWithTag("Radio");
+        radio = radioObject.GetComponent<AudioSource>();
         laneTransforms = new Transform[3]; // create an array with 3 elements
         transformNames = new string[] { "LeftLane", "MiddleLane", "RightLane" }; // set the names of the transforms
 
@@ -45,16 +46,16 @@ public class GoodAgentBadAgentScript : MonoBehaviour
 
         if (freeLaneIndex == 0)
         {
-            audioSource.PlayOneShot(goodGuyLeft[Random.Range(0, goodGuyLeft.Length)], 0.5f);
+            radio.PlayOneShot(goodGuyLeft[Random.Range(0, goodGuyLeft.Length)]);
             int badGuyRandom = Random.Range(0, 2);
 
             if (badGuyRandom == 0)
             {
-                audioSource.PlayOneShot(badGuyRight[Random.Range(0 , badGuyRight.Length)], 1f);
+                radio.PlayOneShot(badGuyRight[Random.Range(0 , badGuyRight.Length)]);
             }
             else
             {
-                audioSource.PlayOneShot(badGuyMiddle[Random.Range(0 , badGuyMiddle.Length)], 1f);
+                radio.PlayOneShot(badGuyMiddle[Random.Range(0 , badGuyMiddle.Length)]);
             }
 
             if (Time.time > reactionTime)
@@ -66,7 +67,7 @@ public class GoodAgentBadAgentScript : MonoBehaviour
         }
         else if (freeLaneIndex == 1)
         {
-            audioSource.PlayOneShot(goodGuyMiddle[Random.Range(0, goodGuyMiddle.Length)], 0.5f);
+            radio.PlayOneShot(goodGuyMiddle[Random.Range(0, goodGuyMiddle.Length)]);
 
             if (Time.time > reactionTime)
             {
@@ -77,16 +78,16 @@ public class GoodAgentBadAgentScript : MonoBehaviour
             int badGuyRandom = Random.Range(0, 2);
             if (badGuyRandom == 0)
             {
-                audioSource.PlayOneShot(badGuyLeft[Random.Range(0, badGuyLeft.Length)], 1f); 
+                radio.PlayOneShot(badGuyLeft[Random.Range(0, badGuyLeft.Length)]); 
             }
             else
             {
-                audioSource.PlayOneShot(badGuyRight[Random.Range(0, badGuyRight.Length)], 1f);
+                radio.PlayOneShot(badGuyRight[Random.Range(0, badGuyRight.Length)]);
             }
         }
         else
         {
-            audioSource.PlayOneShot(goodGuyRight[Random.Range(0, goodGuyRight.Length)], 0.5f);
+            radio.PlayOneShot(goodGuyRight[Random.Range(0, goodGuyRight.Length)]);
 
             if (Time.time > reactionTime)
             {
@@ -97,11 +98,11 @@ public class GoodAgentBadAgentScript : MonoBehaviour
             int badGuyRandom = Random.Range(0, 2);
             if (badGuyRandom == 0)
             {
-                audioSource.PlayOneShot(badGuyLeft[Random.Range(0, badGuyLeft.Length)], 1f); 
+                radio.PlayOneShot(badGuyLeft[Random.Range(0, badGuyLeft.Length)]); 
             }
             else
             {
-                audioSource.PlayOneShot(badGuyMiddle[Random.Range(0 , badGuyMiddle.Length)], 1f);
+                radio.PlayOneShot(badGuyMiddle[Random.Range(0 , badGuyMiddle.Length)]);
             }
 
         }

@@ -18,6 +18,7 @@ public class LaserMovement : MonoBehaviour
         originalPosition = transform.position;
         target = GameObject.Find("Player");
         transform.Rotate(90, 0, 0, Space.Self);
+        Destroy(gameObject, 15f); // Destroy the object after 10 second
     }
 
     // Update is called once per frame

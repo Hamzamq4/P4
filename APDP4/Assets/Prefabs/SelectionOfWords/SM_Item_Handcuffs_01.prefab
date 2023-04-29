@@ -113,7 +113,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 780351bcc4ba2a746877e6ea3ce83bfd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  audioSource: {fileID: 0}
+  radio: {fileID: 0}
   audioclip: {fileID: 8300000, guid: 9f3e42b93d42a4c359110ea148c84257, type: 3}
   feedbackClip:
   - {fileID: 8300000, guid: fee8e36b580374c21bb7dcbb158fca97, type: 3}

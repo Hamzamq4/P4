@@ -18,6 +18,9 @@ public class ObstacleGenerator : MonoBehaviour
     private int currentTerrainLayer; // The layer of the currently active terrain
     private Transform player; // The player object
 
+    public float spawnStartTime;
+    private float elapsedSeconds;
+
     void Start() 
     {
         // Find the player object in the scene
@@ -26,108 +29,85 @@ public class ObstacleGenerator : MonoBehaviour
 
     void Update () 
     {
-        if (Time.time > nextSpawn) 
-            {
-                Vector2 randomCircle = Random.insideUnitCircle;
-                int laneIndex = Mathf.RoundToInt(Mathf.Clamp01(randomCircle.x + 0.5f) * (lanes.Length - 1));
-
-            // Check the layer of the terrain that the player is about to approach
-                RaycastHit hit;
-                Vector3 raycastDirection = Quaternion.Euler(60, 0, 0) * Vector3.forward; // Rotate the forward vector by 45 degrees around the x-axis
-                if (Physics.Raycast(player.position + new Vector3(0, 0, 20f), raycastDirection, out hit))
+        elapsedSeconds += Time.deltaTime;
+        if (elapsedSeconds >= spawnStartTime)
+        {
+            if (Time.time > nextSpawn) 
                 {
-                    currentTerrainLayer = hit.transform.gameObject.layer;
-                }
-            bool isSoundObstacle = Random.value < 0.1f;
-                if (isSoundObstacle) 
-                {
-                    obstacleType = 2;
-                    nextSpawn = Time.time + soundObstacleSpacing;
-                } 
-                else 
-                {
-                    obstacleType = currentTerrainLayer == LayerMask.NameToLayer("SchoolTerrain") ? 0 : 1;
-                    nextSpawn = Time.time + spacing;
-                }
+                    Vector2 randomCircle = Random.insideUnitCircle;
+                    int laneIndex = Mathf.RoundToInt(Mathf.Clamp01(randomCircle.x + 0.5f) * (lanes.Length - 1));
 
-                // Determine which obstacles to spawn
-                bool spawnOtherLanes = false; // flag to determine if obstacle should be spawned in other lanes
+                    // Check the layer of the terrain that the player is about to approach
+                    RaycastHit hit;
+                    if (Physics.Raycast(player.position + new Vector3(0, 0, 20f), Vector3.forward, out hit)) 
+                    {
+                        currentTerrainLayer = hit.transform.gameObject.layer;
+                    }
 
-                GameObject obstacleToSpawn;
-                if (obstacleType == 0) 
-                { // School terrain
-                    obstacleToSpawn = schoolObstacles[Random.Range(0, schoolObstacles.Length)];
-                    spawnOtherLanes = Random.value < 0.1f;
-                } 
-                else if (obstacleType == 1) 
-                { // Traffic terrain
-                    obstacleToSpawn = trafficObstacles[Random.Range(0, trafficObstacles.Length)];
-                    spawnOtherLanes = Random.value < 0.6f;
-                } 
-                else 
-                { // Sound obstacle
-                    obstacleToSpawn = soundObstacles[Random.Range(0, soundObstacles.Length)];
-                    Debug.Log("Sound Obstacle!");
-                }
+                    bool isSoundObstacle = Random.value < 0.1f;
+                    if (isSoundObstacle) 
+                    {
+                        obstacleType = 2;
+                        nextSpawn = Time.time + soundObstacleSpacing;
+                    } 
+                    else 
+                    {
+                        obstacleType = currentTerrainLayer == LayerMask.NameToLayer("SchoolTerrain") ? 0 : 1;
+                        nextSpawn = Time.time + spacing;
+                    }
 
-                // Spawn the obstacles
-                Instantiate(obstacleToSpawn, lanes[laneIndex].position + new Vector3(-1.6f, 3.6f, player.position.z + 50f), Quaternion.identity);
+                    // Determine which obstacles to spawn
+                    bool spawnOtherLanes = false; // flag to determine if obstacle should be spawned in other lanes
 
-            GameObject otherObstacleToSpawn = null;
-            GameObject thirdObstacleToSpawn = null;
+                    GameObject obstacleToSpawn;
+                    if (obstacleType == 0) 
+                    { // School terrain
+                        obstacleToSpawn = schoolObstacles[Random.Range(0, schoolObstacles.Length)];
+                        spawnOtherLanes = Random.value < 0.1f;
+                    } 
+                    else if (obstacleType == 1) 
+                    { // Traffic terrain
+                        obstacleToSpawn = trafficObstacles[Random.Range(0, trafficObstacles.Length)];
+                        spawnOtherLanes = Random.value < 0.6f;
+                    } 
+                    else 
+                    { // Sound obstacle
+                        obstacleToSpawn = soundObstacles[Random.Range(0, soundObstacles.Length)];
+                        Debug.Log("Sound Obstacle!");
+                    }
 
-            if (spawnOtherLanes) 
-            {
-                Debug.Log("Double forhindring!");
-                List<Transform> availableLanes = new List<Transform>(lanes);
-                availableLanes.RemoveAt(laneIndex);
-                int otherLaneIndex = Random.Range(0, availableLanes.Count);
-                Transform otherLane = availableLanes[otherLaneIndex];
-                availableLanes.RemoveAt(otherLaneIndex);
+                    // Spawn the obstacles
+                    Instantiate(obstacleToSpawn, lanes[laneIndex].position + new Vector3(-1.6f, 4.181f, player.position.z + 50f), Quaternion.identity);
 
-                if (currentTerrainLayer == LayerMask.NameToLayer("SchoolTerrain"))
-                {
-                    thirdObstacleToSpawn = schoolObstacles[Random.Range(0, schoolObstacles.Length)];
-                    otherObstacleToSpawn = schoolObstacles[Random.Range(0, schoolObstacles.Length)];
-                } 
-                else 
-                {
-                    thirdObstacleToSpawn = trafficObstacles[Random.Range(0, trafficObstacles.Length)];
-                    otherObstacleToSpawn = trafficObstacles[Random.Range(0, trafficObstacles.Length)];
-                }
+                    GameObject otherObstacleToSpawn = null;
+                    GameObject thirdObstacleToSpawn = null;
 
-                //Instantiate(obstacleToSpawn, lanes[laneIndex].position + new Vector3(-1.6f, 4.181f, player.position.z + 50f), Quaternion.identity);
-                Instantiate(thirdObstacleToSpawn, availableLanes[0].position + new Vector3(-1.6f, 4.181f, player.position.z + 50f), Quaternion.identity);
-                Instantiate(otherObstacleToSpawn, otherLane.position + new Vector3(-1.6f, 4.181f, player.position.z + 50f), Quaternion.identity);
-                spawnOtherLanes = false;
-            } 
+                    if (spawnOtherLanes) 
+                    {
+                        Debug.Log("Double forhindring!");
+                        List<Transform> availableLanes = new List<Transform>(lanes);
+                        availableLanes.RemoveAt(laneIndex);
+                        int otherLaneIndex = Random.Range(0, availableLanes.Count);
+                        Transform otherLane = availableLanes[otherLaneIndex];
+                        availableLanes.RemoveAt(otherLaneIndex);
 
+                        if (currentTerrainLayer == LayerMask.NameToLayer("SchoolTerrain"))
+                        {
+                            thirdObstacleToSpawn = schoolObstacles[Random.Range(0, schoolObstacles.Length)];
+                            otherObstacleToSpawn = schoolObstacles[Random.Range(0, schoolObstacles.Length)];
+                        } 
+                        else 
+                        {
+                            thirdObstacleToSpawn = trafficObstacles[Random.Range(0, trafficObstacles.Length)];
+                            otherObstacleToSpawn = trafficObstacles[Random.Range(0, trafficObstacles.Length)];
+                        }
 
-
-            /*else 
-            {
-                List<Transform> availableLanes = new List<Transform>(lanes);
-                availableLanes.RemoveAt(laneIndex);
-                int otherLaneIndex = Random.Range(0, availableLanes.Count);
-                Transform otherLane = availableLanes[otherLaneIndex];
-
-                if (currentTerrainLayer == LayerMask.NameToLayer("SchoolTerrain")) 
-                {
-                    thirdObstacleToSpawn = trafficObstacles[Random.Range(0, trafficObstacles.Length)];
-                    otherObstacleToSpawn = trafficObstacles[Random.Range(0, trafficObstacles.Length)];
-                } 
-                else 
-                {
-                    thirdObstacleToSpawn = trafficObstacles[Random.Range(0, trafficObstacles.Length)];
-                    otherObstacleToSpawn = trafficObstacles[Random.Range(0, trafficObstacles.Length)];
-                }
-
-                Instantiate(obstacleToSpawn, lanes[laneIndex].position + new Vector3(-1.6f, 4.181f, player.position.z + 50f), Quaternion.identity);
-                Instantiate(otherObstacleToSpawn, otherLane.position + new Vector3(-1.6f, 4.181f, player.position.z + 50f), Quaternion.identity);
-            
-            }*/
-
-
+                        //Instantiate(obstacleToSpawn, lanes[laneIndex].position + new Vector3(-1.6f, 4.181f, player.position.z + 50f), Quaternion.identity);
+                        Instantiate(thirdObstacleToSpawn, availableLanes[0].position + new Vector3(-1.6f, 4.181f, player.position.z + 50f), Quaternion.identity);
+                        Instantiate(otherObstacleToSpawn, otherLane.position + new Vector3(-1.6f, 4.181f, player.position.z + 50f), Quaternion.identity);
+                        spawnOtherLanes = false;
+                    }
+                }   
         }
     }
 }  

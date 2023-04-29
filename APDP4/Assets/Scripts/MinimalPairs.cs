@@ -18,6 +18,7 @@ public class MinimalPairs : MonoBehaviour
     // Define the array of transforms for the lanes
     public Transform[] laneTransforms;
     public string[] transformNames;
+    private bool trueObjectSpawned;
 
     GameObject trueObject;
 
@@ -43,20 +44,34 @@ public class MinimalPairs : MonoBehaviour
         int randomIndex = Random.Range(0, objectCombinations.Length);
         GameObject[] chosenArray = objectCombinations[randomIndex];  
 
-        trueObject = objects[Random.Range(0, objects.Length)];
+        List<GameObject> availableObjects = new List<GameObject>(objects);
+        int randomTrueObjectIndex = Random.Range(0, availableObjects.Count);
+        trueObject = availableObjects[randomTrueObjectIndex];
         Debug.Log(trueObject);
         trueObject.tag = "MinimalPairsTrue";
 
-        List<GameObject> availableObjects = new List<GameObject>(objects);  
+        List<Transform> availableLanes = new List<Transform>(laneTransforms);  
         // Randomly distribute the objects on all three lanes
         for (int i = 0; i < laneTransforms.Length; i++)
         {
+            if(!trueObjectSpawned)
+            {
+            int laneForTrueObject = Random.Range(0, availableLanes.Count);
+            Vector3 trueObjectPosition = new Vector3(availableLanes[laneForTrueObject].position.x - 1.8f, 6f, minimalPairsObject.position.z + 30f);
+            Instantiate(trueObject, trueObjectPosition, Quaternion.identity);
+            availableObjects.RemoveAt(randomTrueObjectIndex);
+            availableLanes.RemoveAt(laneForTrueObject);
+            trueObjectSpawned = true;
+            }
+            else if (trueObjectSpawned)
+            {
             int obstacleToSpawn = Random.Range(0, availableObjects.Count);
             Vector3 objectPosition = new Vector3(laneTransforms[i].position.x - 1.8f, 6f, minimalPairsObject.position.z + 30f);
             //Quaternion objectRotation = availableObjects[obstacleToSpawn].transform.rotation; // Get the rotation of the prefab
             Instantiate(availableObjects[obstacleToSpawn], objectPosition, Quaternion.identity);
             availableObjects.RemoveAt(obstacleToSpawn);
             Debug.Log("Instantiated object!");
+            }
         }
         Invoke("OriginalTag", 8f);
     }

@@ -12,14 +12,14 @@ public class SpatialAudioObstacle : MonoBehaviour
 
     public AudioSource audioSource;
     public AudioClip[] obstacleSounds;
-    public GameObject player;
+    public GameObject radio;
 
     public int reactionTime;
 
     void Start()
     {
-        GameObject player = GameObject.FindGameObjectWithTag("Player");
-        audioSource = player.GetComponent<AudioSource>();
+        GameObject radio = GameObject.FindGameObjectWithTag("Radio");
+        audioSource = radio.GetComponent<AudioSource>();
 
         laneTransforms = new Transform[3]; // create an array with 3 elements
         transformNames = new string[] { "LeftLane", "MiddleLane", "RightLane" }; // set the names of the transforms
@@ -34,7 +34,7 @@ public class SpatialAudioObstacle : MonoBehaviour
         }
 
         Debug.Log("spatial audio obstacle");
-        audioSource.PlayOneShot(SpatialAudioSounds(), 100f);
+        audioSource.PlayOneShot(SpatialAudioSounds(), 1f);
         StartCoroutine(ReactionTime());
         Debug.Log("reaction time done");
         
