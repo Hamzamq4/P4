@@ -38,11 +38,11 @@ public class MinimalPairs : MonoBehaviour
         }
     }
         // Populate the array of arrays with the object arrays
-        objectCombinations = new GameObject[][] { objects1, objects2, objects3};
+        //objectCombinations = new GameObject[][] { objects1, objects2, objects3};
         
         // Choosing a random array
-        int randomIndex = Random.Range(0, objectCombinations.Length);
-        GameObject[] chosenArray = objectCombinations[randomIndex];  
+        //int randomIndex = Random.Range(0, objectCombinations.Length);
+        //GameObject[] chosenArray = objectCombinations[randomIndex];  
 
         List<GameObject> availableObjects = new List<GameObject>(objects);
         int randomTrueObjectIndex = Random.Range(0, availableObjects.Count);
@@ -52,7 +52,7 @@ public class MinimalPairs : MonoBehaviour
 
         List<Transform> availableLanes = new List<Transform>(laneTransforms);  
         // Randomly distribute the objects on all three lanes
-        for (int i = 0; i < laneTransforms.Length; i++)
+        for (int i = 0; i < 3; i++)
         {
             if(!trueObjectSpawned)
             {
@@ -62,14 +62,16 @@ public class MinimalPairs : MonoBehaviour
             availableObjects.RemoveAt(randomTrueObjectIndex);
             availableLanes.RemoveAt(laneForTrueObject);
             trueObjectSpawned = true;
+            Debug.Log(availableLanes);
             }
             else if (trueObjectSpawned)
             {
+            int laneForOtherObjects = Random.Range(0, availableLanes.Count);
             int obstacleToSpawn = Random.Range(0, availableObjects.Count);
-            Vector3 objectPosition = new Vector3(laneTransforms[i].position.x - 1.8f, 6f, minimalPairsObject.position.z + 30f);
-            //Quaternion objectRotation = availableObjects[obstacleToSpawn].transform.rotation; // Get the rotation of the prefab
+            Vector3 objectPosition = new Vector3(availableLanes[laneForOtherObjects].position.x - 1.8f, 6f, minimalPairsObject.position.z + 30f);
             Instantiate(availableObjects[obstacleToSpawn], objectPosition, Quaternion.identity);
             availableObjects.RemoveAt(obstacleToSpawn);
+            availableLanes.RemoveAt(laneForOtherObjects);
             Debug.Log("Instantiated object!");
             }
         }

@@ -39,9 +39,10 @@ public class ObstacleGenerator : MonoBehaviour
 
                     // Check the layer of the terrain that the player is about to approach
                     RaycastHit hit;
-                    if (Physics.Raycast(player.position + new Vector3(0, 0, 20f), Vector3.forward, out hit)) 
+                    if (Physics.Raycast(player.position + new Vector3(0, -0.1f, 50f), Vector3.forward, out hit)) 
                     {
                         currentTerrainLayer = hit.transform.gameObject.layer;
+                        Debug.Log(currentTerrainLayer);
                     }
 
                     bool isSoundObstacle = Random.value < 0.1f;
