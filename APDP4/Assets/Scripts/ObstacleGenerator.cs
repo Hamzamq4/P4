@@ -39,7 +39,7 @@ public class ObstacleGenerator : MonoBehaviour
 
                     // Check the layer of the terrain that the player is about to approach
                     RaycastHit hit;
-                    if (Physics.Raycast(player.position + new Vector3(0, -0.1f, 50f), Vector3.forward, out hit)) 
+                    if (Physics.Raycast(player.position + new Vector3(0, -0.1f, 10f), Vector3.forward, out hit)) 
                     {
                         currentTerrainLayer = hit.transform.gameObject.layer;
                         Debug.Log(currentTerrainLayer);
@@ -78,7 +78,7 @@ public class ObstacleGenerator : MonoBehaviour
                     }
 
                     // Spawn the obstacles
-                    Instantiate(obstacleToSpawn, lanes[laneIndex].position + new Vector3(-1.6f, 4.181f, player.position.z + 50f), Quaternion.identity);
+                    Instantiate(obstacleToSpawn, lanes[laneIndex].position + new Vector3(-1.6f, 4.181f, player.position.z + 30f), Quaternion.identity);
 
                     GameObject otherObstacleToSpawn = null;
                     GameObject thirdObstacleToSpawn = null;

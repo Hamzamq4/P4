@@ -2971,7 +2971,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lowFrequencyCutoff: 1500
   highFrequencyCutoff: 4000
-  distortionLevel: 0.8
+  distortionLevel: 0.86
   volume: 0.5
 --- !u!82 &1224567263
 AudioSource:
