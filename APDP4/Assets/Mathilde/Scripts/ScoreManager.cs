@@ -126,7 +126,7 @@ public class ScoreManager : MonoBehaviour
                 {
                     scoreIncreasing = false;
                     pAnimator.SetTrigger("Death_b");
-                    //isPlayerAlive = false;
+                    isPlayerAlive = false;
                     StartCoroutine(ShowGameOverPanel());
                 }
                 /* zeroLives.gameObject.SetActive(false);
