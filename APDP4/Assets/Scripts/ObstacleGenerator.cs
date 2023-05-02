@@ -45,7 +45,7 @@ public class ObstacleGenerator : MonoBehaviour
                         Debug.Log(currentTerrainLayer);
                     }
 
-                    bool isSoundObstacle = Random.value < 0.1f;
+                    bool isSoundObstacle = Random.value < 0.3f;
                     if (isSoundObstacle) 
                     {
                         obstacleType = 2;

@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 6266099710985499852}
   - component: {fileID: 7330614930257485392}
   - component: {fileID: 7845818664864950853}
-  - component: {fileID: 215766284763647707}
   - component: {fileID: 5406743274540985984}
   - component: {fileID: -1564269490536508623}
+  - component: {fileID: 3909943149598799503}
   m_Layer: 0
   m_Name: Laser 1
   m_TagString: Obstacle
@@ -87,20 +87,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!136 &215766284763647707
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7412207597216234611}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &5406743274540985984
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -212,6 +198,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!65 &3909943149598799503
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7412207597216234611}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 12.03, y: 2.2, z: 108.42}
+  m_Center: {x: -0.14, y: 0, z: -49.7}
 --- !u!1 &7642631986248014579
 GameObject:
   m_ObjectHideFlags: 0
