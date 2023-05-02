@@ -3,7 +3,10 @@ using System.Collections.Generic;
 using UnityEngine.SceneManagement;
 using UnityEngine;
 using UnityEngine.UI;
+using System.IO;
+using System.Linq;
 
+[System.Serializable]
 public class GameMenu : MonoBehaviour
 {
     public GameObject pausePanel;

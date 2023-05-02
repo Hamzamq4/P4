@@ -129,8 +129,8 @@ public class ScoreManager : MonoBehaviour
                     isPlayerAlive = false;
                     StartCoroutine(ShowGameOverPanel());
                 }
-                /* zeroLives.gameObject.SetActive(false);
-                oneLife.gameObject.SetActive(false);
+                zeroLives.gameObject.SetActive(false);
+                /*oneLife.gameObject.SetActive(false);
                 twoLives.gameObject.SetActive(false); */
                 break;
 
