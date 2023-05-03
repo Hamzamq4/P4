@@ -8,6 +8,8 @@ TagManager:
   - MinimalPairsTrue
   - streetlights
   - Radio
+  - trafficcollider
+  - schoolcollider
   layers:
   - Default
   - TransparentFX

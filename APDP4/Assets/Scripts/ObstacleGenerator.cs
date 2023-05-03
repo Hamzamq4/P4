@@ -78,7 +78,7 @@ public class ObstacleGenerator : MonoBehaviour
                     }
 
                     // Spawn the obstacles
-                    Instantiate(obstacleToSpawn, lanes[laneIndex].position + new Vector3(-1.6f, 4.181f, player.position.z + 30f), Quaternion.identity);
+                    Instantiate(obstacleToSpawn, lanes[laneIndex].position + new Vector3(-1.6f, 4.181f, player.position.z + 0f), Quaternion.identity);
 
                     GameObject otherObstacleToSpawn = null;
                     GameObject thirdObstacleToSpawn = null;
