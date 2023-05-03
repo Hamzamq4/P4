@@ -207,7 +207,6 @@ public class ScoreManager : MonoBehaviour
             radio.PlayOneShot(fangetClip);
             Debug.Log("DeathAnimationTime");
         }
-
         yield return new WaitForSeconds(3f); // wait for 3 seconds
         gameOverPanel.SetActive(true);
         scoreUI.gameObject.SetActive(false);

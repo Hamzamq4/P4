@@ -221,10 +221,12 @@ public class PlayerMovement : MonoBehaviour
 
     } 
     */
+    /*
     void PlayerDeath()
     {
         // Set flag to false
         ScoreManager.isPlayerAlive = false;
+
 
         // Stop the movement
         //movec = Vector3.zero;
@@ -232,5 +234,6 @@ public class PlayerMovement : MonoBehaviour
         // Freeze the character's position
         cc.enabled = false; // Disable the character controller component
         gameObject.transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z); // Set the position to the current position
-    }
+
+    }*/
 }
