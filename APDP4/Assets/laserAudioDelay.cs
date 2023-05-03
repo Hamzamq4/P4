@@ -5,8 +5,10 @@ using UnityEngine;
 public class laserAudioDelay : MonoBehaviour
 {
     private float elapsedSeconds;
+    public float delayTime;
     public AudioSource audioSource;
     public AudioClip laserShortSound;
+    private bool hasPlayed = false;
 
     // Start is called before the first frame update
     void Start()
@@ -17,10 +19,14 @@ public class laserAudioDelay : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (elapsedSeconds >= 5f)
+        elapsedSeconds += Time.fixedDeltaTime;
+        if (elapsedSeconds >= delayTime)
+            
+            if(!hasPlayed)
+            {
+                audioSource.PlayOneShot(laserShortSound);
+                hasPlayed = true;
+            }
 
-        audioSource.PlayOneShot(laserShortSound);
-
-        elapsedSeconds += Time.deltaTime;
     }
 }

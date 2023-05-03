@@ -10,6 +10,8 @@ TagManager:
   - Radio
   - trafficcollider
   - schoolcollider
+  - RadioLeft
+  - RadioRight
   layers:
   - Default
   - TransparentFX

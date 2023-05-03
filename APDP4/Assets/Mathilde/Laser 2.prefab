@@ -210,6 +210,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46570da903708ea419b6c48df6c5a3da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  delayTime: 4.5
   audioSource: {fileID: 0}
   laserShortSound: {fileID: 8300000, guid: 27f569d33412cac44bdb71e0d5091511, type: 3}
 --- !u!65 &-2008442494744692913
