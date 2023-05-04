@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657838, g: 0.49641228, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1220,7 +1220,7 @@ MonoBehaviour:
   - {fileID: 1938645797}
   - {fileID: 528139310}
   - {fileID: 1529008785}
-  spacing: 3
+  spacing: 2
   schoolObstacles:
   - {fileID: 2260376842356947821, guid: 4ecd52e19bfc16d4da53c7233398c4ac, type: 3}
   trafficObstacles:
@@ -1229,7 +1229,9 @@ MonoBehaviour:
   - {fileID: 241473963869164114, guid: ec9627adfc2b3874f819a89abc2468be, type: 3}
   soundObstacles:
   - {fileID: 1939034542094382107, guid: 2c6f946e3ba29ca4f94d0b4135f5091d, type: 3}
-  soundObstacleSpacing: 2
+  - {fileID: 5717508223820659031, guid: bc88c59c7296b431dbbcd16d5b77e449, type: 3}
+  - {fileID: 7175974340718362378, guid: 282cafd08a02842e5896c169d37917f5, type: 3}
+  soundObstacleSpacing: 3
   spawnStartTime: 15
 --- !u!114 &558159029
 MonoBehaviour:
@@ -2619,7 +2621,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   offset: {x: 0, y: 20, z: -10}
   target: {fileID: 6450177392893084696}
-  translateSpeed: 2
+  translateSpeed: 3
   rotationSpeed: 2
   cam: {fileID: 963194227}
 --- !u!1 &1014774990
