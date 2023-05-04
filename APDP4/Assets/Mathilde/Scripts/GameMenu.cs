@@ -12,6 +12,7 @@ public class GameMenu : MonoBehaviour
     public GameObject pausePanel;
     public GameObject gameOverPanel;
     public GameObject scoreUI;
+    public GameObject fromMenu;
 
     public Button pause, genoptag, pauseAfslut, tryAgain, gameOverAfslut;
 
@@ -23,6 +24,8 @@ public class GameMenu : MonoBehaviour
         pauseAfslut.onClick.AddListener(delegate { ChangePanel("pauseAfslut"); });
         tryAgain.onClick.AddListener(delegate { ChangePanel("tryAgain"); });
         gameOverAfslut.onClick.AddListener(delegate { ChangePanel("tryAgainAfslut"); });
+        fromMenu = GameObject.FindGameObjectWithTag("FromMenu");
+
     }
 
     public void DisablePanels()
@@ -58,6 +61,7 @@ public class GameMenu : MonoBehaviour
                 break;
             case "tryAgain":
                 Debug.Log("Prøv igen");
+                Destroy(fromMenu);
                 DisablePanels();
                 Time.timeScale = 1;
                 SceneManager.LoadScene("SampleScene");

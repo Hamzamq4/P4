@@ -2595,7 +2595,7 @@ GameObject:
   - component: {fileID: 1866783249}
   m_Layer: 0
   m_Name: FromMenu
-  m_TagString: Untagged
+  m_TagString: FromMenu
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2612,6 +2612,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d975f04c176c04530ba7896e2a7b544c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  longIntro: {fileID: 8300000, guid: 83c5dd284e0044929860fab2242f842b, type: 3}
+  radio: {fileID: 0}
 --- !u!4 &1866783250
 Transform:
   m_ObjectHideFlags: 0

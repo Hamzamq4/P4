@@ -12,6 +12,7 @@ TagManager:
   - schoolcollider
   - RadioLeft
   - RadioRight
+  - FromMenu
   layers:
   - Default
   - TransparentFX
