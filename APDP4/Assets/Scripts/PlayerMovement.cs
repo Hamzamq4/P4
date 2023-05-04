@@ -21,6 +21,10 @@ public class PlayerMovement : MonoBehaviour
 
     private inputManager inputManager;
 
+    private int trafficLayer;
+    private int schoolLayer;
+    private GameObject player;
+
     private void Awake()
     {
         inputManager = GetComponent<inputManager>();
@@ -45,6 +49,10 @@ public class PlayerMovement : MonoBehaviour
     {
         cc = gameObject.GetComponent<CharacterController>();
         pAnimator = GetComponent<Animator>();
+
+        trafficLayer = LayerMask.NameToLayer("TrafficTerrain");
+        schoolLayer = LayerMask.NameToLayer("SchoolTerrain");
+        player = GameObject.FindWithTag("Player");
     }
 
     void Update()
@@ -236,4 +244,26 @@ public class PlayerMovement : MonoBehaviour
         gameObject.transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z); // Set the position to the current position
 
     }*/
+
+    void OnTriggerEnter(Collider other)
+    {
+        
+        if (other.gameObject.tag == "trafficcollider")
+        {
+            player.layer = trafficLayer;
+        }
+        else if (other.gameObject.tag == "schoolcollider")
+        {
+            player.layer = schoolLayer;
+        }
+        
+    }
+
+    void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject == player)
+        {
+            player.layer = LayerMask.NameToLayer("Default");
+        }
+    }
 }
