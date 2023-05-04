@@ -12745,7 +12745,7 @@ GameObject:
   - component: {fileID: 7539688721590780737}
   - component: {fileID: 5808959210164876945}
   - component: {fileID: 7290162861362120373}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: trafficcollider
   m_TagString: trafficcollider
   m_Icon: {fileID: 0}

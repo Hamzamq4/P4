@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class TerrainGenerator : MonoBehaviour
-{
+{   
     // Array of terrain prefabs to randomly choose from
     public GameObject[] terrainPrefabs;
 
@@ -96,32 +96,34 @@ public class TerrainGenerator : MonoBehaviour
         return false;
     }
 
-    
+    private int? lastTerrainIndex = null;
+
     void GenerateTerrain()
     {
-    // Choose a random terrain prefab from the array
-    int randomIndex = Random.Range(0, terrainPrefabs.Length);
-    GameObject newTerrain = Instantiate(terrainPrefabs[randomIndex], new Vector3(0, 0, currentTerrainLength + 50), Quaternion.identity);
-    float newTerrainZPosition;
+        // Choose a random terrain prefab from the array, ensuring it's not a Terrain3 prefab
+        int randomIndex;
+        do
+        {
+            randomIndex = Random.Range(0, terrainPrefabs.Length);
+        } while (lastTerrainIndex.HasValue && terrainPrefabs[randomIndex].name == "Terrain3" && lastTerrainIndex.Value == randomIndex);
 
-    if (currentTerrain != null)
-    {
-        newTerrainZPosition = currentTerrain.transform.position.z + currentTerrainLength + 50;
+        // Update lastTerrainIndex to keep track of the previous terrain generated
+        lastTerrainIndex = randomIndex;
+
+        // Instantiate the new terrain prefab at the appropriate position
+        GameObject newTerrain = Instantiate(terrainPrefabs[randomIndex], new Vector3(0, 0, currentTerrainLength + 50), Quaternion.identity);
+
+        // Update the current terrain length
+        currentTerrainLength += terrainLength + 50;
+
+        // Update the current terrain reference
+        currentTerrain = newTerrain;
+
+        // Get the list of obstacle prefabs from the new terrain section
+        GameObject[] obstaclePrefabs = newTerrain.GetComponent<TerrainSection>().obstacles;
     }
-    else
-    {
-        newTerrainZPosition = 0f;
-    }
 
-    // Update the current terrain length
-    currentTerrainLength += terrainLength + 50;
 
-    // Update the current terrain reference
-    currentTerrain = newTerrain;
-
-    // Get the list of obstacle prefabs from the new terrain section
-    GameObject[] obstaclePrefabs = newTerrain.GetComponent<TerrainSection>().obstacles;
-}
 }
 
 

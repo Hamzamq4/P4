@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2066297379383372}
   - component: {fileID: 2066297380422948}
   - component: {fileID: 67459678363235246}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Sidewalk_01 (44)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -206,7 +206,7 @@ GameObject:
   - component: {fileID: 6325351529729310348}
   - component: {fileID: 1446618125036471446}
   - component: {fileID: 4207432037092789691}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Sidewalk_01 (110)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -303,7 +303,7 @@ GameObject:
   - component: {fileID: 59294160022840863}
   - component: {fileID: 59294160023882615}
   - component: {fileID: 16425365797240317}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Sidewalk_01 (22)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -678,7 +678,7 @@ GameObject:
   - component: {fileID: 112539152010285054}
   - component: {fileID: 112539152011248588}
   - component: {fileID: 101594611278812078}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Fence_01 (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -903,7 +903,7 @@ GameObject:
   - component: {fileID: 173054090983146847}
   - component: {fileID: 173054090982100545}
   - component: {fileID: 184204832992234935}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Sidewalk_01 (33)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1486,7 +1486,7 @@ GameObject:
   - component: {fileID: 1105814074106318336}
   - component: {fileID: 8474551798955950963}
   - component: {fileID: 5609320612030223573}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Sidewalk_01 (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1711,7 +1711,7 @@ GameObject:
   - component: {fileID: 325578836373179216}
   - component: {fileID: 325578836374223320}
   - component: {fileID: 318855338609711648}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Bridge_Pillar_01 (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1891,7 +1891,7 @@ GameObject:
   - component: {fileID: 378448089623647761}
   - component: {fileID: 378448089622608761}
   - component: {fileID: 407709877826063859}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Sidewalk_01 (42)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2423,7 +2423,7 @@ GameObject:
   - component: {fileID: 522533884201412117}
   - component: {fileID: 3722370824971327805}
   - component: {fileID: 2070422103454306018}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Sidewalk_01 (33)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2617,7 +2617,7 @@ GameObject:
   - component: {fileID: 454678877685815686}
   - component: {fileID: 454678877684857104}
   - component: {fileID: 479812480447823528}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Wall_Exterior_Window_02 (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2714,7 +2714,7 @@ GameObject:
   - component: {fileID: 454678877686635182}
   - component: {fileID: 454678877685863124}
   - component: {fileID: 454678877684831278}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Wall_Exterior_Window_Glass_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2799,7 +2799,7 @@ GameObject:
   - component: {fileID: 475124643839380197}
   - component: {fileID: 463878112611982723}
   - component: {fileID: 463975410175155713}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Wall_Exterior_Ground_01 (20)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2909,7 +2909,7 @@ GameObject:
   - component: {fileID: 496983023301633720}
   - component: {fileID: 496983023302675408}
   - component: {fileID: 436108214342778202}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Sidewalk_01 (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3103,7 +3103,7 @@ GameObject:
   - component: {fileID: 587799729159009297}
   - component: {fileID: 587799729157953913}
   - component: {fileID: 630703836874092531}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Sidewalk_01 (38)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3352,7 +3352,7 @@ GameObject:
   - component: {fileID: 634659551333968170}
   - component: {fileID: 634659551332917812}
   - component: {fileID: 587264456401281474}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Sidewalk_01 (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3642,7 +3642,7 @@ GameObject:
   - component: {fileID: 6081037808684248918}
   - component: {fileID: 2603320902461720500}
   - component: {fileID: 3348674926319979036}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: schoolcollider
   m_TagString: schoolcollider
   m_Icon: {fileID: 0}
@@ -3794,7 +3794,7 @@ GameObject:
   - component: {fileID: 6437023060047874355}
   - component: {fileID: 8587726352783309818}
   - component: {fileID: 4859537997145614851}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Roof_04 (25)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4334,7 +4334,7 @@ GameObject:
   - component: {fileID: 2743728684931839484}
   - component: {fileID: 8025107019805736975}
   - component: {fileID: 7736773535605638280}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Sidewalk_01 (43)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4819,7 +4819,7 @@ GameObject:
   - component: {fileID: 8443910534730297838}
   - component: {fileID: 1157332036276609595}
   - component: {fileID: 7926587794140492277}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Sidewalk_01 (34)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5012,7 +5012,7 @@ GameObject:
   - component: {fileID: 5031741069546322839}
   - component: {fileID: 7628325356271934390}
   - component: {fileID: 6101281257633223227}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Door_Glass_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5387,7 +5387,7 @@ GameObject:
   - component: {fileID: 969424528678643623}
   - component: {fileID: 969424528677587663}
   - component: {fileID: 980917246786026565}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Sidewalk_01 (17)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5485,7 +5485,7 @@ GameObject:
   - component: {fileID: 926858336207783361}
   - component: {fileID: 4367433038184258703}
   - component: {fileID: 1086499688325095899}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Prop_LightPole_Base_01 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5791,7 +5791,7 @@ GameObject:
   - component: {fileID: 6905761361481589773}
   - component: {fileID: 8242010424358342066}
   - component: {fileID: 8412886226347953130}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Sidewalk_01 (50)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6083,7 +6083,7 @@ GameObject:
   - component: {fileID: 1098489755938513731}
   - component: {fileID: 1142053294971728933}
   - component: {fileID: 1142008753655904167}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Wall_Exterior_Ground_01 (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6193,7 +6193,7 @@ GameObject:
   - component: {fileID: 5476344177124956519}
   - component: {fileID: 5476298723715450964}
   - component: {fileID: 1920513055137754784}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Sidewalk_01 (20)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6288,7 +6288,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5806796191393379202}
   - component: {fileID: 6169742527044370522}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Directional Light (3)
   m_TagString: streetlights
   m_Icon: {fileID: 0}
@@ -6384,7 +6384,7 @@ GameObject:
   - component: {fileID: 1182943349681422419}
   - component: {fileID: 1182943349682482491}
   - component: {fileID: 1189607554295061425}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Sidewalk_01 (34)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6483,7 +6483,7 @@ GameObject:
   - component: {fileID: 1117175501140380871}
   - component: {fileID: 1523781609959794845}
   - component: {fileID: 1144539009961592549}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Bld_Apartment_Door_01 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6704,7 +6704,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2554829477660173057}
   - component: {fileID: 6426478504548295478}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Directional Light (5)
   m_TagString: streetlights
   m_Icon: {fileID: 0}
@@ -6994,7 +6994,7 @@ GameObject:
   - component: {fileID: 7787538853517195428}
   - component: {fileID: 2848659384008851316}
   - component: {fileID: 1598047685286824286}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Sidewalk_01 (53)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7091,7 +7091,7 @@ GameObject:
   - component: {fileID: 7165933598496277877}
   - component: {fileID: 1867687563221545535}
   - component: {fileID: 733234198289274691}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Roof_04 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7325,7 +7325,7 @@ GameObject:
   - component: {fileID: 1491428124428364151}
   - component: {fileID: 2148041842065677334}
   - component: {fileID: 3448940659292836380}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Bld_Apartment_Stack_01 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7775,7 +7775,7 @@ GameObject:
   - component: {fileID: 2943187906913508117}
   - component: {fileID: 4724854036188332104}
   - component: {fileID: 22244123959075654}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Wall_Exterior_Window_Ground_Glass_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7859,7 +7859,7 @@ GameObject:
   - component: {fileID: 1590306661692464312}
   - component: {fileID: 4552859350076271211}
   - component: {fileID: 7543425045186435245}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Sidewalk_01 (17)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8416,7 +8416,7 @@ GameObject:
   - component: {fileID: 3357917162320700916}
   - component: {fileID: 8946714268930566252}
   - component: {fileID: 3585448753437474540}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Sidewalk_01 (38)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8513,7 +8513,7 @@ GameObject:
   - component: {fileID: 8975927295190321512}
   - component: {fileID: 3135698726945028610}
   - component: {fileID: 2119553836187248183}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Sidewalk_01 (17)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8665,7 +8665,7 @@ GameObject:
   - component: {fileID: 1771149283777148036}
   - component: {fileID: 6511746630818636640}
   - component: {fileID: 7382052145704141902}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Roof_03 (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8859,7 +8859,7 @@ GameObject:
   - component: {fileID: 1615092115938309478}
   - component: {fileID: 1615092115939309908}
   - component: {fileID: 1625460512646162742}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Fence_01 (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8956,7 +8956,7 @@ GameObject:
   - component: {fileID: 800115702914800858}
   - component: {fileID: 7622549706500635804}
   - component: {fileID: 3303578691606488636}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Door_01 (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9249,7 +9249,7 @@ GameObject:
   - component: {fileID: 7728189638754396465}
   - component: {fileID: 7679267368468004582}
   - component: {fileID: 6611169130653219820}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Bld_Apartment_Roof_02 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9457,7 +9457,7 @@ GameObject:
   - component: {fileID: 1217120082650883469}
   - component: {fileID: 8465208412812490384}
   - component: {fileID: 6602357914401641854}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Sidewalk_01 (114)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9554,7 +9554,7 @@ GameObject:
   - component: {fileID: 5935499222141964905}
   - component: {fileID: 2554807515503255974}
   - component: {fileID: 1471921427255654915}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Sidewalk_01 (33)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9749,7 +9749,7 @@ GameObject:
   - component: {fileID: 3832922935137299528}
   - component: {fileID: 18064896219158785}
   - component: {fileID: 6177402455034531870}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Bld_Apartment_Roof_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10333,7 +10333,7 @@ GameObject:
   - component: {fileID: 1891205684592330610}
   - component: {fileID: 1891205684591290906}
   - component: {fileID: 1933756170613267600}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Sidewalk_01 (49)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10513,7 +10513,7 @@ GameObject:
   - component: {fileID: 6507826803827686232}
   - component: {fileID: 8085661714496210246}
   - component: {fileID: 217184748750459811}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Sidewalk_01 (113)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10610,7 +10610,7 @@ GameObject:
   - component: {fileID: 1974447268702269821}
   - component: {fileID: 1974447268701207887}
   - component: {fileID: 1982036104152788269}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Fence_01 (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11095,7 +11095,7 @@ GameObject:
   - component: {fileID: 4231665100421839392}
   - component: {fileID: 8911416628534938509}
   - component: {fileID: 629966108305290075}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Door_01 (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11193,7 +11193,7 @@ GameObject:
   - component: {fileID: 2043647388938190033}
   - component: {fileID: 2043647388937140175}
   - component: {fileID: 2068521044708406329}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Sidewalk_01 (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11582,7 +11582,7 @@ GameObject:
   - component: {fileID: 3705365728085617997}
   - component: {fileID: 6008668912318420036}
   - component: {fileID: 630577255947505596}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Sidewalk_01 (42)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11970,7 +11970,7 @@ GameObject:
   - component: {fileID: 313011449872720010}
   - component: {fileID: 4949530423710833418}
   - component: {fileID: 1300372065823876154}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Sidewalk_01 (15)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12165,7 +12165,7 @@ GameObject:
   - component: {fileID: 7884229232943011268}
   - component: {fileID: 5980431009269507413}
   - component: {fileID: 661075686112024449}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Prop_LightPole_Base_01 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12724,7 +12724,7 @@ GameObject:
   - component: {fileID: 2246965371690074544}
   - component: {fileID: 2246965371689037016}
   - component: {fileID: 2289568488248580690}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Sidewalk_01 (26)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12821,7 +12821,7 @@ GameObject:
   - component: {fileID: 2259018425511168079}
   - component: {fileID: 2259018425512224039}
   - component: {fileID: 2283703496570770349}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Sidewalk_01 (45)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13112,7 +13112,7 @@ GameObject:
   - component: {fileID: 2324698167527719924}
   - component: {fileID: 2324698167526682268}
   - component: {fileID: 2353695798210926614}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Sidewalk_01 (35)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13745,7 +13745,7 @@ GameObject:
   - component: {fileID: 4514329494560672956}
   - component: {fileID: 49469777190927902}
   - component: {fileID: 2219002322976713682}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Sidewalk_01 (40)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13939,7 +13939,7 @@ GameObject:
   - component: {fileID: 2460005206082141174}
   - component: {fileID: 2460005206083172292}
   - component: {fileID: 2505285287536011174}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Fence_01 (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14133,7 +14133,7 @@ GameObject:
   - component: {fileID: 2474907977785714837}
   - component: {fileID: 2474907977784657405}
   - component: {fileID: 2499601974056350583}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Sidewalk_01 (51)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14327,7 +14327,7 @@ GameObject:
   - component: {fileID: 4877929974530167290}
   - component: {fileID: 1118529158668894449}
   - component: {fileID: 4109164611447898026}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Sidewalk_01 (141)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14479,7 +14479,7 @@ GameObject:
   - component: {fileID: 2599613986753656670}
   - component: {fileID: 2599613986752600630}
   - component: {fileID: 2664814128561548476}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Sidewalk_01 (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14673,7 +14673,7 @@ GameObject:
   - component: {fileID: 4555339000500477289}
   - component: {fileID: 8888936769734114327}
   - component: {fileID: 9213214533444589642}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Sidewalk_01 (26)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14992,7 +14992,7 @@ GameObject:
   - component: {fileID: 855303609881724423}
   - component: {fileID: 8383262993416288823}
   - component: {fileID: 6039881199153840048}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Sidewalk_01 (70)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15269,7 +15269,7 @@ GameObject:
   - component: {fileID: 6337055844428918294}
   - component: {fileID: 4130016027654879216}
   - component: {fileID: 6906258896059727634}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Sidewalk_01 (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15366,7 +15366,7 @@ GameObject:
   - component: {fileID: 2718207989312115863}
   - component: {fileID: 2718207989311076863}
   - component: {fileID: 2689210495933550453}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Sidewalk_01 (27)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16096,7 +16096,7 @@ GameObject:
   - component: {fileID: 9102819583772816061}
   - component: {fileID: 4159514632851968138}
   - component: {fileID: 2499352963005237301}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Sidewalk_01 (27)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16290,7 +16290,7 @@ GameObject:
   - component: {fileID: 2866027140338636725}
   - component: {fileID: 2866027140339705149}
   - component: {fileID: 2823283593864431301}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Bridge_Pillar_01 (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16581,7 +16581,7 @@ GameObject:
   - component: {fileID: 1235330358042396761}
   - component: {fileID: 4654612919375760457}
   - component: {fileID: 5617839212636456536}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Sidewalk_01 (146)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17067,7 +17067,7 @@ GameObject:
   - component: {fileID: 550939213916123450}
   - component: {fileID: 4574996717152521124}
   - component: {fileID: 8349193417258823693}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Sidewalk_01 (32)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18120,7 +18120,7 @@ GameObject:
   - component: {fileID: 8738256709176661191}
   - component: {fileID: 3321596593045465262}
   - component: {fileID: 7653864840888704040}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Sidewalk_01 (143)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18217,7 +18217,7 @@ GameObject:
   - component: {fileID: 3169479827860108546}
   - component: {fileID: 3169479827859052650}
   - component: {fileID: 3104313220887932640}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Sidewalk_01 (16)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18317,7 +18317,7 @@ GameObject:
   - component: {fileID: 5115619757398427207}
   - component: {fileID: 3283815735309937237}
   - component: {fileID: 9123765968855996261}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Prop_Vents_Exhaust_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18638,7 +18638,7 @@ GameObject:
   - component: {fileID: 1249702710949371971}
   - component: {fileID: 2339440281981342820}
   - component: {fileID: 858812212860689646}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Prop_Vents_Corner_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19834,7 +19834,7 @@ GameObject:
   - component: {fileID: 3597456365311297847}
   - component: {fileID: 3597456365310256223}
   - component: {fileID: 3532026004398002901}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Sidewalk_01 (24)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20028,7 +20028,7 @@ GameObject:
   - component: {fileID: 6090778933458689944}
   - component: {fileID: 1183573706388867291}
   - component: {fileID: 4355086093011949491}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Roof_04 (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20416,7 +20416,7 @@ GameObject:
   - component: {fileID: 9187670031654354246}
   - component: {fileID: 6496196982608681592}
   - component: {fileID: 3847371183388981266}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Sidewalk_01 (144)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20610,7 +20610,7 @@ GameObject:
   - component: {fileID: 3680392332050219455}
   - component: {fileID: 3680392332051279063}
   - component: {fileID: 3745759187567647325}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Sidewalk_01 (46)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20707,7 +20707,7 @@ GameObject:
   - component: {fileID: 8586672081653027245}
   - component: {fileID: 6416863475974212488}
   - component: {fileID: 7054936769430762037}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Sidewalk_01 (48)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20804,7 +20804,7 @@ GameObject:
   - component: {fileID: 3612708100309446733}
   - component: {fileID: 462172302216342743}
   - component: {fileID: 4571611609651127218}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Wall_Exterior_Window_Ground_01 (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21247,7 +21247,7 @@ GameObject:
   - component: {fileID: 3890731753747038904}
   - component: {fileID: 3890731753748099024}
   - component: {fileID: 3825344557657102682}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Sidewalk_01 (18)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22013,7 +22013,7 @@ GameObject:
   - component: {fileID: 2814721292423405272}
   - component: {fileID: 5418680588864910833}
   - component: {fileID: 1909513660469964743}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Bld_Apartment_Roof_02 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22234,8 +22234,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4022134959224030918}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.45, y: 216.59856, z: -195.10065}
-  m_LocalScale: {x: 15.24067, y: 12.101643, z: 1}
+  m_LocalPosition: {x: 2.45, y: 216.59856, z: -195.1}
+  m_LocalScale: {x: 15.24067, y: 12.101643, z: 1.2966584}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 463493483802708889}
@@ -22663,7 +22663,7 @@ GameObject:
   - component: {fileID: 7774979257650617916}
   - component: {fileID: 6797505998862291339}
   - component: {fileID: 3299481174243073374}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Sidewalk_01 (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22760,7 +22760,7 @@ GameObject:
   - component: {fileID: 6873848102928180463}
   - component: {fileID: 1902304710988678970}
   - component: {fileID: 3500996571442426548}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Sidewalk_01 (109)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22858,7 +22858,7 @@ GameObject:
   - component: {fileID: 4093670873060777156}
   - component: {fileID: 4046587685410884514}
   - component: {fileID: 4046492569649252384}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Wall_Exterior_Ground_01 (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23051,7 +23051,7 @@ GameObject:
   - component: {fileID: 5699658588423768284}
   - component: {fileID: 1707510761144076623}
   - component: {fileID: 1562820589741157705}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Sidewalk_01 (139)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23299,7 +23299,7 @@ GameObject:
   - component: {fileID: 7882975112006360895}
   - component: {fileID: 9202510326779432516}
   - component: {fileID: 6884496195549369273}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Sidewalk_01 (39)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23493,7 +23493,7 @@ GameObject:
   - component: {fileID: 9216202014677795063}
   - component: {fileID: 7986618579042834522}
   - component: {fileID: 3168417645768531263}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Roof_04 (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23591,7 +23591,7 @@ GameObject:
   - component: {fileID: 1285087292994626941}
   - component: {fileID: 5578765557696723063}
   - component: {fileID: 3043021234784983111}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Prop_LightPole_Base_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23854,7 +23854,7 @@ GameObject:
   - component: {fileID: 4216971525896285509}
   - component: {fileID: 4216971525895235163}
   - component: {fileID: 4210043028241327533}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Sidewalk_01 (23)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23951,7 +23951,7 @@ GameObject:
   - component: {fileID: 1617028968507819709}
   - component: {fileID: 698398568457064166}
   - component: {fileID: 2908318613677547206}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Fence_01 (17)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24048,7 +24048,7 @@ GameObject:
   - component: {fileID: 6886964035584215611}
   - component: {fileID: 3608416472925338342}
   - component: {fileID: 3637849008093600384}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Door_02 (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24274,7 +24274,7 @@ GameObject:
   - component: {fileID: 5454821164435359059}
   - component: {fileID: 2797784295315673083}
   - component: {fileID: 1747705608477151227}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Sidewalk_01 (66)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24468,7 +24468,7 @@ GameObject:
   - component: {fileID: 4309507203738729999}
   - component: {fileID: 4309507203737488863}
   - component: {fileID: 4262120026546676373}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Wall_Exterior_01 (19)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24565,7 +24565,7 @@ GameObject:
   - component: {fileID: 4368789191990349946}
   - component: {fileID: 4368789191991386866}
   - component: {fileID: 4344130413319389450}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Bridge_Pillar_01 (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24662,7 +24662,7 @@ GameObject:
   - component: {fileID: 4382080373784626230}
   - component: {fileID: 4382080373785677608}
   - component: {fileID: 4339469442052771038}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Sidewalk_01 (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24759,7 +24759,7 @@ GameObject:
   - component: {fileID: 4088055026321618713}
   - component: {fileID: 2060556703774005817}
   - component: {fileID: 8836723334899918847}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Sidewalk_01 (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24952,7 +24952,7 @@ GameObject:
   - component: {fileID: 1202810632375003087}
   - component: {fileID: 8472957906571686261}
   - component: {fileID: 1390974313002983037}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Wall_Exterior_Window_Ground_Glass_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25035,7 +25035,7 @@ GameObject:
   - component: {fileID: 1481479323407836307}
   - component: {fileID: 3942698961489194130}
   - component: {fileID: 76657351942033465}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Door_Glass_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25228,7 +25228,7 @@ GameObject:
   - component: {fileID: 4557332868313764771}
   - component: {fileID: 4557332868314824395}
   - component: {fileID: 4599894203428833345}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Sidewalk_01 (39)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25325,7 +25325,7 @@ GameObject:
   - component: {fileID: 8143593344165935577}
   - component: {fileID: 8724175759604988204}
   - component: {fileID: 1940982561393214446}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Fence_01 (19)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25422,7 +25422,7 @@ GameObject:
   - component: {fileID: 5849248070426007219}
   - component: {fileID: 5118538647606922734}
   - component: {fileID: 6269327362047434841}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Wall_Exterior_Window_Ground_02 (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25745,7 +25745,7 @@ GameObject:
   - component: {fileID: 7391398207843870237}
   - component: {fileID: 4553572517393859774}
   - component: {fileID: 6663966725936984370}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Sidewalk_01 (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25842,7 +25842,7 @@ GameObject:
   - component: {fileID: 3337261843871006810}
   - component: {fileID: 4841433977529411083}
   - component: {fileID: 2231166743896360577}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Sidewalk_01 (68)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25939,7 +25939,7 @@ GameObject:
   - component: {fileID: 365886215626702317}
   - component: {fileID: 2039434627901353837}
   - component: {fileID: 10582609219917423}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Sidewalk_01 (30)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26133,7 +26133,7 @@ GameObject:
   - component: {fileID: 8643690637156978348}
   - component: {fileID: 6989448627455468489}
   - component: {fileID: 7242502658296582681}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Sidewalk_01 (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26619,7 +26619,7 @@ GameObject:
   - component: {fileID: 979274903468245510}
   - component: {fileID: 1183805157271371184}
   - component: {fileID: 1110121979035217878}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Prop_Water_Tower_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26731,7 +26731,7 @@ GameObject:
   - component: {fileID: 4863429392940376601}
   - component: {fileID: 4863429392941420401}
   - component: {fileID: 4870258386449168891}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Sidewalk_01 (47)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27120,7 +27120,7 @@ GameObject:
   - component: {fileID: 4964467902632174993}
   - component: {fileID: 4964467902631119097}
   - component: {fileID: 4903760494058602099}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Sidewalk_01 (48)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27398,7 +27398,7 @@ GameObject:
   - component: {fileID: 6269069800486864716}
   - component: {fileID: 9040314988317415770}
   - component: {fileID: 5094750414245090175}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Roof_04 (24)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27593,7 +27593,7 @@ GameObject:
   - component: {fileID: 5842131528617320742}
   - component: {fileID: 5916185565214362639}
   - component: {fileID: 6188238721166147743}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Sidewalk_01 (49)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27691,7 +27691,7 @@ GameObject:
   - component: {fileID: 5005299892100671965}
   - component: {fileID: 5012955315171393211}
   - component: {fileID: 5013000952071011641}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Wall_Exterior_Ground_01 (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27801,7 +27801,7 @@ GameObject:
   - component: {fileID: 9119098762188733164}
   - component: {fileID: 1785420709757072373}
   - component: {fileID: 1859216015071554322}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Bridge_Pillar_01 (17)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28120,7 +28120,7 @@ GameObject:
   - component: {fileID: 4713769472809011353}
   - component: {fileID: 5922951761919195976}
   - component: {fileID: 1903895119467394322}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Bld_Apartment_Door_01 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28246,7 +28246,7 @@ GameObject:
   - component: {fileID: 6528129875336030160}
   - component: {fileID: 609884055713596613}
   - component: {fileID: 2369197151537810922}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Roof_04 (23)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28618,7 +28618,7 @@ GameObject:
   - component: {fileID: 2047093153148919416}
   - component: {fileID: 6780318461147732849}
   - component: {fileID: 2695935693575952753}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Door_01 (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28910,7 +28910,7 @@ GameObject:
   - component: {fileID: 7306664356590226769}
   - component: {fileID: 6747166677579133901}
   - component: {fileID: 4008248965782622610}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Sidewalk_01 (35)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29007,7 +29007,7 @@ GameObject:
   - component: {fileID: 5195243055411294320}
   - component: {fileID: 5195243055410248558}
   - component: {fileID: 5256145647249782936}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Sidewalk_01 (16)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29203,7 +29203,7 @@ GameObject:
   - component: {fileID: 1328242896481296150}
   - component: {fileID: 7378577949706663523}
   - component: {fileID: 2535212847274034555}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Bld_Apartment_Door_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29426,7 +29426,7 @@ GameObject:
   - component: {fileID: 5239442051980338074}
   - component: {fileID: 5239442051981381362}
   - component: {fileID: 5214818415990339704}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Sidewalk_01 (31)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29815,7 +29815,7 @@ GameObject:
   - component: {fileID: 46156031975932442}
   - component: {fileID: 1203354996530296782}
   - component: {fileID: 9009705668969943099}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Roof_03 (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30144,7 +30144,7 @@ GameObject:
   - component: {fileID: 7242019288226506796}
   - component: {fileID: 4631755253012039983}
   - component: {fileID: 3181427530636552987}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Bld_Apartment_Stack_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30241,7 +30241,7 @@ GameObject:
   - component: {fileID: 3116787414271415889}
   - component: {fileID: 606467529157874600}
   - component: {fileID: 598045774933052656}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Door_Glass_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30325,7 +30325,7 @@ GameObject:
   - component: {fileID: 1719963604441638667}
   - component: {fileID: 3301899963721672131}
   - component: {fileID: 3959278132024195025}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Sidewalk_01 (72)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31612,7 +31612,7 @@ GameObject:
   - component: {fileID: 6939215311698747839}
   - component: {fileID: 8270262483957905850}
   - component: {fileID: 6563311700218208115}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Sidewalk_01 (14)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32143,7 +32143,7 @@ GameObject:
   - component: {fileID: 5614601032752276460}
   - component: {fileID: 5552072009103045770}
   - component: {fileID: 5552012077442840328}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Wall_Exterior_Ground_01 (19)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32253,7 +32253,7 @@ GameObject:
   - component: {fileID: 5630610944680801050}
   - component: {fileID: 5630610944681923468}
   - component: {fileID: 5675670490401870900}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Wall_Exterior_Window_02 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32350,7 +32350,7 @@ GameObject:
   - component: {fileID: 5630610944680046642}
   - component: {fileID: 5630610944680851528}
   - component: {fileID: 5630610944681918130}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Wall_Exterior_Window_Glass_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32660,7 +32660,7 @@ GameObject:
   - component: {fileID: 3681684280323144765}
   - component: {fileID: 5914772245497800296}
   - component: {fileID: 8135071644354393018}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Sidewalk_01 (63)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32755,7 +32755,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6674898754609973047}
   - component: {fileID: 1339295120120962903}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Directional Light (4)
   m_TagString: streetlights
   m_Icon: {fileID: 0}
@@ -32851,7 +32851,7 @@ GameObject:
   - component: {fileID: 5738856832473123012}
   - component: {fileID: 5738856832474397460}
   - component: {fileID: 5714194430304687198}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Wall_Exterior_01 (18)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33137,7 +33137,7 @@ GameObject:
   - component: {fileID: 6753200254890958659}
   - component: {fileID: 3264528401510218589}
   - component: {fileID: 8064429736162092775}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Roof_04 (21)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33331,7 +33331,7 @@ GameObject:
   - component: {fileID: 475959349310814461}
   - component: {fileID: 6330998999074129428}
   - component: {fileID: 4356440761474243881}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Wall_Exterior_Window_Ground_02 (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33720,7 +33720,7 @@ GameObject:
   - component: {fileID: 7656486940462975296}
   - component: {fileID: 1555413980612160206}
   - component: {fileID: 2396882146463719037}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Sidewalk_01 (30)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34315,7 +34315,7 @@ GameObject:
   - component: {fileID: 1874481056699433782}
   - component: {fileID: 8701767814848883438}
   - component: {fileID: 4614108833437007309}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Door_Glass_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34609,7 +34609,7 @@ GameObject:
   - component: {fileID: 1300212289651537117}
   - component: {fileID: 3449816759215678264}
   - component: {fileID: 4737770209004291089}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Bld_Apartment_Door_01 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35040,7 +35040,7 @@ GameObject:
   - component: {fileID: 7373204761858009978}
   - component: {fileID: 8667903154815412577}
   - component: {fileID: 6626001427545055502}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Bld_Apartment_Door_Corner_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35429,7 +35429,7 @@ GameObject:
   - component: {fileID: 6136911872598803318}
   - component: {fileID: 6136911872599912958}
   - component: {fileID: 6179727944439042566}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Bridge_Pillar_01 (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35525,7 +35525,7 @@ GameObject:
   - component: {fileID: 8414792107553535695}
   - component: {fileID: 7853188729716318727}
   - component: {fileID: 7104532468868826993}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Wall_Exterior_Window_Ground_Glass_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35609,7 +35609,7 @@ GameObject:
   - component: {fileID: 6155544288693688143}
   - component: {fileID: 6155544288694527135}
   - component: {fileID: 6162195908884974549}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Wall_Exterior_01 (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35706,7 +35706,7 @@ GameObject:
   - component: {fileID: 8995570029723154281}
   - component: {fileID: 7554346688858238480}
   - component: {fileID: 4246458794323164365}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Sidewalk_01 (19)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35803,7 +35803,7 @@ GameObject:
   - component: {fileID: 6196782085442482941}
   - component: {fileID: 6196782085443526549}
   - component: {fileID: 6131537679566858527}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Sidewalk_01 (28)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35914,8 +35914,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6210759101538395873}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 16.7329, y: 220.09856, z: -195.10066}
-  m_LocalScale: {x: 19.056932, y: 12.101643, z: 1}
+  m_LocalPosition: {x: 16.7329, y: 220.09856, z: -195.1}
+  m_LocalScale: {x: 19.056932, y: 12.101643, z: 1.2966584}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 463493483802708889}
@@ -35954,7 +35954,7 @@ GameObject:
   - component: {fileID: 1552454353574755431}
   - component: {fileID: 4985265707989649525}
   - component: {fileID: 6738867732239334508}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Sidewalk_01 (69)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36148,7 +36148,7 @@ GameObject:
   - component: {fileID: 6553855642668588425}
   - component: {fileID: 5581515271153901515}
   - component: {fileID: 6952097268565367090}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Sidewalk_01 (31)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36248,7 +36248,7 @@ GameObject:
   - component: {fileID: 6151883044091284027}
   - component: {fileID: 6603697907927109979}
   - component: {fileID: 5693019752838184452}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Prop_Washingline_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36388,7 +36388,7 @@ GameObject:
   - component: {fileID: 8335866300503129055}
   - component: {fileID: 5354650162202451520}
   - component: {fileID: 5344553109272485285}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Sidewalk_01 (147)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36485,7 +36485,7 @@ GameObject:
   - component: {fileID: 6230100025129207513}
   - component: {fileID: 6230100025128168369}
   - component: {fileID: 6241214511621496123}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Sidewalk_01 (37)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36582,7 +36582,7 @@ GameObject:
   - component: {fileID: 5762125501599441943}
   - component: {fileID: 7863737856126420706}
   - component: {fileID: 7440036329139219516}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Sidewalk_01 (47)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36776,7 +36776,7 @@ GameObject:
   - component: {fileID: 6282765830988647777}
   - component: {fileID: 3235242665734041213}
   - component: {fileID: 7805607695682842489}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Sidewalk_Grate_02 (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36873,7 +36873,7 @@ GameObject:
   - component: {fileID: 2609632202376490085}
   - component: {fileID: 5660499931464679590}
   - component: {fileID: 7786515138903685795}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Sidewalk_01 (140)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36970,7 +36970,7 @@ GameObject:
   - component: {fileID: 6269707054678742052}
   - component: {fileID: 6269707054679974964}
   - component: {fileID: 6334973817097646742}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Sidewalk_Grate_02 (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37647,7 +37647,7 @@ GameObject:
   - component: {fileID: 9018380181325333161}
   - component: {fileID: 1486333085553110233}
   - component: {fileID: 4498282006449410632}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Wall_Exterior_Window_Ground_Glass_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37828,7 +37828,7 @@ GameObject:
   - component: {fileID: 6420187625497163301}
   - component: {fileID: 6420187625496107853}
   - component: {fileID: 6481220618251480519}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Sidewalk_01 (40)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37925,7 +37925,7 @@ GameObject:
   - component: {fileID: 3065387708903439662}
   - component: {fileID: 6782725913484854955}
   - component: {fileID: 6045659672262428911}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Bld_Apartment_Stack_03
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38023,7 +38023,7 @@ GameObject:
   - component: {fileID: 500892069241593899}
   - component: {fileID: 3995264418020213590}
   - component: {fileID: 1839284447887191446}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Sidewalk_01 (64)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38120,7 +38120,7 @@ GameObject:
   - component: {fileID: 6703714413653170856}
   - component: {fileID: 2231561485013887345}
   - component: {fileID: 8512279736720541412}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Sidewalk_01 (29)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38314,7 +38314,7 @@ GameObject:
   - component: {fileID: 6405198583610210707}
   - component: {fileID: 2134010010534161622}
   - component: {fileID: 1698070829622597228}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Door_02 (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38637,7 +38637,7 @@ GameObject:
   - component: {fileID: 5093783417525154748}
   - component: {fileID: 7693525960319440698}
   - component: {fileID: 1111930778426989604}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Sidewalk_01 (112)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38903,7 +38903,7 @@ GameObject:
   - component: {fileID: 1540001688755588770}
   - component: {fileID: 7978692956146420413}
   - component: {fileID: 1390712962774147207}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Bld_Shop_Corner_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39113,7 +39113,7 @@ GameObject:
   - component: {fileID: 194269155894875530}
   - component: {fileID: 4818871230740510384}
   - component: {fileID: 5004896316065593871}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Bridge_Pillar_01 (18)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39405,7 +39405,7 @@ GameObject:
   - component: {fileID: 4312293185777597736}
   - component: {fileID: 5212522378152609386}
   - component: {fileID: 2634830300724035765}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Prop_LightPole_Base_01 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39519,7 +39519,7 @@ GameObject:
   - component: {fileID: 5971725014734364279}
   - component: {fileID: 5893141293860293731}
   - component: {fileID: 4281558831936551918}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Wall_Exterior_DoubleDoor_01 (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40237,7 +40237,7 @@ GameObject:
   - component: {fileID: 8468498030027807575}
   - component: {fileID: 3686089715567980669}
   - component: {fileID: 5680263577690037902}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Door_Glass_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40321,7 +40321,7 @@ GameObject:
   - component: {fileID: 2125335598656565963}
   - component: {fileID: 1060815821188663162}
   - component: {fileID: 1922281960494744630}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Sidewalk_01 (36)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40418,7 +40418,7 @@ GameObject:
   - component: {fileID: 6767110907526690390}
   - component: {fileID: 1016818655408870049}
   - component: {fileID: 1551028320615474922}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Sidewalk_01 (111)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40707,7 +40707,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9125837966627426233}
   - component: {fileID: 4594489960524629704}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Directional Light (2)
   m_TagString: streetlights
   m_Icon: {fileID: 0}
@@ -40803,7 +40803,7 @@ GameObject:
   - component: {fileID: 1466466189286209590}
   - component: {fileID: 911907826758314996}
   - component: {fileID: 1921063192405176416}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Roof_04 (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40900,7 +40900,7 @@ GameObject:
   - component: {fileID: 8637975392624741530}
   - component: {fileID: 8585182445296637264}
   - component: {fileID: 7656173108816110446}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Sidewalk_01 (41)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41191,7 +41191,7 @@ GameObject:
   - component: {fileID: 5104361648838038046}
   - component: {fileID: 8274458365489859479}
   - component: {fileID: 7729695228237272335}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Bridge_Pillar_01 (21)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41288,7 +41288,7 @@ GameObject:
   - component: {fileID: 6788962335415948074}
   - component: {fileID: 6788962335414910530}
   - component: {fileID: 6836394103022127304}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Sidewalk_01 (25)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41482,7 +41482,7 @@ GameObject:
   - component: {fileID: 4468835819376366975}
   - component: {fileID: 4380802733952761416}
   - component: {fileID: 6430568780310093257}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Sidewalk_01 (62)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41579,7 +41579,7 @@ GameObject:
   - component: {fileID: 1558804160838270799}
   - component: {fileID: 5518416650517711137}
   - component: {fileID: 3093730965016928766}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Sidewalk_01 (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41773,7 +41773,7 @@ GameObject:
   - component: {fileID: 6927928829694638229}
   - component: {fileID: 6927928829695677949}
   - component: {fileID: 6974967384481080183}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Sidewalk_01 (36)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41981,7 +41981,7 @@ GameObject:
   - component: {fileID: 6936519330235814962}
   - component: {fileID: 6936519330234769196}
   - component: {fileID: 6965895456845274330}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Sidewalk_01 (24)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42645,7 +42645,7 @@ GameObject:
   - component: {fileID: 5009685593129266074}
   - component: {fileID: 1679541861261317646}
   - component: {fileID: 8312138863323206603}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Sidewalk_01 (37)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43382,7 +43382,7 @@ GameObject:
   - component: {fileID: 7093329615668622702}
   - component: {fileID: 7093329615669663750}
   - component: {fileID: 7104548006017592972}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Sidewalk_01 (14)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43771,7 +43771,7 @@ GameObject:
   - component: {fileID: 5624287446695460265}
   - component: {fileID: 4023112579265146906}
   - component: {fileID: 8607647191695781681}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Wall_Exterior_Window_Ground_01 (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43869,7 +43869,7 @@ GameObject:
   - component: {fileID: 7153432636724426173}
   - component: {fileID: 7153432636725467349}
   - component: {fileID: 7182929574528413279}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Sidewalk_01 (23)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44063,7 +44063,7 @@ GameObject:
   - component: {fileID: 842789687334214646}
   - component: {fileID: 6804135139349398536}
   - component: {fileID: 1874210910444389625}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Sidewalk_01 (145)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44174,8 +44174,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7237973569388141533}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 30.74, y: 216.59856, z: -195.10066}
-  m_LocalScale: {x: 15.24067, y: 12.101643, z: 1}
+  m_LocalPosition: {x: 30.74, y: 216.59856, z: -195.1}
+  m_LocalScale: {x: 15.24067, y: 12.101643, z: 1.2966584}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 463493483802708889}
@@ -44297,7 +44297,7 @@ GameObject:
   - component: {fileID: 7256448480555234005}
   - component: {fileID: 7256448480556277693}
   - component: {fileID: 7231910202619341111}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Sidewalk_01 (29)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44394,7 +44394,7 @@ GameObject:
   - component: {fileID: 7303157885215913775}
   - component: {fileID: 7303157885216963633}
   - component: {fileID: 7328102001033625543}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Sidewalk_01 (22)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44812,7 +44812,7 @@ GameObject:
   - component: {fileID: 65435108662697031}
   - component: {fileID: 8092879375686509230}
   - component: {fileID: 5660290912146409194}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Wall_Exterior_DoubleDoor_01 (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -45349,7 +45349,7 @@ GameObject:
   - component: {fileID: 7671869163088969546}
   - component: {fileID: 6431074142330893552}
   - component: {fileID: 2654260367980344002}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Sidewalk_01 (29)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -45640,7 +45640,7 @@ GameObject:
   - component: {fileID: 459615184541324953}
   - component: {fileID: 8687596749115611101}
   - component: {fileID: 7436251043844804173}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Sidewalk_01 (37)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -46589,7 +46589,7 @@ GameObject:
   - component: {fileID: 7528732086870740875}
   - component: {fileID: 7528732086871786645}
   - component: {fileID: 7535594643222103907}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Sidewalk_01 (14)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -46686,7 +46686,7 @@ GameObject:
   - component: {fileID: 1344436439970242742}
   - component: {fileID: 6243788191295871865}
   - component: {fileID: 4264764925771393817}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Sidewalk_01 (36)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -46976,7 +46976,7 @@ GameObject:
   - component: {fileID: 5651439262992067613}
   - component: {fileID: 2090624221135829318}
   - component: {fileID: 3097490664847693983}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Wall_Exterior_DoubleDoor_01 (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -47130,7 +47130,7 @@ GameObject:
   - component: {fileID: 7654316539743085975}
   - component: {fileID: 7654316539744572999}
   - component: {fileID: 7697212770235283725}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Wall_Exterior_01 (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -47726,7 +47726,7 @@ GameObject:
   - component: {fileID: 7269791504818705553}
   - component: {fileID: 3785348388630437423}
   - component: {fileID: 4075942095298774946}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Wall_Exterior_Window_Ground_Glass_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -47907,7 +47907,7 @@ GameObject:
   - component: {fileID: 4071256778441232799}
   - component: {fileID: 5606656175231625863}
   - component: {fileID: 4523087303450115422}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Roof_03 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -48101,7 +48101,7 @@ GameObject:
   - component: {fileID: 7835874520889746656}
   - component: {fileID: 7835874520890939184}
   - component: {fileID: 7806699894598219898}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Wall_Exterior_01 (20)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -48199,7 +48199,7 @@ GameObject:
   - component: {fileID: 6542115513548262845}
   - component: {fileID: 7630240978007611878}
   - component: {fileID: 3214557967494063995}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Bld_Apartment_Roof_02 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -48309,7 +48309,7 @@ GameObject:
   - component: {fileID: 7906571600885842670}
   - component: {fileID: 7906571600884805510}
   - component: {fileID: 7877136098142640396}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Sidewalk_01 (33)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -48406,7 +48406,7 @@ GameObject:
   - component: {fileID: 7914102098676570607}
   - component: {fileID: 7914102098677617393}
   - component: {fileID: 7871214056627589383}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Sidewalk_01 (21)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -48503,7 +48503,7 @@ GameObject:
   - component: {fileID: 3905422191582828694}
   - component: {fileID: 5713147937665802620}
   - component: {fileID: 4433528319881158090}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Sidewalk_01 (28)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -48600,7 +48600,7 @@ GameObject:
   - component: {fileID: 2125395412503907279}
   - component: {fileID: 9116172585089240724}
   - component: {fileID: 5704998489927436287}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Wall_Exterior_Window_Ground_01 (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -49099,7 +49099,7 @@ GameObject:
   - component: {fileID: 7983444376654767788}
   - component: {fileID: 7983444376654124412}
   - component: {fileID: 7936048643653057078}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Wall_Exterior_01 (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -49196,7 +49196,7 @@ GameObject:
   - component: {fileID: 5593775915351267637}
   - component: {fileID: 9046493280771395407}
   - component: {fileID: 1881990411691438665}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Roof_04 (22)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -49293,7 +49293,7 @@ GameObject:
   - component: {fileID: 231814585357689452}
   - component: {fileID: 3806395994595650510}
   - component: {fileID: 6002958473413836394}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Sidewalk_01 (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -49598,7 +49598,7 @@ GameObject:
   - component: {fileID: 7863237167944113755}
   - component: {fileID: 5807656914766599974}
   - component: {fileID: 371884389111821273}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Sidewalk_01 (138)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -49846,7 +49846,7 @@ GameObject:
   - component: {fileID: 7618525356937237146}
   - component: {fileID: 2719734270950453010}
   - component: {fileID: 7347320901203196744}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Wall_Exterior_Window_Ground_02 (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -49944,7 +49944,7 @@ GameObject:
   - component: {fileID: 8082698763432279515}
   - component: {fileID: 8082698763431219379}
   - component: {fileID: 8125477526543951417}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Sidewalk_01 (30)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -50138,7 +50138,7 @@ GameObject:
   - component: {fileID: 2609779304786017740}
   - component: {fileID: 5801228431262862025}
   - component: {fileID: 4080224583757596070}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Sidewalk_01 (46)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -50432,7 +50432,7 @@ GameObject:
   - component: {fileID: 8156894173540438934}
   - component: {fileID: 8202429308980987120}
   - component: {fileID: 8202383670040971122}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Wall_Exterior_Ground_01 (18)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -50750,7 +50750,7 @@ GameObject:
   - component: {fileID: 4457771220600633741}
   - component: {fileID: 5447617647509394288}
   - component: {fileID: 7710633836060467235}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Sidewalk_01 (115)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -50847,7 +50847,7 @@ GameObject:
   - component: {fileID: 9060906423458654269}
   - component: {fileID: 8418504395110528285}
   - component: {fileID: 7054532530471942388}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Sidewalk_01 (137)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -50943,7 +50943,7 @@ GameObject:
   - component: {fileID: 4938090719356746294}
   - component: {fileID: 2680962448321893067}
   - component: {fileID: 893540393122958640}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Wall_Exterior_Window_Ground_Glass_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -51606,7 +51606,7 @@ GameObject:
   - component: {fileID: 5642318875423121899}
   - component: {fileID: 6899579797446655619}
   - component: {fileID: 933262340336740779}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Sidewalk_01 (21)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -51928,7 +51928,7 @@ GameObject:
   - component: {fileID: 8704163072181237855}
   - component: {fileID: 4682638966089341858}
   - component: {fileID: 6553115980568428226}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Sidewalk_01 (52)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -52026,7 +52026,7 @@ GameObject:
   - component: {fileID: 215367083044976757}
   - component: {fileID: 502280216848166596}
   - component: {fileID: 5007981626440909451}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Bld_OfficeOld_Large_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -52235,7 +52235,7 @@ GameObject:
   - component: {fileID: 8440044206560634029}
   - component: {fileID: 8440044206561675717}
   - component: {fileID: 8487581106519883599}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Sidewalk_01 (32)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -52332,7 +52332,7 @@ GameObject:
   - component: {fileID: 6854028264175787156}
   - component: {fileID: 8445939381978005608}
   - component: {fileID: 4416194378291665314}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Sidewalk_01 (15)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -52932,7 +52932,7 @@ GameObject:
   - component: {fileID: 4997918918607418588}
   - component: {fileID: 5616948090791831313}
   - component: {fileID: 9073217116103683024}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Sidewalk_01 (136)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -53298,7 +53298,7 @@ GameObject:
   - component: {fileID: 8610180439351136997}
   - component: {fileID: 8610180439352187387}
   - component: {fileID: 8616832954739038733}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Sidewalk_01 (25)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -53395,7 +53395,7 @@ GameObject:
   - component: {fileID: 6655841517216500487}
   - component: {fileID: 6684835654516939684}
   - component: {fileID: 526262116782424006}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Sidewalk_01 (32)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -53894,7 +53894,7 @@ GameObject:
   - component: {fileID: 6093582660843417219}
   - component: {fileID: 4633245440939359796}
   - component: {fileID: 7649374913185012484}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Roof_04 (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -53990,7 +53990,7 @@ GameObject:
   - component: {fileID: 2859245151974978577}
   - component: {fileID: 709081050811473448}
   - component: {fileID: 2436306901294670179}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Door_Glass_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -54473,7 +54473,7 @@ GameObject:
   - component: {fileID: 344188453665971962}
   - component: {fileID: 2801613505249317084}
   - component: {fileID: 56991333506407805}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Wall_Exterior_Window_Ground_Glass_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -54557,7 +54557,7 @@ GameObject:
   - component: {fileID: 1730163871343036362}
   - component: {fileID: 2966540092350116483}
   - component: {fileID: 3333152375749119480}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Door_02 (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -55057,7 +55057,7 @@ GameObject:
   - component: {fileID: 8678289835651886575}
   - component: {fileID: 7805337305214705498}
   - component: {fileID: 3914904803643399325}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Sidewalk_01 (65)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -55154,7 +55154,7 @@ GameObject:
   - component: {fileID: 2563917045744670664}
   - component: {fileID: 2825176392944837751}
   - component: {fileID: 305553982822304930}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Wall_Exterior_Window_Ground_01 (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -55446,7 +55446,7 @@ GameObject:
   - component: {fileID: 4657790439049695940}
   - component: {fileID: 103339769552020284}
   - component: {fileID: 5904605506477667620}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Sidewalk_01 (35)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -55543,7 +55543,7 @@ GameObject:
   - component: {fileID: 8955202237489085777}
   - component: {fileID: 8955202237488025657}
   - component: {fileID: 8984603792802391731}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Sidewalk_01 (43)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -55736,7 +55736,7 @@ GameObject:
   - component: {fileID: 5835923062342415514}
   - component: {fileID: 8498412450740155245}
   - component: {fileID: 5417889559184523521}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Bld_Shop_Corner_01_Glass
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -55931,7 +55931,7 @@ GameObject:
   - component: {fileID: 1451216689959663443}
   - component: {fileID: 1336515620278296395}
   - component: {fileID: 1572901552426450726}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Sidewalk_01 (142)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -56223,7 +56223,7 @@ GameObject:
   - component: {fileID: 5034770960884120363}
   - component: {fileID: 4273091147730716491}
   - component: {fileID: 7851216581135584052}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Bridge_Pillar_01 (20)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -56418,7 +56418,7 @@ GameObject:
   - component: {fileID: 6321191599934946111}
   - component: {fileID: 1950874577028725011}
   - component: {fileID: 7571921726501394287}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Sidewalk_01 (71)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -56612,7 +56612,7 @@ GameObject:
   - component: {fileID: 9188251706057987456}
   - component: {fileID: 9188251706056941214}
   - component: {fileID: 9181600114557689192}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SM_Env_Sidewalk_01 (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -56884,7 +56884,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 138182, guid: 34bd91b097c07bb44bea4694542e023b, type: 3}
       propertyPath: m_Layer
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 472798, guid: 34bd91b097c07bb44bea4694542e023b, type: 3}
       propertyPath: m_RootOrder
@@ -57083,6 +57083,10 @@ PrefabInstance:
     - target: {fileID: 1449411819928282, guid: 91dc1ab115d03f04b930f9e619fb953f, type: 3}
       propertyPath: m_Name
       value: table2 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1449411819928282, guid: 91dc1ab115d03f04b930f9e619fb953f, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4653498214664590, guid: 91dc1ab115d03f04b930f9e619fb953f, type: 3}
       propertyPath: m_RootOrder
@@ -57552,6 +57556,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: locker_3 (24)
       objectReference: {fileID: 0}
+    - target: {fileID: 1796756107964060, guid: 0480571cf64de034d9d908aa51157db8, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4787288408625336, guid: 0480571cf64de034d9d908aa51157db8, type: 3}
       propertyPath: m_RootOrder
       value: 24
@@ -58020,7 +58028,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 138182, guid: 34bd91b097c07bb44bea4694542e023b, type: 3}
       propertyPath: m_Layer
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 472798, guid: 34bd91b097c07bb44bea4694542e023b, type: 3}
       propertyPath: m_RootOrder
@@ -58198,7 +58206,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 138182, guid: 34bd91b097c07bb44bea4694542e023b, type: 3}
       propertyPath: m_Layer
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 472798, guid: 34bd91b097c07bb44bea4694542e023b, type: 3}
       propertyPath: m_RootOrder
@@ -59014,6 +59022,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: locker_3 (34)
       objectReference: {fileID: 0}
+    - target: {fileID: 1796756107964060, guid: 0480571cf64de034d9d908aa51157db8, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4787288408625336, guid: 0480571cf64de034d9d908aa51157db8, type: 3}
       propertyPath: m_RootOrder
       value: 34
@@ -59126,6 +59138,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: locker_3 (25)
       objectReference: {fileID: 0}
+    - target: {fileID: 1796756107964060, guid: 0480571cf64de034d9d908aa51157db8, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4787288408625336, guid: 0480571cf64de034d9d908aa51157db8, type: 3}
       propertyPath: m_RootOrder
       value: 25
@@ -59190,7 +59206,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 195910, guid: ae7b8255185ace64ca379cb1ca3b24e6, type: 3}
       propertyPath: m_Layer
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 413058, guid: ae7b8255185ace64ca379cb1ca3b24e6, type: 3}
       propertyPath: m_RootOrder
@@ -59542,7 +59558,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 194848, guid: 19996e14d00fca24abb5f94dad0acc41, type: 3}
       propertyPath: m_Layer
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 477178, guid: 19996e14d00fca24abb5f94dad0acc41, type: 3}
       propertyPath: m_RootOrder
@@ -59705,6 +59721,10 @@ PrefabInstance:
     - target: {fileID: 1796756107964060, guid: 0480571cf64de034d9d908aa51157db8, type: 3}
       propertyPath: m_Name
       value: locker_3 (38)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1796756107964060, guid: 0480571cf64de034d9d908aa51157db8, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4787288408625336, guid: 0480571cf64de034d9d908aa51157db8, type: 3}
       propertyPath: m_RootOrder
@@ -59900,6 +59920,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: locker_3 (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 1796756107964060, guid: 0480571cf64de034d9d908aa51157db8, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4787288408625336, guid: 0480571cf64de034d9d908aa51157db8, type: 3}
       propertyPath: m_RootOrder
       value: 10
@@ -60023,6 +60047,10 @@ PrefabInstance:
     - target: {fileID: 182092, guid: 73fd09c03ac478646b1ce53fe6cc9cde, type: 3}
       propertyPath: m_Name
       value: SM_Env_Ceiling_Light_03 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 182092, guid: 73fd09c03ac478646b1ce53fe6cc9cde, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 413034, guid: 73fd09c03ac478646b1ce53fe6cc9cde, type: 3}
       propertyPath: m_RootOrder
@@ -60336,7 +60364,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 138182, guid: 34bd91b097c07bb44bea4694542e023b, type: 3}
       propertyPath: m_Layer
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 472798, guid: 34bd91b097c07bb44bea4694542e023b, type: 3}
       propertyPath: m_RootOrder
@@ -60714,7 +60742,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 195910, guid: ae7b8255185ace64ca379cb1ca3b24e6, type: 3}
       propertyPath: m_Layer
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 413058, guid: ae7b8255185ace64ca379cb1ca3b24e6, type: 3}
       propertyPath: m_RootOrder
@@ -60892,7 +60920,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 195910, guid: ae7b8255185ace64ca379cb1ca3b24e6, type: 3}
       propertyPath: m_Layer
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 413058, guid: ae7b8255185ace64ca379cb1ca3b24e6, type: 3}
       propertyPath: m_RootOrder
@@ -61396,6 +61424,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: locker_3 (32)
       objectReference: {fileID: 0}
+    - target: {fileID: 1796756107964060, guid: 0480571cf64de034d9d908aa51157db8, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4787288408625336, guid: 0480571cf64de034d9d908aa51157db8, type: 3}
       propertyPath: m_RootOrder
       value: 32
@@ -61719,6 +61751,10 @@ PrefabInstance:
     - target: {fileID: 1796756107964060, guid: 0480571cf64de034d9d908aa51157db8, type: 3}
       propertyPath: m_Name
       value: locker_3 (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1796756107964060, guid: 0480571cf64de034d9d908aa51157db8, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4787288408625336, guid: 0480571cf64de034d9d908aa51157db8, type: 3}
       propertyPath: m_RootOrder
@@ -62966,6 +63002,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_Ceiling_Light_03 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 182092, guid: 73fd09c03ac478646b1ce53fe6cc9cde, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 413034, guid: 73fd09c03ac478646b1ce53fe6cc9cde, type: 3}
       propertyPath: m_RootOrder
       value: 66
@@ -63240,6 +63280,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: locker_3 (31)
       objectReference: {fileID: 0}
+    - target: {fileID: 1796756107964060, guid: 0480571cf64de034d9d908aa51157db8, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4787288408625336, guid: 0480571cf64de034d9d908aa51157db8, type: 3}
       propertyPath: m_RootOrder
       value: 31
@@ -63355,6 +63399,10 @@ PrefabInstance:
     - target: {fileID: 1796756107964060, guid: 0480571cf64de034d9d908aa51157db8, type: 3}
       propertyPath: m_Name
       value: locker_3 (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1796756107964060, guid: 0480571cf64de034d9d908aa51157db8, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4787288408625336, guid: 0480571cf64de034d9d908aa51157db8, type: 3}
       propertyPath: m_RootOrder
@@ -63876,6 +63924,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: locker_3 (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 1796756107964060, guid: 0480571cf64de034d9d908aa51157db8, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4787288408625336, guid: 0480571cf64de034d9d908aa51157db8, type: 3}
       propertyPath: m_RootOrder
       value: 13
@@ -64048,7 +64100,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 194848, guid: 19996e14d00fca24abb5f94dad0acc41, type: 3}
       propertyPath: m_Layer
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 477178, guid: 19996e14d00fca24abb5f94dad0acc41, type: 3}
       propertyPath: m_RootOrder
@@ -64212,6 +64264,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_Ceiling_Light_03 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 182092, guid: 73fd09c03ac478646b1ce53fe6cc9cde, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 413034, guid: 73fd09c03ac478646b1ce53fe6cc9cde, type: 3}
       propertyPath: m_RootOrder
       value: 70
@@ -64351,6 +64407,10 @@ PrefabInstance:
     - target: {fileID: 1165130320748170, guid: 4bc798f368a5f214ba2ad9cc17bc9b80, type: 3}
       propertyPath: m_Name
       value: fire1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1165130320748170, guid: 4bc798f368a5f214ba2ad9cc17bc9b80, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4405267496668470, guid: 4bc798f368a5f214ba2ad9cc17bc9b80, type: 3}
       propertyPath: m_RootOrder
@@ -65164,6 +65224,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: locker_3 (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 1796756107964060, guid: 0480571cf64de034d9d908aa51157db8, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4787288408625336, guid: 0480571cf64de034d9d908aa51157db8, type: 3}
       propertyPath: m_RootOrder
       value: 8
@@ -65375,6 +65439,10 @@ PrefabInstance:
     - target: {fileID: 1796756107964060, guid: 0480571cf64de034d9d908aa51157db8, type: 3}
       propertyPath: m_Name
       value: locker_3 (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1796756107964060, guid: 0480571cf64de034d9d908aa51157db8, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4787288408625336, guid: 0480571cf64de034d9d908aa51157db8, type: 3}
       propertyPath: m_RootOrder
@@ -65614,7 +65682,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 138182, guid: 34bd91b097c07bb44bea4694542e023b, type: 3}
       propertyPath: m_Layer
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 472798, guid: 34bd91b097c07bb44bea4694542e023b, type: 3}
       propertyPath: m_RootOrder
@@ -65801,6 +65869,10 @@ PrefabInstance:
     - target: {fileID: 1796756107964060, guid: 0480571cf64de034d9d908aa51157db8, type: 3}
       propertyPath: m_Name
       value: locker_3 (33)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1796756107964060, guid: 0480571cf64de034d9d908aa51157db8, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4787288408625336, guid: 0480571cf64de034d9d908aa51157db8, type: 3}
       propertyPath: m_RootOrder
@@ -68014,6 +68086,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_Ceiling_Light_03 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 182092, guid: 73fd09c03ac478646b1ce53fe6cc9cde, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 413034, guid: 73fd09c03ac478646b1ce53fe6cc9cde, type: 3}
       propertyPath: m_RootOrder
       value: 68
@@ -68404,7 +68480,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 195910, guid: ae7b8255185ace64ca379cb1ca3b24e6, type: 3}
       propertyPath: m_Layer
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 413058, guid: ae7b8255185ace64ca379cb1ca3b24e6, type: 3}
       propertyPath: m_RootOrder
@@ -68629,6 +68705,10 @@ PrefabInstance:
     - target: {fileID: 1449411819928282, guid: 91dc1ab115d03f04b930f9e619fb953f, type: 3}
       propertyPath: m_Name
       value: table2 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1449411819928282, guid: 91dc1ab115d03f04b930f9e619fb953f, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4653498214664590, guid: 91dc1ab115d03f04b930f9e619fb953f, type: 3}
       propertyPath: m_RootOrder
@@ -69422,6 +69502,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: locker_3 (36)
       objectReference: {fileID: 0}
+    - target: {fileID: 1796756107964060, guid: 0480571cf64de034d9d908aa51157db8, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4787288408625336, guid: 0480571cf64de034d9d908aa51157db8, type: 3}
       propertyPath: m_RootOrder
       value: 36
@@ -69541,6 +69625,10 @@ PrefabInstance:
     - target: {fileID: 1796756107964060, guid: 0480571cf64de034d9d908aa51157db8, type: 3}
       propertyPath: m_Name
       value: locker_3 (35)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1796756107964060, guid: 0480571cf64de034d9d908aa51157db8, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4787288408625336, guid: 0480571cf64de034d9d908aa51157db8, type: 3}
       propertyPath: m_RootOrder
@@ -70044,6 +70132,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: fire
       objectReference: {fileID: 0}
+    - target: {fileID: 1197077392500550, guid: 9b95a03e0e9ba914da4f1c7fb5a46ab7, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4252114463333326, guid: 9b95a03e0e9ba914da4f1c7fb5a46ab7, type: 3}
       propertyPath: m_RootOrder
       value: 42
@@ -70229,6 +70321,10 @@ PrefabInstance:
     - target: {fileID: 1796756107964060, guid: 0480571cf64de034d9d908aa51157db8, type: 3}
       propertyPath: m_Name
       value: locker_3 (29)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1796756107964060, guid: 0480571cf64de034d9d908aa51157db8, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4787288408625336, guid: 0480571cf64de034d9d908aa51157db8, type: 3}
       propertyPath: m_RootOrder
@@ -70894,6 +70990,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: locker_3 (39)
       objectReference: {fileID: 0}
+    - target: {fileID: 1796756107964060, guid: 0480571cf64de034d9d908aa51157db8, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4787288408625336, guid: 0480571cf64de034d9d908aa51157db8, type: 3}
       propertyPath: m_RootOrder
       value: 39
@@ -71118,6 +71218,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: locker_3 (27)
       objectReference: {fileID: 0}
+    - target: {fileID: 1796756107964060, guid: 0480571cf64de034d9d908aa51157db8, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4787288408625336, guid: 0480571cf64de034d9d908aa51157db8, type: 3}
       propertyPath: m_RootOrder
       value: 27
@@ -71232,7 +71336,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 194848, guid: 19996e14d00fca24abb5f94dad0acc41, type: 3}
       propertyPath: m_Layer
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 477178, guid: 19996e14d00fca24abb5f94dad0acc41, type: 3}
       propertyPath: m_RootOrder
@@ -71598,6 +71702,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: locker_3 (26)
       objectReference: {fileID: 0}
+    - target: {fileID: 1796756107964060, guid: 0480571cf64de034d9d908aa51157db8, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4787288408625336, guid: 0480571cf64de034d9d908aa51157db8, type: 3}
       propertyPath: m_RootOrder
       value: 26
@@ -71933,6 +72041,10 @@ PrefabInstance:
     - target: {fileID: 1796756107964060, guid: 0480571cf64de034d9d908aa51157db8, type: 3}
       propertyPath: m_Name
       value: locker_3 (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1796756107964060, guid: 0480571cf64de034d9d908aa51157db8, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4787288408625336, guid: 0480571cf64de034d9d908aa51157db8, type: 3}
       propertyPath: m_RootOrder
@@ -72682,7 +72794,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 138182, guid: 34bd91b097c07bb44bea4694542e023b, type: 3}
       propertyPath: m_Layer
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 472798, guid: 34bd91b097c07bb44bea4694542e023b, type: 3}
       propertyPath: m_RootOrder
@@ -72807,6 +72919,10 @@ PrefabInstance:
     - target: {fileID: 1796756107964060, guid: 0480571cf64de034d9d908aa51157db8, type: 3}
       propertyPath: m_Name
       value: locker_3 (37)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1796756107964060, guid: 0480571cf64de034d9d908aa51157db8, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4787288408625336, guid: 0480571cf64de034d9d908aa51157db8, type: 3}
       propertyPath: m_RootOrder
@@ -73748,6 +73864,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: locker_3 (28)
       objectReference: {fileID: 0}
+    - target: {fileID: 1796756107964060, guid: 0480571cf64de034d9d908aa51157db8, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4787288408625336, guid: 0480571cf64de034d9d908aa51157db8, type: 3}
       propertyPath: m_RootOrder
       value: 28
@@ -74538,6 +74658,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: locker_3 (30)
       objectReference: {fileID: 0}
+    - target: {fileID: 1796756107964060, guid: 0480571cf64de034d9d908aa51157db8, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4787288408625336, guid: 0480571cf64de034d9d908aa51157db8, type: 3}
       propertyPath: m_RootOrder
       value: 30
@@ -74599,6 +74723,10 @@ PrefabInstance:
     - target: {fileID: 1449411819928282, guid: 91dc1ab115d03f04b930f9e619fb953f, type: 3}
       propertyPath: m_Name
       value: table2 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1449411819928282, guid: 91dc1ab115d03f04b930f9e619fb953f, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4653498214664590, guid: 91dc1ab115d03f04b930f9e619fb953f, type: 3}
       propertyPath: m_RootOrder
@@ -74673,6 +74801,10 @@ PrefabInstance:
     - target: {fileID: 1796756107964060, guid: 0480571cf64de034d9d908aa51157db8, type: 3}
       propertyPath: m_Name
       value: locker_3 (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1796756107964060, guid: 0480571cf64de034d9d908aa51157db8, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4787288408625336, guid: 0480571cf64de034d9d908aa51157db8, type: 3}
       propertyPath: m_RootOrder
@@ -75856,7 +75988,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 138182, guid: 34bd91b097c07bb44bea4694542e023b, type: 3}
       propertyPath: m_Layer
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 472798, guid: 34bd91b097c07bb44bea4694542e023b, type: 3}
       propertyPath: m_RootOrder

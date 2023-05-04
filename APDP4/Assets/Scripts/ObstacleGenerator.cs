@@ -78,7 +78,7 @@ public class ObstacleGenerator : MonoBehaviour
                     }
 
                     // Spawn the obstacles
-                    Instantiate(obstacleToSpawn, lanes[laneIndex].position + new Vector3(-1.6f, 4.181f, player.position.z + 0f), Quaternion.identity);
+                    Instantiate(obstacleToSpawn, lanes[laneIndex].position + new Vector3(-1.6f, 4.181f, player.position.z + 25f), Quaternion.identity);
 
                     GameObject otherObstacleToSpawn = null;
                     GameObject thirdObstacleToSpawn = null;
@@ -104,8 +104,8 @@ public class ObstacleGenerator : MonoBehaviour
                         }
 
                         //Instantiate(obstacleToSpawn, lanes[laneIndex].position + new Vector3(-1.6f, 4.181f, player.position.z + 50f), Quaternion.identity);
-                        Instantiate(thirdObstacleToSpawn, availableLanes[0].position + new Vector3(-1.6f, 4.181f, player.position.z + 50f), Quaternion.identity);
-                        Instantiate(otherObstacleToSpawn, otherLane.position + new Vector3(-1.6f, 4.181f, player.position.z + 50f), Quaternion.identity);
+                        Instantiate(thirdObstacleToSpawn, availableLanes[0].position + new Vector3(-1.6f, 4.181f, player.position.z + 25f), Quaternion.identity);
+                        Instantiate(otherObstacleToSpawn, otherLane.position + new Vector3(-1.6f, 4.181f, player.position.z + 25f), Quaternion.identity);
                         spawnOtherLanes = false;
                     }
                 }   
