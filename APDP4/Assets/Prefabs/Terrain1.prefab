@@ -17229,7 +17229,7 @@ GameObject:
   - component: {fileID: 1210062652270754106}
   m_Layer: 6
   m_Name: Terrain1
-  m_TagString: Untagged
+  m_TagString: trafficcollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

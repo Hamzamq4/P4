@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657838, g: 0.49641228, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1875,13 +1875,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0e1091a184c04f03bc1677ee5cfc5ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioClip: {fileID: 8300000, guid: bf28e27f972ba4ed096ed858a2d46f84, type: 3}
+  trafficClip: {fileID: 8300000, guid: bf28e27f972ba4ed096ed858a2d46f84, type: 3}
+  schoolClip: {fileID: 8300000, guid: 41b595778ff124ff0bbbf474aa741fd8, type: 3}
   maxLevel: 1
   levelIncrement: 0.01
   audioSource: {fileID: 637290103}
   currentLevel: 0
-  timeToIncrement: 10
-  player: {fileID: 0}
+  timeToIncrement: 60
+  player: {fileID: 6450177392892860472}
+  fadeDuration: 1
+  fadeTimer: 0
 --- !u!82 &637290103
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1892,9 +1895,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: bf28e27f972ba4ed096ed858a2d46f84, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.05
+  m_Volume: 0.1
   m_Pitch: 1
   Loop: 0
   Mute: 0
