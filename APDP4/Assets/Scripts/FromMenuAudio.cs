@@ -7,12 +7,15 @@ public class FromMenuAudio : MonoBehaviour
 {   
     public AudioClip longIntro;
     public AudioSource radio;
+    public GameObject gameManager;
     private bool hasPlayedIntro = false;
     private int activeScene;
     // Start is called before the first frame update
     void Start()
     {
         DontDestroyOnLoad(gameObject);
+        GameObject gameManager = GameObject.FindGameObjectWithTag("GameManager");
+
     }
 
     // Update is called once per frame
@@ -28,6 +31,9 @@ public class FromMenuAudio : MonoBehaviour
         radio.clip = longIntro;
         radio.Play();
         hasPlayedIntro = true;
+
+        GameObject gameManager = GameObject.FindGameObjectWithTag("GameManager");
+        gameManager.GetComponent<ObstacleGenerator>().spawnStartTime = 15;
         }
     }
     }

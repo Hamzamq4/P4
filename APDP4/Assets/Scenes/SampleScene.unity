@@ -1149,7 +1149,7 @@ GameObject:
   - component: {fileID: 558159029}
   m_Layer: 0
   m_Name: GameManager
-  m_TagString: Untagged
+  m_TagString: GameManager
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1232,8 +1232,8 @@ MonoBehaviour:
   - {fileID: 1939034542094382107, guid: 2c6f946e3ba29ca4f94d0b4135f5091d, type: 3}
   - {fileID: 5717508223820659031, guid: bc88c59c7296b431dbbcd16d5b77e449, type: 3}
   - {fileID: 7175974340718362378, guid: 282cafd08a02842e5896c169d37917f5, type: 3}
-  soundObstacleSpacing: 3
-  spawnStartTime: 15
+  soundObstacleSpacing: 8
+  spawnStartTime: 3
 --- !u!114 &558159029
 MonoBehaviour:
   m_ObjectHideFlags: 0

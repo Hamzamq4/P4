@@ -19,7 +19,7 @@ public class laserAudioDelay : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        elapsedSeconds += Time.fixedDeltaTime;
+        elapsedSeconds += Time.deltaTime;
         if (elapsedSeconds >= delayTime)
             
             if(!hasPlayed)
