@@ -3281,7 +3281,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 6450177392892860472}
   fogWall: {fileID: 8572871347106903977, guid: 4f8232b2e12518c4e8f7b84d8da6bea5, type: 3}
-  wallDistance: 75
+  wallDistance: 100
 --- !u!4 &1232410558
 Transform:
   m_ObjectHideFlags: 0
