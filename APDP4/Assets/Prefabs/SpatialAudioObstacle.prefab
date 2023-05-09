@@ -50,8 +50,8 @@ MonoBehaviour:
   spatialAudio: {fileID: 5717508223820659032}
   audioSource: {fileID: 0}
   obstacleSounds:
-  - {fileID: 8300000, guid: 6a7bf516f4d23456d91010aca4073dd5, type: 3}
-  player: {fileID: 0}
+  - {fileID: 8300000, guid: 7bb59b7489f8c1045af546056b671372, type: 3}
+  radio: {fileID: 0}
   reactionTime: 5
 --- !u!82 &5717508223820659030
 AudioSource:

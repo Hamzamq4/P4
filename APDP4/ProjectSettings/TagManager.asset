@@ -13,6 +13,7 @@ TagManager:
   - RadioLeft
   - RadioRight
   - FromMenu
+  - GameManager
   layers:
   - Default
   - TransparentFX

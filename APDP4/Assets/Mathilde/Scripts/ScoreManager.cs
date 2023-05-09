@@ -47,33 +47,13 @@ public class ScoreManager : MonoBehaviour
 
     private AudioSource radio;
 
-    void Awake()
-    {
-        scoreFilePath = Path.Combine(Application.dataPath, "Mathilde", "Scripts", "scores.csv");
-    }
-
     // Start is called before the first frame update
     void Start()
     {
-        List<float> scores = new List<float>();
-        // Read all lines from the file
-        string[] lines = File.ReadAllLines(scoreFilePath);
-
-        // Loop through all lines and try to parse them as floats
-        foreach (string line in lines)
+        if (PlayerPrefs.HasKey("HighScore"))
         {
-            if (float.TryParse(line, out float score))
-            {
-                scores.Add(score);
-            }
-            else
-            {
-                Debug.LogError("Failed to parse score: " + line);
-            }
+            highScoreCount = PlayerPrefs.GetFloat("HighScore");
         }
-
-        highScoreCount = scores.Any() ? scores.Max() : 0;
-        highScoreText.text = "High Score: " + Mathf.Round(highScoreCount).ToString();
 
         Time.timeScale = 1;
 
@@ -125,7 +105,7 @@ public class ScoreManager : MonoBehaviour
                 if (!gameOverPanel.activeSelf)
                 {
                     scoreIncreasing = false;
-                    pAnimator.SetTrigger("Death_b");
+                    //pAnimator.SetTrigger("Death_b");
                     isPlayerAlive = false;
                     StartCoroutine(ShowGameOverPanel());
                 }
@@ -146,27 +126,13 @@ public class ScoreManager : MonoBehaviour
         if (scoreCount > highScoreCount)
         {
             highScoreCount = scoreCount;
+            PlayerPrefs.SetFloat("HighScore", highScoreCount);
         }
 
         scoreText.text = "Score: " + Mathf.Round(scoreCount);
         endScoreText.text = "Score: " + Mathf.Round(scoreCount);
         highScoreText.text = "High Score: " + Mathf.Round(highScoreCount).ToString();
-        scoreCount.ToString("0.#####");
 
-        if (!isPlayerAlive)
-        {
-            if (!saveScore)
-            {
-                // Write the score to the file
-                WriteScoreToFile(true);
-                saveScore = true;
-            }
-        }
-        else
-        {
-            // Don't write the score to the file
-            WriteScoreToFile(false);
-        }
     }
 
 
@@ -221,21 +187,6 @@ public class ScoreManager : MonoBehaviour
         //pAnimator.SetTrigger("Static_b");
         ScoreManager.isPlayerAlive = true;
 
-
-    }
-
-
-    private void WriteScoreToFile(bool shouldWrite)
-    {
-        if (shouldWrite)
-        {
-            using (StreamWriter sw = File.AppendText(scoreFilePath))
-            {
-                //sw.WriteLine("{0:F5}", scoreCount);
-                sw.WriteLine(scoreCount.ToString());
-                sw.Flush();
-            }
-        }
     }
 
 

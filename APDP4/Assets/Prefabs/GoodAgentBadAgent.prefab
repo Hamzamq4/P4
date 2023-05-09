@@ -53,7 +53,10 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  audioSource: {fileID: 3482742823152455133}
+  radio: {fileID: 0}
+  radioLeft: {fileID: 0}
+  radioRight: {fileID: 0}
+  leftOrRight: []
   goodGuyLeft:
   - {fileID: 8300000, guid: 02fe62d5e9e3f408186ee9fe560e0d74, type: 3}
   - {fileID: 8300000, guid: 0e57b06bfaa6d4b508049a7996b2ba72, type: 3}
@@ -75,7 +78,7 @@ MonoBehaviour:
   badGuyRight:
   - {fileID: 8300000, guid: eebb540e2ebd74f24a496bc3b1d9c518, type: 3}
   - {fileID: 8300000, guid: d570b6dc3d4b942db815097e62365449, type: 3}
-  reactionTime: 5
+  reactionTime: 7
 --- !u!82 &3482742823152455133
 AudioSource:
   m_ObjectHideFlags: 0
