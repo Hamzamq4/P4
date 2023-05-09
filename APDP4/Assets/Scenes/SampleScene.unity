@@ -1879,7 +1879,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   trafficClip: {fileID: 8300000, guid: bf28e27f972ba4ed096ed858a2d46f84, type: 3}
-  schoolClip: {fileID: 8300000, guid: 41b595778ff124ff0bbbf474aa741fd8, type: 3}
+  schoolClip: {fileID: 8300000, guid: 3e2001b1572b940caa196c541a759859, type: 3}
   maxLevel: 1
   levelIncrement: 0.01
   audioSource: {fileID: 637290103}
