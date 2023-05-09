@@ -27,7 +27,6 @@ public class LaserMovement : MonoBehaviour
         // Only follow the target if it exists
         if (target != null)
         {
-             elapsedSeconds += Time.fixedDeltaTime;
             // Get the target's position
             Vector3 targetPosition = target.transform.position;
             currentTargetZ = target.transform.position.z;
@@ -41,14 +40,14 @@ public class LaserMovement : MonoBehaviour
             // Otherwise, accelerate quickly and move past the target object
             else
             {
-                float distance = acceleration * Time.fixedDeltaTime * Time.fixedDeltaTime;
+                float distance = acceleration * Time.deltaTime * Time.deltaTime;
                 
                 // Move our position ahead of the target object along the z-axis
                 transform.position += new Vector3(0f, 0f, distance);
             }
 
             // Increment the elapsed time
-            elapsedSeconds += Time.fixedDeltaTime;
+            elapsedSeconds += Time.deltaTime;
         }
     }
 }
