@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657838, g: 0.49641228, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1232,7 +1232,7 @@ MonoBehaviour:
   - {fileID: 1939034542094382107, guid: 2c6f946e3ba29ca4f94d0b4135f5091d, type: 3}
   - {fileID: 5717508223820659031, guid: bc88c59c7296b431dbbcd16d5b77e449, type: 3}
   - {fileID: 7175974340718362378, guid: 282cafd08a02842e5896c169d37917f5, type: 3}
-  soundObstacleSpacing: 8
+  soundObstacleSpacing: 10
   spawnStartTime: 3
 --- !u!114 &558159029
 MonoBehaviour:
