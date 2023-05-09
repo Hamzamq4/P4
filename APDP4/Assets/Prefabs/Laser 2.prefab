@@ -101,7 +101,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 0}
   followDistance: 22
-  acceleration: 50000
+  acceleration: 30000
 --- !u!82 &-1564269490536508623
 AudioSource:
   m_ObjectHideFlags: 0
