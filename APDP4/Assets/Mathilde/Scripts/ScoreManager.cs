@@ -181,6 +181,7 @@ public class ScoreManager : MonoBehaviour
 
     public void ReloadGame()
     {
+        //pAnimator.ResetTrigger("Death_b");
         SceneManager.LoadScene("SampleScene");
         scoreUI.gameObject.SetActive(true);
         health = 2;

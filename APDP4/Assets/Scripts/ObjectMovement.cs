@@ -28,10 +28,11 @@ public class ObjectMovement : MonoBehaviour
     {
         if (other.CompareTag("schoolcollider"))
         {
-            isFrozen = true; // Freeze the object in place
+            //isFrozen = true; // Freeze the object in place
             // Instantiate a new particle system at the position of the destroyed gameobject
             //Instantiate(particleSystemPrefab, other.gameObject.transform.position, Quaternion.identity);
-            //Destroy(gameObject);
+            new WaitForSeconds(1f); // wait for 1 seconds
+            Destroy(gameObject);
         }
     }
 }

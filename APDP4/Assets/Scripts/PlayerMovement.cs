@@ -60,6 +60,8 @@ public class PlayerMovement : MonoBehaviour
         if (!ScoreManager.isPlayerAlive)
         {
             pAnimator.SetTrigger("Death_b");
+            //new WaitForSeconds(3f); // wait for 3 seconds
+            //pAnimator.ResetTrigger("Death_b");
             // Stop the movement
             //movec = Vector3.zero;
             //speed = 0f; // Stop the player from moving along the z-axis
