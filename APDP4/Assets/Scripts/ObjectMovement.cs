@@ -3,7 +3,7 @@ using UnityEngine;
 public class ObjectMovement : MonoBehaviour
 {
     public float distance = 100f; // Distance to move the object on the z-axis
-    public float speed = 120f; // Speed at which the object moves
+    public float speed = 100f; // Speed at which the object moves
 
     //public GameObject particleSystemPrefab; // Assign the particle system prefab in the Inspector
 
