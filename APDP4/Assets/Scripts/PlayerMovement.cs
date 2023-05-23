@@ -35,7 +35,6 @@ public class PlayerMovement : MonoBehaviour
         inputManager.OnSwipeLeft += OnSwipeLeft;
         inputManager.OnSwipeRight += OnSwipeRight;
         inputManager.OnSwipeUp += OnSwipeUp;
-        //inputManager.OnSwipeDown += OnSwipeDown;
     }
 
     private void OnDisable()
@@ -43,7 +42,6 @@ public class PlayerMovement : MonoBehaviour
         inputManager.OnSwipeLeft -= OnSwipeLeft;
         inputManager.OnSwipeRight -= OnSwipeRight;
         inputManager.OnSwipeUp -= OnSwipeUp;
-        //inputManager.OnSwipeDown -= OnSwipeDown;
     }
     void Start()
     {
@@ -60,26 +58,8 @@ public class PlayerMovement : MonoBehaviour
         if (!ScoreManager.isPlayerAlive)
         {
             pAnimator.SetTrigger("Death_b");
-            //new WaitForSeconds(3f); // wait for 3 seconds
-            //pAnimator.ResetTrigger("Death_b");
-            // Stop the movement
-            //movec = Vector3.zero;
-            //speed = 0f; // Stop the player from moving along the z-axis
             return;
         }
-
-       /* bool isJumping = (Input.GetKeyDown(KeyCode.UpArrow));
-        if (isJumping)
-        {
-            pAnimator.SetTrigger("Jump_b");
-        }*/
-        /*
-        bool isDucking = (Input.GetKeyDown(KeyCode.DownArrow));
-        if (isDucking)
-        {
-            pAnimator.SetTrigger("Crouch_b");
-        }
-        */
         Vector3 pos = gameObject.transform.position;
         if (!line.Equals(targetLine))
         {
@@ -169,19 +149,6 @@ public class PlayerMovement : MonoBehaviour
             OnSwipeUp();
 
         }
-        /*
-        // added code for ducking on down arrow
-        if (Input.GetKeyDown(KeyCode.DownArrow) && cc.isGrounded)
-        {
-            //cc.height = 1.0f;  // set character height to lower value
-            //cc.center = new Vector3(0, -0.5f, 0);  // move character's center down to maintain balance
-            
-        }
-        // added code to reset character height when the down arrow is released
-        if (Input.GetKeyUp(KeyCode.DownArrow))
-        {
-            OnSwipeDown();
-        }*/
     }
 
     private void OnSwipeLeft(){
@@ -222,32 +189,6 @@ public class PlayerMovement : MonoBehaviour
             return;
         }
     }
-    /*
-    private void OnSwipeDown(){
-
-        Debug.Log("Down swipe detected");
-        //cc.height = 2.0f;  // set character height back to default value
-        cc.center = new Vector3(0, 0, 0);  // move character's center back to default position
-        pAnimator.ResetTrigger("Crouch_b"); // Reset the Jump_b animation trigger
-
-    } 
-    */
-    /*
-    void PlayerDeath()
-    {
-        // Set flag to false
-        ScoreManager.isPlayerAlive = false;
-
-
-        // Stop the movement
-        //movec = Vector3.zero;
-
-        // Freeze the character's position
-        cc.enabled = false; // Disable the character controller component
-        gameObject.transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z); // Set the position to the current position
-
-    }*/
-
     void OnTriggerEnter(Collider other)
     {
         
