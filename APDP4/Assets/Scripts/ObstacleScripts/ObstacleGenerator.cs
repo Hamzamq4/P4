@@ -2,17 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Script for the obstacle generation, that handles traffic obstacles, school obstacles and sound obstacles.
+/// </summary>
+
 public class ObstacleGenerator : MonoBehaviour 
 {
-
-    public Transform[] lanes; // Three lanes
-    public float spacing = 5f; // Space between obstacle generations
+    public Transform[] lanes; // The three lanes
+    public float spacing = 5f; // Space in units between obstacle generations
     public GameObject[] schoolObstacles; // Array of obstacles for school terrain
     public GameObject[] trafficObstacles; // Array of obstacles for traffic terrain
-    public GameObject[] soundObstacles;
+    public GameObject[] soundObstacles;// Array of sounds obstacles
     public float soundObstacleSpacing = 20f; // Space between sound obstacle generations
 
-    private float nextSpawn = 1f; // Time until next obstacle generation
+    private float nextSpawn = 1f; // Time in units until next obstacle generation
     private int obstacleType = 0; // 0 for school obstacle, 1 for traffic obstacle, 2 for sound obstacle
 
     private int currentTerrainLayer; // The layer of the currently active terrain
@@ -23,7 +26,7 @@ public class ObstacleGenerator : MonoBehaviour
 
     void Start() 
     {
-        // Find the player object in the scene
+        // Finds the player object in the scene
         player = GameObject.FindGameObjectWithTag("Player").transform;
     }
 
@@ -77,7 +80,7 @@ public class ObstacleGenerator : MonoBehaviour
                         Debug.Log("Sound Obstacle!");
                     }
 
-                    // Spawn the obstacles
+                    // Spawns the obstacles
                     Instantiate(obstacleToSpawn, lanes[laneIndex].position + new Vector3(-1.6f, 3.9f, player.position.z + 60f), Quaternion.identity);
 
                     GameObject otherObstacleToSpawn = null;
@@ -102,8 +105,6 @@ public class ObstacleGenerator : MonoBehaviour
                             thirdObstacleToSpawn = trafficObstacles[Random.Range(0, trafficObstacles.Length)];
                             otherObstacleToSpawn = trafficObstacles[Random.Range(0, trafficObstacles.Length)];
                         }
-
-                        //Instantiate(obstacleToSpawn, lanes[laneIndex].position + new Vector3(-1.6f, 4.181f, player.position.z + 50f), Quaternion.identity);
                         Instantiate(thirdObstacleToSpawn, availableLanes[0].position + new Vector3(-1.6f, 4.181f, player.position.z + 60f), Quaternion.identity);
                         Instantiate(otherObstacleToSpawn, otherLane.position + new Vector3(-1.6f, 4.181f, player.position.z + 60f), Quaternion.identity);
                         spawnOtherLanes = false;

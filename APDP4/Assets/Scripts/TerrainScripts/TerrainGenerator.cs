@@ -2,6 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// 
+/// </summary>
+
 public class TerrainGenerator : MonoBehaviour
 {   
     // Array of terrain prefabs to randomly choose from
@@ -35,7 +39,6 @@ public class TerrainGenerator : MonoBehaviour
     public float obstacleProbability;
     public float obstaclePlacementDistance;
     public float laneWidth;
-    
     private float[] lanePositions = new float[] { -1f, 0f, 1f };
 
     void Start()
@@ -122,8 +125,6 @@ public class TerrainGenerator : MonoBehaviour
         // Get the list of obstacle prefabs from the new terrain section
         GameObject[] obstaclePrefabs = newTerrain.GetComponent<TerrainSection>().obstacles;
     }
-
-
 }
 
 

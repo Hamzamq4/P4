@@ -4,7 +4,9 @@ using UnityEngine.SceneManagement;
 using UnityEngine;
 using UnityEngine.UI;
 
-
+/// <summary>
+/// This script serves as the main functionality for the initial screen upon opening the game. 
+/// </summary>
 public class MainMenu : MonoBehaviour
 {
     public GameObject mainMenuPanel;
@@ -13,14 +15,15 @@ public class MainMenu : MonoBehaviour
 
     public Button start, fremskridt, indstillinger;
 
-    void Start()
+    void Start() // Adds listeners that detect when a click event occurs
     {
         start.onClick.AddListener(delegate { ChangePanel("start"); });
         fremskridt.onClick.AddListener(delegate { ChangePanel("fremskridt"); });
         indstillinger.onClick.AddListener(delegate { ChangePanel("indstillinger"); });  
     }
 
-    public void DisablePanels()
+    public void DisablePanels() // Adds listeners that detect when a click event occurs
+
     {
         mainMenuPanel.SetActive(false);
         fremskridtPanel.SetActive(false);
@@ -33,12 +36,12 @@ public class MainMenu : MonoBehaviour
         {
             case "start":
                 DisablePanels();
-                Time.timeScale = 1;
+                Time.timeScale = 1; //Sets timescale to normal speed
                 ChangeScene("SampleScene");
                 break;
             case "fremskridt":
                 DisablePanels();
-                fremskridtPanel.SetActive(true);
+                fremskridtPanel.SetActive(true); 
                 break;
             case "indstillinger":
                 DisablePanels();

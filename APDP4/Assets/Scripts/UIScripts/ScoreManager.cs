@@ -7,6 +7,12 @@ using TMPro;
 using System.IO;
 using System.Linq;
 
+/// <summary>
+/// This script gradually increases the player score, as well as checking the health of the player,
+/// and increasing the player health when the player has lost a health. 
+/// Upon the player losing all health, an enemy prefab spawns, followed by the game overpanel showing. 
+/// </summary>
+
 [System.Serializable]
 public class ScoreManager : MonoBehaviour
 {
@@ -37,7 +43,6 @@ public class ScoreManager : MonoBehaviour
 
     public static bool isPlayerAlive = true;
 
-
     public GameObject enemyDeathSpawnPrefab;
     private bool hasSpawned = false;
 
@@ -47,7 +52,6 @@ public class ScoreManager : MonoBehaviour
 
     private AudioSource radio;
 
-    // Start is called before the first frame update
     void Start()
     {
         if (PlayerPrefs.HasKey("HighScore"))
@@ -65,25 +69,16 @@ public class ScoreManager : MonoBehaviour
         radio = radioObject.GetComponent<AudioSource>();
 
         pAnimator = GameObject.FindGameObjectWithTag("Player").GetComponent<Animator>();
-       
-
     }
 
-    // Update is called once per frame
     void Update()
     {
-        /*Debug.Log(highScoreCount);
-        Debug.Log("File path: " + scoreFilePath);
-        Debug.Log("High score text: " + highScoreText.text);*/
-        
         switch (health)
         {
             case 2:
                 zeroLives.SetActive(false);
                 oneLife.SetActive(false);
                 twoLives.SetActive(true);
-                /* oneLife.gameObject.SetActive(true);
-                twoLives.gameObject.SetActive(true); */
                 break;
                 
             case 1:
@@ -92,7 +87,7 @@ public class ScoreManager : MonoBehaviour
                 twoLives.SetActive(false);
                 if (lifeRefillCoroutine == null)
                 {
-                    // Start a new coroutine to refill the life
+                    // Starts a new coroutine to refill health
                     lifeRefillCoroutine = StartCoroutine(RefillLives());
                 }
                 break;
@@ -105,18 +100,12 @@ public class ScoreManager : MonoBehaviour
                 if (!gameOverPanel.activeSelf)
                 {
                     scoreIncreasing = false;
-                    //pAnimator.SetTrigger("Death_b");
                     isPlayerAlive = false;
                     StartCoroutine(ShowGameOverPanel());
                 }
                 zeroLives.gameObject.SetActive(false);
-                /*oneLife.gameObject.SetActive(false);
-                twoLives.gameObject.SetActive(false); */
                 break;
-
-                // Check if the player is alive
         }
-
 
         if (scoreIncreasing)
         {
@@ -135,8 +124,6 @@ public class ScoreManager : MonoBehaviour
 
     }
 
-
-    
     IEnumerator RefillLives()
     {
         yield return new WaitForSeconds(refillLifeTime);
@@ -153,42 +140,33 @@ public class ScoreManager : MonoBehaviour
     {
         if (!hasSpawned)
         {
-            hasSpawned = true; // Set the hasSpawned variable to true to prevent spawning more than once
+            hasSpawned = true; // Set the hasSpawned variable to true to prevent it from spawning more than once
 
             GameObject player = GameObject.FindGameObjectWithTag("Player");
-            Vector3 spawnPosition = player.transform.position - new Vector3(0f, 0f, 20f); // Spawn the prefab 20 units behind the player
+            Vector3 spawnPosition = player.transform.position - new Vector3(0f, 0f, 20f); // Spawns the prefab 20 units behind the player
             GameObject spawnedObject = Instantiate(enemyDeathSpawnPrefab, spawnPosition, Quaternion.identity);
-            // Get the direction from the spawn position to the player's position
-            Vector3 direction = (player.transform.position - spawnPosition).normalized;
+            Vector3 direction = (player.transform.position - spawnPosition).normalized; // Gets the direction from spawn position to the player's position
+            spawnedObject.transform.rotation = Quaternion.LookRotation(direction); // Rotates the spawned object to face the player
+            while (Vector3.Distance(spawnedObject.transform.position, player.transform.position) > 10f) // Move the spawned object towards the player across 10 units
 
-            // Set the initial rotation of the spawned object to face the player
-            spawnedObject.transform.rotation = Quaternion.LookRotation(direction);
-
-            // Move the spawned object towards the player across 10 units
-            while (Vector3.Distance(spawnedObject.transform.position, player.transform.position) > 10f)
             {
-                spawnedObject.transform.position += direction * Time.deltaTime * 5f; // Change the speed here as required
+                spawnedObject.transform.position += direction * Time.deltaTime * 5f; // Speed 5f, change if required.
                 yield return null;
             }
             radio.PlayOneShot(fangetClip);
             Debug.Log("DeathAnimationTime");
         }
-        yield return new WaitForSeconds(3f); // wait for 3 seconds
+        yield return new WaitForSeconds(3f); // Wait for 3 seconds
         gameOverPanel.SetActive(true);
         scoreUI.gameObject.SetActive(false);
-        Time.timeScale = 0; // Set the time scale to zero after the delay
+        Time.timeScale = 0; // Set the time scale to zero after WaitForSeconds
     }
 
     public void ReloadGame()
     {
-        //pAnimator.ResetTrigger("Death_b");
         SceneManager.LoadScene("SampleScene");
         scoreUI.gameObject.SetActive(true);
         health = 2;
-        //pAnimator.SetTrigger("Static_b");
         ScoreManager.isPlayerAlive = true;
-
     }
-
-
 }
