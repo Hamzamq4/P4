@@ -2,6 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// This code is for the radio filter for the narration of the game. 
+/// </summary>
+
 public class RadioFilter : MonoBehaviour
 {
     private AudioHighPassFilter highPassFilter;
@@ -20,7 +24,6 @@ public class RadioFilter : MonoBehaviour
 
     [RangeAttribute(0, 1)]
     public float volume = 0.6f;
-    // Start is called before the first frame update
     void Start()
     {
         audioSource = gameObject.GetComponent<AudioSource>();
@@ -32,11 +35,5 @@ public class RadioFilter : MonoBehaviour
         lowPassFilter.cutoffFrequency = highFrequencyCutoff;
         distortion.distortionLevel = distortionLevel;
         audioSource.volume = volume;
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }

@@ -87,7 +87,7 @@ public class ScoreManager : MonoBehaviour
                 twoLives.SetActive(false);
                 if (lifeRefillCoroutine == null)
                 {
-                    // Starts a new coroutine to refill health
+                    // starts a new coroutine to refill health
                     lifeRefillCoroutine = StartCoroutine(RefillLives());
                 }
                 break;
@@ -127,7 +127,7 @@ public class ScoreManager : MonoBehaviour
     IEnumerator RefillLives()
     {
         yield return new WaitForSeconds(refillLifeTime);
-        // Refill the life only if the player has not lost another life in the meantime
+        // refill the life only if the player has not lost another life in the meantime
         if (health == 1)
         {
             Debug.Log("2 lives now");
@@ -140,26 +140,26 @@ public class ScoreManager : MonoBehaviour
     {
         if (!hasSpawned)
         {
-            hasSpawned = true; // Set the hasSpawned variable to true to prevent it from spawning more than once
+            hasSpawned = true; // set the hasSpawned variable to true to prevent it from spawning more than once
 
             GameObject player = GameObject.FindGameObjectWithTag("Player");
-            Vector3 spawnPosition = player.transform.position - new Vector3(0f, 0f, 20f); // Spawns the prefab 20 units behind the player
+            Vector3 spawnPosition = player.transform.position - new Vector3(0f, 0f, 20f); // spawns the prefab 20 units behind the player
             GameObject spawnedObject = Instantiate(enemyDeathSpawnPrefab, spawnPosition, Quaternion.identity);
-            Vector3 direction = (player.transform.position - spawnPosition).normalized; // Gets the direction from spawn position to the player's position
-            spawnedObject.transform.rotation = Quaternion.LookRotation(direction); // Rotates the spawned object to face the player
-            while (Vector3.Distance(spawnedObject.transform.position, player.transform.position) > 10f) // Move the spawned object towards the player across 10 units
+            Vector3 direction = (player.transform.position - spawnPosition).normalized; // gets the direction from spawn position to the player's position
+            spawnedObject.transform.rotation = Quaternion.LookRotation(direction); // rotates the spawned object to face the player
+            while (Vector3.Distance(spawnedObject.transform.position, player.transform.position) > 10f) // move the spawned object towards the player across 10 units
 
             {
-                spawnedObject.transform.position += direction * Time.deltaTime * 5f; // Speed 5f, change if required.
+                spawnedObject.transform.position += direction * Time.deltaTime * 5f; // speed 5f, change if required.
                 yield return null;
             }
             radio.PlayOneShot(fangetClip);
             Debug.Log("DeathAnimationTime");
         }
-        yield return new WaitForSeconds(3f); // Wait for 3 seconds
+        yield return new WaitForSeconds(3f); // wait for 3 seconds
         gameOverPanel.SetActive(true);
         scoreUI.gameObject.SetActive(false);
-        Time.timeScale = 0; // Set the time scale to zero after WaitForSeconds
+        Time.timeScale = 0; // set the time scale to zero after WaitForSeconds
     }
 
     public void ReloadGame()

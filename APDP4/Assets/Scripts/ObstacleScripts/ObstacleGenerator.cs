@@ -8,25 +8,25 @@ using UnityEngine;
 
 public class ObstacleGenerator : MonoBehaviour 
 {
-    public Transform[] lanes; // The three lanes
-    public float spacing = 5f; // Space in units between obstacle generations
-    public GameObject[] schoolObstacles; // Array of obstacles for school terrain
-    public GameObject[] trafficObstacles; // Array of obstacles for traffic terrain
-    public GameObject[] soundObstacles;// Array of sounds obstacles
-    public float soundObstacleSpacing = 20f; // Space between sound obstacle generations
+    public Transform[] lanes; // the three lanes
+    public float spacing = 5f; // space in units between obstacle generations
+    public GameObject[] schoolObstacles; // array of obstacles for school terrain
+    public GameObject[] trafficObstacles; // array of obstacles for traffic terrain
+    public GameObject[] soundObstacles;// array of sounds obstacles
+    public float soundObstacleSpacing = 20f; // space between sound obstacle generations
 
-    private float nextSpawn = 1f; // Time in units until next obstacle generation
+    private float nextSpawn = 1f; // time in units until next obstacle generation
     private int obstacleType = 0; // 0 for school obstacle, 1 for traffic obstacle, 2 for sound obstacle
 
-    private int currentTerrainLayer; // The layer of the currently active terrain
-    private Transform player; // The player object
+    private int currentTerrainLayer; //layer of currently active terrain
+    private Transform player; // the player object
 
     public float spawnStartTime;
     private float elapsedSeconds;
 
     void Start() 
     {
-        // Finds the player object in the scene
+        // finds the player object in the scene
         player = GameObject.FindGameObjectWithTag("Player").transform;
     }
 
@@ -40,7 +40,7 @@ public class ObstacleGenerator : MonoBehaviour
                     Vector2 randomCircle = Random.insideUnitCircle;
                     int laneIndex = Mathf.RoundToInt(Mathf.Clamp01(randomCircle.x + 0.5f) * (lanes.Length - 1));
 
-                    // Check the layer of the terrain that the player is about to approach
+                    // check the layer of the terrain that the player is about to approach
                     RaycastHit hit;
                     if (Physics.Raycast(player.position + new Vector3(0, -0.1f, 10f), Vector3.forward, out hit)) 
                     {
@@ -60,27 +60,27 @@ public class ObstacleGenerator : MonoBehaviour
                         nextSpawn = Time.time + spacing;
                     }
 
-                    // Determine which obstacles to spawn
+                    // determines which obstacles to spawn
                     bool spawnOtherLanes = false; // flag to determine if obstacle should be spawned in other lanes
 
                     GameObject obstacleToSpawn;
                     if (obstacleType == 0) 
-                    { // School terrain
+                    { // school terrain
                         obstacleToSpawn = schoolObstacles[Random.Range(0, schoolObstacles.Length)];
                         spawnOtherLanes = Random.value < 0.1f;
                     } 
                     else if (obstacleType == 1) 
-                    { // Traffic terrain
+                    { // traffic terrain
                         obstacleToSpawn = trafficObstacles[Random.Range(0, trafficObstacles.Length)];
                         spawnOtherLanes = Random.value < 0.6f;
                     } 
                     else 
-                    { // Sound obstacle
+                    { // sound obstacle
                         obstacleToSpawn = soundObstacles[Random.Range(0, soundObstacles.Length)];
                         Debug.Log("Sound Obstacle!");
                     }
 
-                    // Spawns the obstacles
+                    // spawns the obstacles
                     Instantiate(obstacleToSpawn, lanes[laneIndex].position + new Vector3(-1.6f, 3.9f, player.position.z + 60f), Quaternion.identity);
 
                     GameObject otherObstacleToSpawn = null;

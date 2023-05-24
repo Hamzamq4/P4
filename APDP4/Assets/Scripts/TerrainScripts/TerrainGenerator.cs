@@ -3,39 +3,35 @@ using System.Collections.Generic;
 using UnityEngine;
 
 /// <summary>
-/// 
+/// This script works as the main terrain generation, which generates the different terrains that
+/// procedurally appear in front of the player. 
 /// </summary>
 
 public class TerrainGenerator : MonoBehaviour
 {   
-    // Array of terrain prefabs to randomly choose from
     public GameObject[] terrainPrefabs;
-
-    // Finding player object
-
     public GameObject player;
 
-    public float deleteDistance = 10f; // Distance behind the player at which objects will be deleted
+    public float deleteDistance = 10f; // distance behind the player where the objects will be deleted
 
-    private List<GameObject> objectsToDestroy = new List<GameObject>(); // List of objects to destroy
-     public GameObject[] objectsToIgnore; // Array of objects to ignore during deletion
+    private List<GameObject> objectsToDestroy = new List<GameObject>(); // list of objects to be destroyed
+    public GameObject[] objectsToIgnore; // array of objects that shouldnt be deleted
 
-    // Length of each terrain section
     public float terrainLength = 50f;
 
-    // Starting terrain prefab
+    // starting terrain prefab
     public GameObject initialTerrain;
 
-    // Reference to the current terrain section
+    // reference to the current terrain section
     private GameObject currentTerrain;
 
-    // Length of the current terrain section
+    // current length of terrain section
     private float currentTerrainLength;
 
-    // Distance threshold from the end of the current terrain section to generate a new section
+    // distance from the end of the current terrain section for generating a new section
     public float distanceThreshold = 10f;
 
-    // Variables for obstacle instantiation
+    // variables for obstacle instantiation
     public float obstacleProbability;
     public float obstaclePlacementDistance;
     public float laneWidth;
@@ -43,49 +39,44 @@ public class TerrainGenerator : MonoBehaviour
 
     void Start()
     {
-        // Instantiate the initial terrain prefab at the starting position
+        // instantiate the initial terrain prefab at the starting position
         currentTerrain = Instantiate(initialTerrain, Vector3.zero, Quaternion.identity);
         
-        // Set the current terrain length to the length of the initial terrain
+        // sets current terrain length to length of the initial terrain
         currentTerrainLength = terrainLength;
     }
 
-    // Update is called once per frame
     void Update()
     {
-        // Calculate the distance between the player and the end of the current terrain section
+        // calculates the distance between the player and the end of the current terrain section
         float distanceToEdge = currentTerrainLength - player.transform.position.z;
 
-        // If the player is within the distance threshold from the end of the current terrain section, generate a new section
+        // if the player is within the distance threshold from the end of the current terrain section it generates a new section
         if (distanceToEdge < distanceThreshold)
         {
-            //Destroy(currentTerrain);
             GenerateTerrain();  
         }
 
-        // Next part for deletion of objects behind player
-        // Loop through all objects in the scene
+        // for deletion of objects behind player - loop through all objects in the scene
         foreach (GameObject obj in FindObjectsOfType<GameObject>())
         {
-            // Check if the object is behind the player and not in the ignore list
+            // checks if the object is behind the player and not in the ignore list
             if (obj.transform.position.z < player.transform.position.z - deleteDistance && !IsObjectIgnored(obj))
             {
-                // Add the object to the list of objects to destroy
+                // adds the object to the list of objects to destroy
                 objectsToDestroy.Add(obj);
             }
         }
 
-        // Destroy all objects in the list
+        // destroys all objects in the list
         foreach (GameObject obj in objectsToDestroy)
         {
             Destroy(obj);
         }
-
-        // Clear the list for the next frame
         objectsToDestroy.Clear();
     }
 
-    // Check if an object is in the ignore list
+    // check if an object is in the ignore list
     bool IsObjectIgnored(GameObject obj)
     {
         foreach (GameObject ignoreObj in objectsToIgnore)
@@ -103,26 +94,26 @@ public class TerrainGenerator : MonoBehaviour
 
     void GenerateTerrain()
     {
-        // Choose a random terrain prefab from the array, ensuring it's not a Terrain3 prefab
+        // choose a random terrain prefab from the array, ensuring it's not a Terrain3 prefab
         int randomIndex;
         do
         {
             randomIndex = Random.Range(0, terrainPrefabs.Length);
         } while (lastTerrainIndex.HasValue && terrainPrefabs[randomIndex].name == "Terrain3" && lastTerrainIndex.Value == randomIndex);
 
-        // Update lastTerrainIndex to keep track of the previous terrain generated
+        // update lastTerrainIndex to keep track of the previous terrain generated
         lastTerrainIndex = randomIndex;
 
-        // Instantiate the new terrain prefab at the appropriate position
+        // instantiate the new terrain prefab at the appropriate position
         GameObject newTerrain = Instantiate(terrainPrefabs[randomIndex], new Vector3(0, 0, currentTerrainLength + 50), Quaternion.identity);
 
-        // Update the current terrain length
+        // updates the current terrain length
         currentTerrainLength += terrainLength + 50;
 
-        // Update the current terrain reference
+        // updates the current terrain reference
         currentTerrain = newTerrain;
 
-        // Get the list of obstacle prefabs from the new terrain section
+        // gets list of obstacle prefabs from the new terrain section
         GameObject[] obstaclePrefabs = newTerrain.GetComponent<TerrainSection>().obstacles;
     }
 }

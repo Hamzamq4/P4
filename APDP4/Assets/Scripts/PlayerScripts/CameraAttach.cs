@@ -2,6 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// This script is attached to the camera, and serves as a smooth following 
+/// camera that follows the player and changes position depending on which 
+/// terrain the player is on.
+/// </summary>
+
 public class CameraAttach : MonoBehaviour
 {
 

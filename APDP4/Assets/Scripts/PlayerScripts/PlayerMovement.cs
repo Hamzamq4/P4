@@ -2,6 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// This script is the primary script for the player's movement in the game. With Touch controls.
+/// </summary>
+
 public class PlayerMovement : MonoBehaviour
 {
     CharacterController cc;

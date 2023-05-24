@@ -15,14 +15,14 @@ public class MainMenu : MonoBehaviour
 
     public Button start, fremskridt, indstillinger;
 
-    void Start() // Adds listeners that detect when a click event occurs
+    void Start() // adds listeners that detect when a click event occurs
     {
         start.onClick.AddListener(delegate { ChangePanel("start"); });
         fremskridt.onClick.AddListener(delegate { ChangePanel("fremskridt"); });
         indstillinger.onClick.AddListener(delegate { ChangePanel("indstillinger"); });  
     }
 
-    public void DisablePanels() // Adds listeners that detect when a click event occurs
+    public void DisablePanels() // adds listeners that detect when a click event occurs
 
     {
         mainMenuPanel.SetActive(false);
@@ -30,13 +30,13 @@ public class MainMenu : MonoBehaviour
         indstillingerPanel.SetActive(false);
     }
 
-    public void ChangePanel(string panelName)
+    public void ChangePanel(string panelName) //the start screen, fremskridt screen and settings screen. 
     {
         switch (panelName)
         {
             case "start":
                 DisablePanels();
-                Time.timeScale = 1; //Sets timescale to normal speed
+                Time.timeScale = 1; //sets timescale to the normal speed
                 ChangeScene("SampleScene");
                 break;
             case "fremskridt":
