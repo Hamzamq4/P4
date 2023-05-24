@@ -4,6 +4,7 @@
 #GitHub
 The GitHub Repository for this project is:
 https://github.com/Hamzamq4/P4
+Branch: 2nd-Iteration-
 
 #Excutable
 There is an APK file included in the files ("SpyRun.apk"). This can be open on an Android device (Preferably a phone). However, in order to run the game on an iOS device, you have to switch build platforms.  Additionally we recommend to watch the following video on how to run the game on iOS (this is the same video we used to build to iOS): https://www.youtube.com/watch?v=-Hr4-XNCf8Y&feature=youtu.be
