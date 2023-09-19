@@ -14,10 +14,10 @@
 # They also could contain extremely sensitive data
 /[Mm]emoryCaptures/
 
-#Libary Ignore
+# Libary Ignore
 /APDP4/Library/
 
-#User Settings
+# User Settings
 /APDP4/UserSettings/
 
 # Recordings can get excessive in size
@@ -66,6 +66,7 @@ sysinfo.txt
 *.aab
 *.unitypackage
 *.app
+*.icloud
 
 # Crashlytics generated file
 crashlytics-build.properties
@@ -76,3 +77,31 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
+
+# Ignore Unity .meta files
+**/*.meta
+APDP4/Builds/Data/Managed/.SerializedTypes.xml.icloud
+APDP4/Builds/Data/.unity default resources.icloud
+APDP4/Builds/Data/Managed/.MethodsToPreserve.xml.icloud
+APDP4/Builds/Data/.sharedassets1.resource.icloud
+APDP4/Builds/Data/.sharedassets1.assets.resS.icloud
+APDP4/Builds/Data/.ScriptingAssemblies.json.icloud
+APDP4/Builds/Data/.sharedassets1.assets.icloud
+APDP4/Builds/Data/.sharedassets0.resource.icloud
+APDP4/Builds/Data/.sharedassets0.assets.resS.icloud
+APDP4/Builds/Data/.sharedassets0.assets.icloud
+APDP4/Builds/Data/.resources.assets.resS.icloud
+APDP4/Builds/Data/.resources.assets.icloud
+APDP4/Builds/Data/.level1.resS.icloud
+APDP4/Builds/Data/.level1.icloud
+APDP4/Builds/Data/.level0.resS.icloud
+APDP4/Builds/Data/.level0.icloud
+APDP4/Builds/Data/.globalgamemanagers.icloud
+APDP4/Builds/Data/.boot.config.icloud
+APDP4/Builds/Data/.globalgamemanagers.assets.icloud
+APDP4/Builds/.LaunchScreen-iPhone.storyboard.icloud
+APDP4/Builds/.LaunchScreen-iPhone 2.storyboard.icloud
+APDP4/Builds/.LaunchScreen-iPad.storyboard.icloud
+APDP4/Builds/.LaunchScreen-iPad 2.storyboard.icloud
+APDP4/Builds/.Info.plist.icloud
+APDP4/Builds/.Info 2.plist.icloud
