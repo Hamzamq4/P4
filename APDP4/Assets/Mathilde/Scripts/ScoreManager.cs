@@ -6,6 +6,7 @@ using UnityEngine.UI;
 using TMPro;
 using System.IO;
 using System.Linq;
+using System;
 
 [System.Serializable]
 public class ScoreManager : MonoBehaviour
@@ -101,7 +102,6 @@ public class ScoreManager : MonoBehaviour
                 zeroLives.SetActive(true);
                 oneLife.SetActive(false);
                 twoLives.SetActive(false);
-
                 if (!gameOverPanel.activeSelf)
                 {
                     scoreIncreasing = false;
@@ -190,5 +190,9 @@ public class ScoreManager : MonoBehaviour
 
     }
 
+public class DataSaver
+    {
+    public Array[] allScores;
+    }
 
 }

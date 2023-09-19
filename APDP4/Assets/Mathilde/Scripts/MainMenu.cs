@@ -10,14 +10,16 @@ public class MainMenu : MonoBehaviour
     public GameObject mainMenuPanel;
     public GameObject fremskridtPanel;
     public GameObject indstillingerPanel;
-
-    public Button start, fremskridt, indstillinger;
+    public GameObject startPanel;
+    public Button start, fremskridt, indstillinger, traffik, skole;
 
     void Start()
     {
         start.onClick.AddListener(delegate { ChangePanel("start"); });
         fremskridt.onClick.AddListener(delegate { ChangePanel("fremskridt"); });
         indstillinger.onClick.AddListener(delegate { ChangePanel("indstillinger"); });  
+        traffik.onClick.AddListener(delegate { ChangeScene("traffik");});
+        skole.onClick.AddListener(delegate { ChangeScene("skole");});
     }
 
     public void DisablePanels()
@@ -25,6 +27,7 @@ public class MainMenu : MonoBehaviour
         mainMenuPanel.SetActive(false);
         fremskridtPanel.SetActive(false);
         indstillingerPanel.SetActive(false);
+        startPanel.SetActive(false);
     }
 
     public void ChangePanel(string panelName)
@@ -33,8 +36,9 @@ public class MainMenu : MonoBehaviour
         {
             case "start":
                 DisablePanels();
-                Time.timeScale = 1;
-                ChangeScene("SampleScene");
+                /*Time.timeScale = 1;
+                ChangeScene("SampleScene");*/
+                startPanel.SetActive(true);
                 break;
             case "fremskridt":
                 DisablePanels();
@@ -55,6 +59,15 @@ public class MainMenu : MonoBehaviour
 
     public void ChangeScene(string sceneName)
     {
-        SceneManager.LoadScene(sceneName);
+        Debug.Log("Change scene");
+        if (sceneName == "traffik")
+        {
+            Debug.Log("Traffik");
+            SceneManager.LoadScene("TraffikScene");
+        }
+        else if (sceneName == "skole")
+        {
+            SceneManager.LoadScene("SkoleScene");
+        }
     }
 }

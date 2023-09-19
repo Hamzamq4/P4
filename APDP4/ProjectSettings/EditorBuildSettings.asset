@@ -6,11 +6,14 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Mathilde/MenuScene.unity
+    path: Assets/Scenes/MenuScene.unity
     guid: b44dbd1b43e2d4ce191b43565165c237
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
+    path: Assets/Scenes/SkoleScene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/TraffikScene.unity
+    guid: 05f0153886e6841de88d4d64d845d452
   m_configObjects:
     com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: 8492f99241b25ea40b949e167b8c40ad, type: 2}
     com.unity.adaptiveperformance.samsung.android.provider_settings: {fileID: 11400000, guid: e8f5a557a6e4b844f9a0454027f1ca91, type: 2}

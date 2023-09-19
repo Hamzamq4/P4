@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1167,8 +1167,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   terrainPrefabs:
-  - {fileID: 7028618665781999005, guid: 4d1f2c2052eec4689b1aae856db1ec2b, type: 3}
-  - {fileID: 7028618665781999005, guid: b42994c1754c92d4886d88f26355b649, type: 3}
   - {fileID: 7028618665781999005, guid: 3feed1b4611d339488e898baf0a6c98e, type: 3}
   player: {fileID: 6450177392892860472}
   deleteDistance: 200

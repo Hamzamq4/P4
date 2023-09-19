@@ -101,11 +101,7 @@ public class TerrainGenerator : MonoBehaviour
     void GenerateTerrain()
     {
         // Choose a random terrain prefab from the array, ensuring it's not a Terrain3 prefab
-        int randomIndex;
-        do
-        {
-            randomIndex = Random.Range(0, terrainPrefabs.Length);
-        } while (lastTerrainIndex.HasValue && terrainPrefabs[randomIndex].name == "Terrain3" && lastTerrainIndex.Value == randomIndex);
+        int randomIndex = Random.Range(0, terrainPrefabs.Length);
 
         // Update lastTerrainIndex to keep track of the previous terrain generated
         lastTerrainIndex = randomIndex;
