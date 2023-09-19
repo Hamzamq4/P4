@@ -16,6 +16,7 @@
 
 # Libary Ignore
 /APDP4/Library/
+/APDP4/Logs/
 
 # User Settings
 /APDP4/UserSettings/
