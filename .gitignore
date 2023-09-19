@@ -67,7 +67,6 @@ sysinfo.txt
 *.unitypackage
 *.app
 *.icloud
-*.log
 
 # Crashlytics generated file
 crashlytics-build.properties
@@ -81,3 +80,4 @@ crashlytics-build.properties
 
 # Ignore Unity .meta files
 **/*.meta
+**/*.log
