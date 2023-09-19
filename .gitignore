@@ -67,6 +67,7 @@ sysinfo.txt
 *.unitypackage
 *.app
 *.icloud
+*.log
 
 # Crashlytics generated file
 crashlytics-build.properties
